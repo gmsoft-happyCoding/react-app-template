@@ -1,0 +1,27 @@
+---
+name: WhatToEat
+---
+
+import { Playground, PropsTable } from 'docz';
+import WhatToEat, { WhatToEat as Origin } from './WhatToEat';
+import { Mode } from '../../enums/Mode';
+
+# WhatToEat
+
+## Properties
+
+<PropsTable of={Origin} />
+
+## usage
+
+### defaultMode draw
+
+<Playground>
+  <WhatToEat defaultMode={Mode.DRAW} />
+</Playground>
+
+### defaultMode search
+
+<Playground>
+  <WhatToEat defaultMode={Mode.SEARCH} />
+</Playground>

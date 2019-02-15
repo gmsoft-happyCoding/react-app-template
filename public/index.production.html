@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="description" content="{{ projectDescription }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#000000" />
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- antd css -->
+    <link
+      href="%REACT_APP_DNS_SERVER%/??antd/3.13.2/antd.css,antd/3.13.2/custom-antd.css"
+      rel="stylesheet"
+    />
+    <!-- polyfill -->
+    <script crossorigin src="%REACT_APP_DNS_SERVER%/polyfill/1.0.0/polyfill.min.js"></script>
+    <!-- 
+      可能会经常升级的放到一组
+      react
+      react-dom
+      moment
+      antd
+      styled-components
+    -->
+    <script
+      crossorigin
+      src="%REACT_APP_DNS_SERVER%/??react/16.8.1/react.production.min.js,react-dom/16.8.1/react-dom.production.min.js,moment/2.22.2/moment.min.js,moment/2.22.2/locale.zh-cn.js,moment/use-locale.js,antd/3.13.2/antd.min.js,styled-components/4.1.3/styled-components.min.js"
+    ></script>
+    <!-- 
+      history
+      react-router-dom
+      redux
+      redux-saga
+      react-router-redux
+      react-redux
+      redux-actions
+      reselect 
+      react-virtualized
+      react-virtualized-tree
+    -->
+    <script
+      crossorigin
+      src="%REACT_APP_DNS_SERVER%/??history/4.7.2/history.min.js,react-router-dom/4.3.1/react-router-dom.min.js,redux/4.0.1/redux.min.js,redux-saga/0.16.2/redux-saga.min.js,react-router-redux/4.0.8/ReactRouterRedux.min.js,react-redux/5.1.1/react-redux.min.js,redux-actions/2.6.4/redux-actions.min.js,reselect/4.0.0/reselect.min.js,react-virtualized/9.21.0/react-virtualized.min.js,react-virtualized-tree/2.0.2/react-virtualized-tree.min.js"
+    ></script>
+    <!-- 
+      dva-core
+      immer
+      state-container
+      axios
+      systemjs
+     -->
+    <script src="%REACT_APP_DNS_SERVER%/??dva-core/1.5.0-beta.2/dva-core.min.js,immer/1.8.0/immer.umd.js,state-container/1.0.0/state-container.min.js,axios/0.18.0/axios.min.js,systemjs/0.21.5/system.js"></script>
+    <!--
+      Notice the use of % PUBLIC_URL % in the tags above. It will be replaced with the URL of the`public` folder
+      during the build. Only files inside the`public` folder can be referenced from the HTML. Unlike "/favicon.ico" or
+      "favicon.ico" , "%PUBLIC_URL%/favicon.ico" will work correctly both with client - side routing and a non - root
+      public URL. Learn how to configure a non - root public URL by running`npm run build`.
+    -->
+    <title>{{ projectTitle }}</title>
+  </head>
+
+  <body>
+    <noscript> You need to enable JavaScript to run this app. </noscript>
+    <div id="root"></div>
+    <!--
+          This HTML file is a template.
+          If you open it directly in the browser, you will see an empty page.
+
+          You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+        To begin the development, run `npm start` or `yarn start`.
+        To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
