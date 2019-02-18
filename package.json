@@ -1,4 +1,5 @@
 {
+  "name": "{{projectName}}",
   "private": true,
   "scripts": {
     "start": "node --max_old_space_size=6144 scripts/start.js",
