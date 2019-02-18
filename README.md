@@ -59,9 +59,9 @@ REACT_APP_DEPLOY_SERVERS
 
 ## 路径别名
 
-@src -> /src
+@ -> src
 
-> 如果相对路径较长例如 ../../components/\* 可以改写为 @src/components/\*
+> 如果相对路径较长例如 ../../components/\* 可以改写为 @/components/\*
 
 如果你想要定义自己的路径别名, 请修改一下文件
 

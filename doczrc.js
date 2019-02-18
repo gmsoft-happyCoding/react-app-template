@@ -65,7 +65,7 @@ module.exports = {
     config.plugins.push(new webpack.DefinePlugin(env.stringified));
     // 路径别名
     const alias = {
-      '@src': paths.appSrc,
+      '@': paths.appSrc,
     };
     config.resolve.alias = { ...config.resolve.alias, ...alias };
     return config;

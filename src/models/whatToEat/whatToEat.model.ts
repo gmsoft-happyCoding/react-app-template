@@ -1,7 +1,7 @@
 import { Model } from 'dva';
-import { whatToEat } from '@src/api';
-import { Food } from '@src/types/Food.d';
-import { popup, unwrapActions } from '@src/utils';
+import { whatToEat } from '@/api';
+import { Food } from '@/types/Food.d';
+import { popup, unwrapActions } from '@/utils';
 import wrappedWhatToEatActions from './whatToEat.action';
 
 const whatToEatActions = unwrapActions(wrappedWhatToEatActions);
