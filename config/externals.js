@@ -104,7 +104,7 @@ module.exports = (global = 'var') => ({
     commonjs2: 'reselect',
   },
   'react-virtualized': {
-    [global]: 'ReactVirtualized ',
+    [global]: 'ReactVirtualized',
     amd: 'react-virtualized',
     commonjs: 'react-virtualized',
     commonjs2: 'react-virtualized',
