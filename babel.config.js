@@ -1,19 +1,19 @@
 module.exports = {
-  presets: ["react-app"],
+  presets: ['react-app'],
   plugins: [
-    "react-hot-loader/babel",
+    'react-hot-loader/babel',
     [
-      "styled-components",
+      'styled-components',
       {
-        displayName: true
-      }
+        displayName: true,
+      },
     ],
-    "lodash",
+    'lodash',
     [
-      "ramda",
+      'ramda',
       {
-        useES: true
-      }
-    ]
-  ]
+        useES: true,
+      },
+    ],
+  ],
 };

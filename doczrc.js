@@ -41,7 +41,7 @@ function getBase(url) {
 }
 
 module.exports = {
-  title: `{{projectName}}`,
+  title: '{{projectName}}',
   base: `${getBase(publicUrl)}/${docPath}`,
   dest: `build/${docPath}`,
   typescript: true,
@@ -49,12 +49,10 @@ module.exports = {
   wrapper: 'src/DocWrapper',
   indexHtml: 'public/index.docz.html',
   // docz 内部也用了 react-hot-loader, 重复了
-  modifyBabelRc: (babelrc, args) => {
-    return {
-      ...babelrc,
-      plugins: babelrc.plugins.filter(plugin => plugin !== 'react-hot-loader/babel'),
-    };
-  },
+  modifyBabelRc: (babelrc, args) => ({
+    ...babelrc,
+    plugins: babelrc.plugins.filter(plugin => plugin !== 'react-hot-loader/babel'),
+  }),
   modifyBundlerConfig: (config, dev, args) => {
     // 外部依赖
     config.externals = externals();
