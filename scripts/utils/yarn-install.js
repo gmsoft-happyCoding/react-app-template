@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const child_process = require('child_process');
 
-//检测文件或者文件夹存在
+// 检测文件或者文件夹存在
 function fsExistsSync(path) {
   try {
     fs.accessSync(path, fs.F_OK);
