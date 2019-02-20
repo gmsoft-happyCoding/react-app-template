@@ -60,7 +60,7 @@ const bindActionsCollection: BindActionsCollection = (...actionsCollection) => d
     }),
     {}
   );
-  return { ...boundActionsCollection };
+  return { ...boundActionsCollection, dispatch };
 };
 
 export default bindActionsCollection;
