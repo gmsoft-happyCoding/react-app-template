@@ -70,8 +70,8 @@ module.exports = (global = 'var') => ({
   'redux-actions': {
     [global]: 'ReduxActions',
     amd: 'redux-actions',
-    commonjs: 'react-actions',
-    commonjs2: 'react-actions',
+    commonjs: 'redux-actions',
+    commonjs2: 'redux-actions',
   },
   'dva-core': {
     [global]: 'DvaCore',
