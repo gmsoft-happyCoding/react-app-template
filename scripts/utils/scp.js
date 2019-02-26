@@ -179,25 +179,29 @@ async function scp(
     });
   }
 
+  let answers = {};
   if (questions.length > 0) {
-    await inquirer.prompt(questions).then(answers => {
-      if (answers.host) host = answers.host;
-      if (answers.username) username = answers.username;
-      if (answers.password) password = answers.password;
-      if (answers.privateKey) privateKey = answers.privateKey;
-      if (answers.passphrase) passphrase = answers.passphrase;
-      if (answers.path) path = answers.path;
-    });
+    answers = await inquirer.prompt(questions);
   }
 
   try {
     await scpExec(
       srcPath,
-      { port, host, username, password, privateKey, passphrase, path },
+      { port, host, username, password, privateKey, passphrase, path, ...answers },
       verbose
     );
   } catch (err) {
     console.log(chalk.red(`[scp error] ${err}`));
+    const { retry } = await inquirer.prompt([
+      {
+        type: 'confirm',
+        name: 'retry',
+        message: '上传文件失败, 你想要重试吗?',
+        default: true,
+      },
+    ]);
+    if (retry)
+      await scp(srcPath, { port, host, username, password, privateKey, passphrase, path }, verbose);
   }
 }
 
