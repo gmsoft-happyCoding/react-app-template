@@ -5,7 +5,7 @@ process.env.NODE_ENV = 'development';
 
 const getClientEnvironment = require('./config/env');
 const env = getClientEnvironment();
-const cdnServer = env.raw.REACT_APP_DNS_SERVER;
+const cdnServer = env.raw.REACT_APP_CDN_SERVER;
 
 const links = ['??antd/3.13.2/antd.css,antd/3.13.2/custom-antd.css'];
 
