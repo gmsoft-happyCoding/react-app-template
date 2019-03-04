@@ -103,7 +103,7 @@ export const loadComponent = ({ name, url }: RegistryInfo) =>
  * return Component Element
  */
 export default (props: RegistryInfo & AnyProps) => {
-  const Component = loadComponent(props);
+  const Component = React.useMemo(() => loadComponent(props), [props.name, props.url]);
   // delete component when unmount
   // React.useEffect(() => () => SystemJS.delete(url), []);
   return <Component {...props} />;
