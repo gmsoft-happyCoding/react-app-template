@@ -1,5 +1,6 @@
 /* eslint-disable */
-import { Opts } from '../Opts.d';
+import { AxiosRequestConfig } from 'axios';
+import { Opts, WithPathOpts } from '../Opts.d';
 import instance from './instance';
 import { convertRESTAPI } from '../util';
 

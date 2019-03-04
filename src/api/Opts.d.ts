@@ -1,3 +1,12 @@
-import axios, { AxiosRequestConfig } from 'axios';
+import { AxiosRequestConfig } from "axios";
 
-export type Opts = AxiosRequestConfig & { path: { [key: string]: string } };
+// 如果有额外的配置项, 请在此声明类型
+type Extend = {};
+
+interface PathParam {
+  path: { [key: string]: string };
+}
+
+export type Opts = AxiosRequestConfig & Extend;
+
+export type WithPathOpts = Opts & PathParam;

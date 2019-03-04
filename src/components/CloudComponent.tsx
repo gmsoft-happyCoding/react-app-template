@@ -19,6 +19,7 @@ import * as ReactVirtualized from 'react-virtualized';
 import * as reactVirtualizedTree from 'react-virtualized-tree';
 import SystemJS from 'systemjs';
 import Loadable from 'react-loadable';
+import { componentRegistry } from '@/api';
 import Loading from './Loading';
 
 // 设置被加载组件依赖的公共库
@@ -41,20 +42,69 @@ SystemJS.set('reselect', SystemJS.newModule({ __useDefault: Reselect }));
 SystemJS.set('react-virtualized', SystemJS.newModule({ __useDefault: ReactVirtualized }));
 SystemJS.set('react-virtualized-tree', SystemJS.newModule({ __useDefault: reactVirtualizedTree }));
 
-const loadComponent = url =>
+interface RegistryInfo {
+  /**
+   * 组件名字
+   * format projectName/componentName
+   */
+  name?: string;
+  /**
+   * 组件加载的url
+   */
+  url?: string;
+}
+
+interface AnyProps {
+  [key: string]: any;
+}
+
+const loading = () => <Loading tip="加载中..." />;
+
+/**
+ * 返回 Loadable 所需的加载器
+ */
+const getLoader = ({ name, url }: RegistryInfo) => async () => {
+  if (!url && !name) {
+    console.error('loadComponent ERROR:', '请传递有效的参数 url or name');
+    return;
+  }
+
+  try {
+    if (!url && name) {
+      const [projectName, componentName] = name.split('/');
+      const {
+        data,
+      } = await componentRegistry.api_projects_projectName_components_componentName_url_get({
+        path: {
+          projectName,
+          componentName,
+        },
+      });
+      url = data.url;
+    }
+
+    const { default: Component } = await SystemJS.import(url);
+    return Component;
+  } catch (error) {
+    console.error('loadComponent ERROR:', error);
+  }
+};
+
+/**
+ * return Component
+ */
+export const loadComponent = ({ name, url }: RegistryInfo) =>
   Loadable({
-    loader: () =>
-      SystemJS.import(url)
-        .then(({ default: Component }) => Component)
-        .catch(error => console.error('loadComponent ERROR:', error)),
-    loading() {
-      return <Loading tip="加载中..." />;
-    },
+    loader: getLoader({ name, url }),
+    loading,
   });
 
-export default ({ url, ...restProps }) => {
-  const Component = loadComponent(url);
+/**
+ * return Component Element
+ */
+export default (props: RegistryInfo & AnyProps) => {
+  const Component = loadComponent(props);
   // delete component when unmount
   // React.useEffect(() => () => SystemJS.delete(url), []);
-  return <Component {...restProps} />;
+  return <Component {...props} />;
 };

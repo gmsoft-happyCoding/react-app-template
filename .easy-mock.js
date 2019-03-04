@@ -14,5 +14,11 @@ module.exports = {
       // 如果baseUrl为字符串请使用 "'baseUrl'"
       baseUrl: 'process.env.REACT_APP_API_GATEWAY_BASE',
     },
+    {
+      // easy-mock project http://192.168.2.11:7300/project/5c7c941504e77820f451b643
+      id: '5c7c941504e77820f451b643',
+      name: 'componentRegistry',
+      baseUrl: 'process.env.REACT_APP_COMPONENT_REGISTRY_SERVER',
+    },
   ],
 };
