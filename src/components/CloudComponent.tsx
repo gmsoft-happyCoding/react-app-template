@@ -1,4 +1,3 @@
-/* eslint-disable */
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import * as StyledComponent from 'styled-components';
@@ -18,7 +17,6 @@ import * as Reselect from 'reselect';
 import * as ReactVirtualized from 'react-virtualized';
 import * as reactVirtualizedTree from 'react-virtualized-tree';
 import SystemJS from 'systemjs';
-import Loadable from 'react-loadable';
 import { componentRegistry } from '@/api';
 import Loading from './Loading';
 
@@ -45,7 +43,7 @@ SystemJS.set('react-virtualized-tree', SystemJS.newModule({ __useDefault: reactV
 interface RegistryInfo {
   /**
    * 组件名字
-   * format projectName/componentName
+   * format project/component
    */
   name?: string;
   /**
@@ -58,15 +56,36 @@ interface AnyProps {
   [key: string]: any;
 }
 
-const loading = () => <Loading tip="加载中..." />;
+const { lazy, useMemo, Suspense } = React;
+const { compose } = Redux;
+const {
+  Icon,
+  Typography: { Paragraph },
+} = antd;
 
-/**
- * 返回 Loadable 所需的加载器
- */
-const getLoader = ({ name, url }: RegistryInfo) => async () => {
+// 创建加载失败显示的组件
+const createError = (errorMessage: string) => ({
+  default: () => (
+    <div style={{ textAlign: 'center' }}>
+      <Icon type="frown" theme="twoTone" style={{ fontSize: 30, marginBottom: 15 }} />
+      <Paragraph
+        type="warning"
+        ellipsis={{ rows: 3, expandable: true }}
+        style={{ maxWidth: 600, margin: '0 auto' }}
+      >
+        {errorMessage}
+      </Paragraph>
+    </div>
+  ),
+});
+
+// 创建组件加载器
+const createLoader = ({ name, url }: RegistryInfo) => async () => {
   if (!url && !name) {
-    console.error('loadComponent ERROR:', '请传递有效的参数 url or name');
-    return;
+    const error = '请传递有效的参数 url or name';
+    // eslint-disable-next-line no-console
+    console.error('loadComponent Error =>', error);
+    return createError(error);
   }
 
   try {
@@ -80,30 +99,39 @@ const getLoader = ({ name, url }: RegistryInfo) => async () => {
           componentName,
         },
       });
+      // eslint-disable-next-line prefer-destructuring
       url = data.url;
     }
 
-    const { default: Component } = await SystemJS.import(url);
-    return Component;
+    return await SystemJS.import(url);
   } catch (error) {
-    console.error('loadComponent ERROR:', error);
+    // eslint-disable-next-line no-console
+    console.error('loadComponent Error =>', error);
+    return createError(error.message);
   }
 };
 
-/**
- * return Component
- */
-export const loadComponent = ({ name, url }: RegistryInfo) =>
-  Loadable({
-    loader: getLoader({ name, url }),
-    loading,
-  });
+const wrapSuspense = Component => props => (
+  <Suspense fallback={<Loading tip="加载中..." />}>
+    <Component {...props} />
+  </Suspense>
+);
 
 /**
- * return Component Element
+ * 通过 url or name 加载组件
+ * name = project/component
+ * 优先级: url > name
  */
+export const loadComponent = ({ name, url }: RegistryInfo) =>
+  compose(
+    wrapSuspense,
+    lazy,
+    createLoader
+  )({ name, url });
+
 export default (props: RegistryInfo & AnyProps) => {
-  const Component = React.useMemo(() => loadComponent(props), [props.name, props.url]);
+  const { name, url } = props;
+  const Component = useMemo(() => loadComponent({ name, url }), [name, url]);
   // delete component when unmount
   // React.useEffect(() => () => SystemJS.delete(url), []);
   return <Component {...props} />;
