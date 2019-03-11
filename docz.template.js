@@ -23,7 +23,7 @@ const scripts = [
   'redux/4.0.1/redux.js',
   'redux-saga/0.16.2/redux-saga.js',
   'react-router-redux/4.0.8/ReactRouterRedux.js',
-  'react-redux/5.1.1/react-redux.js',
+  'react-redux/6.0.1/react-redux.js',
   'redux-actions/2.6.4/redux-actions.js',
   'reselect/4.0.0/reselect.js',
   'react-virtualized/9.21.0/react-virtualized.js',
