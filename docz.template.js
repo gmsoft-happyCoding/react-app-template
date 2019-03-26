@@ -19,7 +19,7 @@ const scripts = [
   'antd/3.14.1/antd.js',
   'styled-components/4.1.1/styled-components.js',
   'history/4.7.2/history.js',
-  'react-router-dom/4.3.1/react-router-dom.js',
+  'react-router-dom/5.0.0/react-router-dom.js',
   'redux/4.0.1/redux.js',
   'redux-saga/0.16.2/redux-saga.js',
   'react-router-redux/4.0.8/ReactRouterRedux.js',
