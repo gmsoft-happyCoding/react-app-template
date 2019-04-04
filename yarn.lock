@@ -2728,10 +2728,10 @@ ant-design-palettes@^1.1.3:
   dependencies:
     tinycolor2 "^1.4.1"
 
-antd@^3.16.1:
-  version "3.16.1"
-  resolved "http://192.168.2.11:4873/antd/-/antd-3.16.1.tgz#d2581ae90ece236a5a7e1e65d751bfdaf2602dc5"
-  integrity sha512-dJjfOW40YS+v0OHpaD9yIgQTmfOQoZ2Dp+zWUeNhavNMQM9f7uV3TMoen0zN7ABxzKAa8RT7/gop/FVs/G47pQ==
+antd@^3.16.1-custom.0:
+  version "3.16.1-custom.0"
+  resolved "http://192.168.2.11:4873/antd/-/antd-3.16.1-custom.0.tgz#25b4619069a101bf354ceeeb2deb12712105fd05"
+  integrity sha512-U4z6+nEQGIZzqbj5sUmy59F5gMEedtlFrlWyhvgo1btbTYFSI8AV4xiH4JK05PWGx+YvUxbVG6nY6auJds0BAg==
   dependencies:
     "@ant-design/icons" "~1.2.0"
     "@ant-design/icons-react" "~1.1.2"
