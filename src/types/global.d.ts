@@ -17,7 +17,24 @@ type EventKey =
   | 'page.gotop'
   | 'page.print'
   | 'account.logout'
-  | 'route.angular';
+  | 'route.angular'
+  | 'antd.Modal.info'
+  | 'antd.Modal.success'
+  | 'antd.Modal.error'
+  | 'antd.Modal.warning'
+  | 'antd.Modal.confirm'
+  | 'antd.message.info'
+  | 'antd.message.success'
+  | 'antd.message.error'
+  | 'antd.message.warning'
+  | 'antd.message.loading'
+  | 'antd.notification.info'
+  | 'antd.notification.success'
+  | 'antd.notification.error'
+  | 'antd.notification.warning'
+  | 'antd.notification.open'
+  | 'antd.notification.close'
+  | 'antd.notification.destroy';
 
 interface Window {
   /**
