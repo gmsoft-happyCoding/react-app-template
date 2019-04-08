@@ -10,7 +10,7 @@ const cdnServer = env.raw.REACT_APP_CDN_SERVER;
 const links = ['antd/3.16.1-custom.0/antd.css'];
 
 const scripts = [
-  'polyfill/1.0.0/polyfill.js',
+  'polyfill/1.0.1/polyfill.js',
   'react/16.8.1/react.development.js',
   'react-dom/16.8.1/react-dom.development.js',
   'moment/2.22.2/moment.js',
