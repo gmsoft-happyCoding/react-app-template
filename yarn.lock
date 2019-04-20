@@ -4299,6 +4299,11 @@ clone@^1.0.2:
   resolved "http://registry.npm.taobao.org/clone/download/clone-1.0.4.tgz#da309cc263df15994c688ca902179ca3c7cd7c7e"
   integrity sha1-2jCcwmPfFZlMaIypAheco8fNfH4=
 
+cloud-component@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.npmjs.org/cloud-component/-/cloud-component-0.0.1.tgz#99020c9566457e18ab32ea323da8f785d809dabe"
+  integrity sha512-Qaug6OSN39J+RxY8DOIu6c8Yh23/RFYw4eNNiRahKbCLxBcfK3JjXfMHd9iEcFrZQu8Lcx3I3sPxsfFWSJAbrA==
+
 cmd-shim@^2.0.2:
   version "2.0.2"
   resolved "http://registry.npm.taobao.org/cmd-shim/download/cmd-shim-2.0.2.tgz#6fcbda99483a8fd15d7d30a196ca69d688a2efdb"

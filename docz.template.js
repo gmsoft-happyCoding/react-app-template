@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const systemModules = require('./config/systemModules');
 
 process.env.NODE_ENV = 'development';
 
@@ -53,6 +54,7 @@ const html = `
     ${scripts
       .map(script => `<script crossorigin="anonymous" src="${cdnServer}/${script}"></script>`)
       .join('\n')}
+    <script>${systemModules}</script>
     <div id="root"></div>
     {{ footer }}
   </body>
