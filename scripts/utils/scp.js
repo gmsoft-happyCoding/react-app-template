@@ -16,7 +16,7 @@ const LOGIN_TYPE = {
  * 执行scp命令
  * @param {string} srcPath - 本地目录或文件
  * @param {Object} dest - {
-    port = 22,  // ssh 端口号
+    port,       // ssh 端口号
     host,       // 服务器地址
     username,   // 登录用户名
     password,   // 密码
@@ -89,11 +89,10 @@ function scpExec(
 
 /**
  * 拷贝文件到目标服务器
- * ssh 默认使用端口 22
  * 如果没有配置密码, 会提示输入用户密码或私钥密码
  * @param {string} srcPath - 本地目录或文件
  * @param {Object} dest - {
-    port = 22,  // ssh 端口号
+    port,       // ssh 端口号
     host,       // 服务器地址
     username,   // 登录用户名
     password,   // 密码
@@ -106,7 +105,7 @@ function scpExec(
  */
 async function scp(
   srcPath,
-  { port = 22, host, username, password, privateKey, passphrase, path },
+  { port, host, username, password, privateKey, passphrase, path },
   verbose
 ) {
   const questions = [];
@@ -116,6 +115,15 @@ async function scp(
       type: 'input',
       name: 'host',
       message: '你要部署到哪个服务器?',
+    });
+  }
+
+  if (port === undefined) {
+    questions.push({
+      type: 'input',
+      name: 'port',
+      default: 22,
+      message: '连接使用的端口号?',
     });
   }
 

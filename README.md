@@ -39,6 +39,7 @@ REACT_APP_DEPLOY_SERVERS
 示例:
 [{
     "host": "192.168.2.11",
+    "port": 22,
     "username": "root",
     "privateKey":"C:/Users/xb/.ssh/id_rsa",
     "passphrase":"",
