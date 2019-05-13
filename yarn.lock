@@ -10,18 +10,18 @@
     gud "^1.0.0"
     warning "^4.0.3"
 
-"@ant-design/icons-react@~1.1.5":
-  version "1.1.5"
-  resolved "http://192.168.2.11:4873/@ant-design%2ficons-react/-/icons-react-1.1.5.tgz#1b03da8dcced2a4bb982ef7b25c1d24014c35a68"
-  integrity sha1-GwPajcztKku5gu97JcHSQBTDWmg=
+"@ant-design/icons-react@~2.0.0":
+  version "2.0.0"
+  resolved "http://192.168.2.11:4873/@ant-design%2ficons-react/-/icons-react-2.0.0.tgz#2f28d91bbc440af79e43cea0a86b29940e11e506"
+  integrity sha1-LyjZG7xECveeQ86gqGsplA4R5QY=
   dependencies:
     ant-design-palettes "^1.1.3"
     babel-runtime "^6.26.0"
 
-"@ant-design/icons@~1.2.0":
-  version "1.2.1"
-  resolved "http://192.168.2.11:4873/@ant-design%2ficons/-/icons-1.2.1.tgz#8e19301b1433ec67d6bbd0e892782e2ade561ff9"
-  integrity sha1-jhkwGxQz7GfWu9DoknguKt5WH/k=
+"@ant-design/icons@~2.0.0":
+  version "2.0.0"
+  resolved "http://192.168.2.11:4873/@ant-design%2ficons/-/icons-2.0.0.tgz#f9b8b16e188ec71ed40a24a0037f1a26d8c2be59"
+  integrity sha1-+bixbhiOxx7UCiSgA38aJtjCvlk=
 
 "@babel/code-frame@7.0.0", "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.0.0-beta.35":
   version "7.0.0"
@@ -2069,14 +2069,6 @@
   resolved "http://registry.npm.taobao.org/@types/history/download/@types/history-4.7.2.tgz#0e670ea254d559241b6eeb3894f8754991e73220"
   integrity sha1-DmcOolTVWSQbbus4lPh1SZHnMiA=
 
-"@types/hoist-non-react-statics@^3.3.1":
-  version "3.3.1"
-  resolved "http://192.168.2.11:4873/@types%2fhoist-non-react-statics/-/hoist-non-react-statics-3.3.1.tgz#1124aafe5118cb591977aeb1ceaaed1070eb039f"
-  integrity sha1-ESSq/lEYy1kZd66xzqrtEHDrA58=
-  dependencies:
-    "@types/react" "*"
-    hoist-non-react-statics "^3.3.0"
-
 "@types/isomorphic-fetch@^0.0.34":
   version "0.0.34"
   resolved "http://registry.npm.taobao.org/@types/isomorphic-fetch/download/@types/isomorphic-fetch-0.0.34.tgz#3c3483e606c041378438e951464f00e4e60706d6"
@@ -2744,15 +2736,14 @@ ant-design-palettes@^1.1.3:
   dependencies:
     tinycolor2 "^1.4.1"
 
-antd@3.16.6-custom.0:
-  version "3.16.6-custom.0"
-  resolved "http://192.168.2.11:4873/antd/-/antd-3.16.6-custom.0.tgz#af9c10eafd35fe7138f8d7d41bb1e7f621d0028f"
-  integrity sha512-svS4FCk+q50H0AI/CdsZGZzNTzv1y18tuTJp77doTsCtfvwt1B02XUJ9FW9pvkEcPpJCOTffxFpYyDwT+mVeqg==
+antd@3.18.1-custom.0:
+  version "3.18.1-custom.0"
+  resolved "http://192.168.2.11:4873/antd/-/antd-3.18.1-custom.0.tgz#f4aa01b26e30913107e6211b0817cf4d8ebcaf8b"
+  integrity sha512-Ygr7XMqRFW7s/29T8k28HLhU51VIytqw1BJJ38xdQeQhU9kV0tM34yF2Qnlsv86A5729rbRL/xaejHU67q9nvQ==
   dependencies:
     "@ant-design/create-react-context" "^0.2.4"
-    "@ant-design/icons" "~1.2.0"
-    "@ant-design/icons-react" "~1.1.5"
-    "@types/hoist-non-react-statics" "^3.3.1"
+    "@ant-design/icons" "~2.0.0"
+    "@ant-design/icons-react" "~2.0.0"
     "@types/react-slick" "^0.23.3"
     array-tree-filter "^2.1.0"
     babel-runtime "6.x"
@@ -2771,15 +2762,15 @@ antd@3.16.6-custom.0:
     rc-cascader "~0.17.0"
     rc-checkbox "~2.1.5"
     rc-collapse "~1.11.1"
-    rc-dialog "~7.3.0"
-    rc-drawer "~1.7.6"
+    rc-dialog "~7.4.0"
+    rc-drawer "~1.8.0"
     rc-dropdown "~2.4.1"
     rc-editor-mention "^1.1.7"
     rc-form "^2.4.0"
     rc-input-number "~4.4.0"
     rc-menu "~7.4.12"
     rc-notification "~3.3.0"
-    rc-pagination "~1.17.7"
+    rc-pagination "~1.18.0"
     rc-progress "~2.3.0"
     rc-rate "~2.5.0"
     rc-select "~9.1.0"
@@ -2790,8 +2781,8 @@ antd@3.16.6-custom.0:
     rc-tabs "~9.6.0"
     rc-time-picker "~3.6.1"
     rc-tooltip "~3.7.3"
-    rc-tree "~1.15.2"
-    rc-tree-select "~2.6.0"
+    rc-tree "~2.1.0"
+    rc-tree-select "~2.9.1"
     rc-trigger "^2.6.2"
     rc-upload "~2.6.0"
     rc-util "^4.5.1"
@@ -12288,7 +12279,19 @@ rc-animate@2.x, rc-animate@^2.3.0, rc-animate@^2.5.4:
     raf "^3.4.0"
     react-lifecycles-compat "^3.0.4"
 
-rc-animate@^3.0.0-rc.1, rc-animate@^3.0.0-rc.4, rc-animate@^3.0.0-rc.5:
+rc-animate@^2.6.0, rc-animate@^2.8.2:
+  version "2.8.2"
+  resolved "http://192.168.2.11:4873/rc-animate/-/rc-animate-2.8.2.tgz#1c517728e361745efead6dd8c3c74ecfa8e54cda"
+  integrity sha1-HFF3KONhdF7+rW3Yw8dOz6jlTNo=
+  dependencies:
+    babel-runtime "6.x"
+    classnames "^2.2.6"
+    css-animation "^1.3.2"
+    prop-types "15.x"
+    raf "^3.4.0"
+    react-lifecycles-compat "^3.0.4"
+
+rc-animate@^3.0.0-rc.1:
   version "3.0.0-rc.6"
   resolved "http://192.168.2.11:4873/rc-animate/-/rc-animate-3.0.0-rc.6.tgz#04288eefa118e0cae214536c8a903ffaac1bc3fb"
   integrity sha1-BCiO76EY4MriFFNsipA/+qwbw/s=
@@ -12350,19 +12353,19 @@ rc-collapse@~1.11.1:
     react-is "^16.7.0"
     shallowequal "^1.1.0"
 
-rc-dialog@~7.3.0:
-  version "7.3.1"
-  resolved "http://192.168.2.11:4873/rc-dialog/-/rc-dialog-7.3.1.tgz#45041ec35bfc8e337c91b64b52cebef6ea5cd4a2"
-  integrity sha1-RQQew1v8jjN8kbZLUs6+9upc1KI=
+rc-dialog@~7.4.0:
+  version "7.4.0"
+  resolved "http://192.168.2.11:4873/rc-dialog/-/rc-dialog-7.4.0.tgz#640551235b1f886c7f9a01ce75f87102a70ae1d4"
+  integrity sha1-ZAVRI1sfiGx/mgHOdfhxAqcK4dQ=
   dependencies:
     babel-runtime "6.x"
     rc-animate "2.x"
     rc-util "^4.4.0"
 
-rc-drawer@~1.7.6:
-  version "1.7.8"
-  resolved "http://192.168.2.11:4873/rc-drawer/-/rc-drawer-1.7.8.tgz#e4d0659dc203909e5ffacbac8a68926e0c222fb5"
-  integrity sha1-5NBlncIDkJ5f+susimiSbgwiL7U=
+rc-drawer@~1.8.0:
+  version "1.8.1"
+  resolved "http://192.168.2.11:4873/rc-drawer/-/rc-drawer-1.8.1.tgz#0398c440f6e434e2b72f5ce38f114c66cacbaad4"
+  integrity sha1-A5jEQPbkNOK3L1zjjxFMZsrLqtQ=
   dependencies:
     babel-runtime "6.x"
     classnames "^2.2.5"
@@ -12468,12 +12471,13 @@ rc-notification@~3.3.0:
     rc-animate "2.x"
     rc-util "^4.0.4"
 
-rc-pagination@~1.17.7:
-  version "1.17.14"
-  resolved "http://192.168.2.11:4873/rc-pagination/-/rc-pagination-1.17.14.tgz#ffb2882fd89d95b3b603938dc5db2fb2c30026d3"
-  integrity sha1-/7KIL9idlbO2A5ONxdsvssMAJtM=
+rc-pagination@~1.18.0:
+  version "1.18.0"
+  resolved "http://192.168.2.11:4873/rc-pagination/-/rc-pagination-1.18.0.tgz#004a7d381f0e03dc025f96929de3657094496525"
+  integrity sha1-AEp9OB8OA9wCX5aSneNlcJRJZSU=
   dependencies:
     babel-runtime "6.x"
+    classnames "^2.2.6"
     prop-types "^15.5.7"
     react-lifecycles-compat "^3.0.4"
 
@@ -12596,35 +12600,48 @@ rc-tooltip@^3.7.0, rc-tooltip@^3.7.3, rc-tooltip@~3.7.3:
     prop-types "^15.5.8"
     rc-trigger "^2.2.2"
 
-rc-tree-select@~2.6.0:
-  version "2.6.3"
-  resolved "http://192.168.2.11:4873/rc-tree-select/-/rc-tree-select-2.6.3.tgz#376c368f0bd60d266f2740b99ab80f1a00bd44ad"
-  integrity sha1-N2w2jwvWDSZvJ0C5mrgPGgC9RK0=
+rc-tree-select@~2.9.1:
+  version "2.9.1"
+  resolved "http://192.168.2.11:4873/rc-tree-select/-/rc-tree-select-2.9.1.tgz#d076b8ce5bf432df3fdd8a6a01cdd9c93c8e7399"
+  integrity sha1-0Ha4zlv0Mt8/3YpqAc3ZyTyOc5k=
   dependencies:
     classnames "^2.2.1"
     dom-scroll-into-view "^1.2.1"
     prop-types "^15.5.8"
     raf "^3.4.0"
-    rc-animate "^3.0.0-rc.4"
-    rc-tree "~1.15.0"
+    rc-animate "^2.8.2"
+    rc-tree "~2.0.0"
     rc-trigger "^3.0.0-rc.2"
     rc-util "^4.5.0"
     react-lifecycles-compat "^3.0.4"
     shallowequal "^1.0.2"
     warning "^4.0.1"
 
-rc-tree@~1.15.0, rc-tree@~1.15.2:
-  version "1.15.2"
-  resolved "http://192.168.2.11:4873/rc-tree/-/rc-tree-1.15.2.tgz#a0d6f20fa2bdbe51d829d5ceea74a407b04bfea9"
-  integrity sha1-oNbyD6K9vlHYKdXO6nSkB7BL/qk=
+rc-tree@~2.0.0:
+  version "2.0.0"
+  resolved "http://192.168.2.11:4873/rc-tree/-/rc-tree-2.0.0.tgz#68fc4c9ab696943b279a143619e2ecf05918fb53"
+  integrity sha1-aPxMmraWlDsnmhQ2GeLs8FkY+1M=
   dependencies:
     babel-runtime "^6.23.0"
     classnames "2.x"
     prop-types "^15.5.8"
-    rc-animate "^3.0.0-rc.5"
+    rc-animate "^2.6.0"
     rc-util "^4.5.1"
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
+
+rc-tree@~2.1.0:
+  version "2.1.0"
+  resolved "http://192.168.2.11:4873/rc-tree/-/rc-tree-2.1.0.tgz#ea43c246cf9038fa16be5d08a08c73a38aa6aa61"
+  integrity sha1-6kPCRs+QOPoWvl0IoIxzo4qmqmE=
+  dependencies:
+    babel-runtime "^6.23.0"
+    classnames "2.x"
+    prop-types "^15.5.8"
+    rc-animate "^2.6.0"
+    rc-util "^4.5.1"
+    react-lifecycles-compat "^3.0.4"
+    warning "^4.0.3"
 
 rc-trigger@^2.2.0, rc-trigger@^2.2.2, rc-trigger@^2.3.0, rc-trigger@^2.5.1, rc-trigger@^2.5.4, rc-trigger@^2.6.2:
   version "2.6.2"
