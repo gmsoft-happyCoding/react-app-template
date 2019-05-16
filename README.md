@@ -18,7 +18,9 @@
 
 docz 是什么? 详见: https://www.docz.site/documentation
 
-### `yarn run bad`
+### `yarn run bad [env]`
+
+- `env` - (可选参数) 指定发布环境
 
 编译&发布(build and deploy) app 项目
 发布信息可以通过以下环境变量(在此目录 /env 对应的配置文件中)配置:
