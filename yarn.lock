@@ -2736,10 +2736,10 @@ ant-design-palettes@^1.1.3:
   dependencies:
     tinycolor2 "^1.4.1"
 
-antd@3.18.1-custom.0:
-  version "3.18.1-custom.0"
-  resolved "http://192.168.2.11:4873/antd/-/antd-3.18.1-custom.0.tgz#f4aa01b26e30913107e6211b0817cf4d8ebcaf8b"
-  integrity sha512-Ygr7XMqRFW7s/29T8k28HLhU51VIytqw1BJJ38xdQeQhU9kV0tM34yF2Qnlsv86A5729rbRL/xaejHU67q9nvQ==
+antd@3.18.2-custom.0:
+  version "3.18.2-custom.0"
+  resolved "http://192.168.2.11:4873/antd/-/antd-3.18.2-custom.0.tgz#4200eeac7ed3f74089d98678cd44620e238aad58"
+  integrity sha512-zBVR2fbIdmcoXY10cOH4cWK5iP48czZFkYL1oTAi0WZGdpV2wgZjk3Fdypzc4CYfVE4F46DBjIJmL7sls/CmPw==
   dependencies:
     "@ant-design/create-react-context" "^0.2.4"
     "@ant-design/icons" "~2.0.0"
@@ -2758,7 +2758,7 @@ antd@3.18.1-custom.0:
     prop-types "^15.6.2"
     raf "^3.4.0"
     rc-animate "^2.5.4"
-    rc-calendar "~9.12.1"
+    rc-calendar "~9.13.3"
     rc-cascader "~0.17.0"
     rc-checkbox "~2.1.5"
     rc-collapse "~1.11.1"
@@ -12305,10 +12305,10 @@ rc-animate@^3.0.0-rc.1:
     rc-util "^4.5.0"
     react-lifecycles-compat "^3.0.4"
 
-rc-calendar@~9.12.1:
-  version "9.12.4"
-  resolved "http://192.168.2.11:4873/rc-calendar/-/rc-calendar-9.12.4.tgz#68ee3a857b5341d780d9473541926cfe0b449154"
-  integrity sha1-aO46hXtTQdeA2Uc1QZJs/gtEkVQ=
+rc-calendar@~9.13.3:
+  version "9.13.4"
+  resolved "http://192.168.2.11:4873/rc-calendar/-/rc-calendar-9.13.4.tgz#6ad89c1b9fbf814422bfda09405053592cd52592"
+  integrity sha1-aticG5+/gUQiv9oJQFBTWSzVJZI=
   dependencies:
     babel-runtime "6.x"
     classnames "2.x"
