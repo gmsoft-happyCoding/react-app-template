@@ -69,11 +69,11 @@ REACT_APP_DEPLOY_SERVERS
 如果你想要定义自己的路径别名, 请修改一下文件
 
 ```
-1. packages/*/config/webpack.config.dev.js
-2. packages/*/config/webpack.config.prod.js
-3. packages/*/tsconfig.json
-4. packages/*/doczrc.js
-5. packages/*/jest.config.js
+1. /config/webpack.config.dev.js
+2. /config/webpack.config.prod.js
+3. /tsconfig.json
+4. /doczrc.js
+5. /jest.config.js
 ```
 
 ## 其他
