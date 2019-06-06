@@ -32,7 +32,7 @@ const scripts = [
   'dva-core/1.5.0-beta.2/dva-core.js',
   'immer/1.8.0/immer.umd.js',
   'state-container/1.0.0/state-container.js',
-  'axios/0.18.0/axios.js',
+  'axios/0.18.1/axios.js',
   'systemjs/0.21.5/system.src.js',
 ];
 
