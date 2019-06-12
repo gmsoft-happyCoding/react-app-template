@@ -62,8 +62,8 @@ checkBrowsers(paths.appPath, isInteractive)
     fs.emptyDirSync(paths.appBuild);
     // Merge with the public folder
     copyPublicFolder();
-    // replace env
-    replaceEnv();
+    // replace envs
+    replaceRefRouterEnvs();
     // Start the webpack build
     return build(previousFileSizes);
   })
@@ -181,7 +181,7 @@ function copyPublicFolder() {
 }
 
 // 替换ref-router中的环境变量
-function replaceEnv() {
+function replaceRefRouterEnvs() {
   const env = getClientEnvironment(paths.servedPath);
 
   walker.files.sync(path.join(paths.appBuild, 'ref-router')).forEach(function(stats) {
