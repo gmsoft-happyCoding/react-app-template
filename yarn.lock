@@ -6989,6 +6989,11 @@ fs-minipass@^1.2.5:
   dependencies:
     minipass "^2.2.1"
 
+fs-walker@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npm.taobao.org/fs-walker/download/fs-walker-1.0.0.tgz#4897bac6c9822af9e8b80d35eb9e299d20c8840f"
+  integrity sha1-SJe6xsmCKvnouA01654pnSDIhA8=
+
 fs-write-stream-atomic@^1.0.8:
   version "1.0.10"
   resolved "http://registry.npm.taobao.org/fs-write-stream-atomic/download/fs-write-stream-atomic-1.0.10.tgz#b47df53493ef911df75731e70a9ded0189db40c9"

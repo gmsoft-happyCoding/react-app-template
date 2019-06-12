@@ -28,6 +28,7 @@
     "axios": "0.18.1",
     "cloud-component": "^0.0.1",
     "dva": "^2.4.1",
+    "fs-walker": "^1.0.0",
     "history": "^4.7.2",
     "immer": "1.8.0",
     "moment": "2.22.2",
