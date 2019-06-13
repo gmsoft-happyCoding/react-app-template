@@ -27,7 +27,7 @@ const FileSizeReporter = require('react-dev-utils/FileSizeReporter');
 const printBuildError = require('react-dev-utils/printBuildError');
 const walker = require('fs-walker');
 const replaceEnvs = require('./utils/replace-envs');
-var babel = require("@babel/core");
+const babel = require('@babel/core');
 
 const measureFileSizesBeforeBuild = FileSizeReporter.measureFileSizesBeforeBuild;
 const printFileSizesAfterBuild = FileSizeReporter.printFileSizesAfterBuild;
@@ -63,8 +63,8 @@ checkBrowsers(paths.appPath, isInteractive)
     fs.emptyDirSync(paths.appBuild);
     // Merge with the public folder
     copyPublicFolder();
-    // replace envs
-    replaceRefRouterEnvs();
+    // babel and replace
+    compileRefRouter();
     // Start the webpack build
     return build(previousFileSizes);
   })
@@ -181,21 +181,27 @@ function copyPublicFolder() {
   });
 }
 
-// 替换ref-router中的环境变量
-function replaceRefRouterEnvs() {
+function compileRefRouter() {
   const env = getClientEnvironment(paths.servedPath);
 
   walker.files.sync(path.join(paths.appBuild, 'ref-router')).forEach(function(stats) {
     // 修改文件权限为可读写
     fs.chmodSync(stats.fullname, 0o666);
     // babel compile
-    const {code} = babel.transformFileSync(stats.fullname, { configFile: false,
-      presets: [ ["@babel/env", {
-        modules: "amd",
-        "targets": {
-          "browsers": ["last 2 versions", 'ie >= 10']}
-      }]]
-     });
+    const { code } = babel.transformFileSync(stats.fullname, {
+      configFile: false,
+      presets: [
+        [
+          '@babel/env',
+          {
+            modules: 'amd',
+            targets: {
+              browsers: ['last 2 versions', 'ie >= 10'],
+            },
+          },
+        ],
+      ],
+    });
     // 替换变量, 保存文件
     fs.writeFileSync(stats.fullname, replaceEnvs(code, env.raw));
   });
