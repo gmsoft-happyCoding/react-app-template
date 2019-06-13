@@ -27,6 +27,7 @@ const FileSizeReporter = require('react-dev-utils/FileSizeReporter');
 const printBuildError = require('react-dev-utils/printBuildError');
 const walker = require('fs-walker');
 const replaceEnvs = require('./utils/replace-envs');
+var babel = require("@babel/core");
 
 const measureFileSizesBeforeBuild = FileSizeReporter.measureFileSizesBeforeBuild;
 const printFileSizesAfterBuild = FileSizeReporter.printFileSizesAfterBuild;
@@ -185,11 +186,17 @@ function replaceRefRouterEnvs() {
   const env = getClientEnvironment(paths.servedPath);
 
   walker.files.sync(path.join(paths.appBuild, 'ref-router')).forEach(function(stats) {
-    const fileContent = fs.readFileSync(stats.fullname, {
-      encoding: 'utf8',
-    });
     // 修改文件权限为可读写
     fs.chmodSync(stats.fullname, 0o666);
-    fs.writeFileSync(stats.fullname, replaceEnvs(fileContent, env.raw));
+    // babel compile
+    const {code} = babel.transformFileSync(stats.fullname, { configFile: false,
+      presets: [ ["@babel/env", {
+        modules: "amd",
+        "targets": {
+          "browsers": ["last 2 versions", 'ie >= 10']}
+      }]]
+     });
+    // 替换变量, 保存文件
+    fs.writeFileSync(stats.fullname, replaceEnvs(code, env.raw));
   });
 }
