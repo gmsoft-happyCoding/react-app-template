@@ -188,6 +188,8 @@ function replaceRefRouterEnvs() {
     const fileContent = fs.readFileSync(stats.fullname, {
       encoding: 'utf8',
     });
+    // 修改文件权限为可读写
+    fs.chmodSync(stats.fullname, 0o666);
     fs.writeFileSync(stats.fullname, replaceEnvs(fileContent, env.raw));
   });
 }
