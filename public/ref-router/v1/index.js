@@ -9,7 +9,17 @@
  * 项目需要被外部引用时
  * 在此定义外部引用路由
  */
-define(['angular', 'frameRoute', 'ui-router', 'angular-breadcrumb'], function(angular, frameRoute) {
+
+define(['angular', 'createFrameRoute', 'ui-router', 'angular-breadcrumb'], function(
+  angular,
+  createFrameRoute
+) {
+  // prettier-ignore
+  // eslint-disable-next-line
+  var frameRoute = createFrameRoute({
+    proxyDomain: process.env.REACT_APP_DOMAIN,
+  });
+
   angular
     .module('template-app.router', [require('ui-router'), require('angular-breadcrumb')])
     .config(function($stateProvider) {
@@ -18,7 +28,6 @@ define(['angular', 'frameRoute', 'ui-router', 'angular-breadcrumb'], function(an
         frameRoute({
           url: '/demo',
           frameUrl: '/demo',
-          proxyDomain: process.env.REACT_APP_DOMAIN,
         })
       );
     });
