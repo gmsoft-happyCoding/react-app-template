@@ -12862,15 +12862,15 @@ react-docgen@^3.0.0:
     node-dir "^0.1.10"
     recast "^0.16.0"
 
-react-dom@16.8.1:
-  version "16.8.1"
-  resolved "http://registry.npm.taobao.org/react-dom/download/react-dom-16.8.1.tgz#ec860f98853d09d39bafd3a6f1e12389d283dbb4"
-  integrity sha1-7IYPmIU9CdObr9Om8eEjidKD27Q=
+react-dom@16.8.6:
+  version "16.8.6"
+  resolved "https://registry.npm.taobao.org/react-dom/download/react-dom-16.8.6.tgz#71d6303f631e8b0097f56165ef608f051ff6e10f"
+  integrity sha1-cdYwP2MeiwCX9WFl72CPBR/24Q8=
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     prop-types "^15.6.2"
-    scheduler "^0.13.1"
+    scheduler "^0.13.6"
 
 react-dom@^16.7.0:
   version "16.8.5"
@@ -13132,15 +13132,15 @@ react-virtualized@9.21.0:
     prop-types "^15.6.0"
     react-lifecycles-compat "^3.0.4"
 
-react@16.8.1:
-  version "16.8.1"
-  resolved "http://registry.npm.taobao.org/react/download/react-16.8.1.tgz#ae11831f6cb2a05d58603a976afc8a558e852c4a"
-  integrity sha1-rhGDH2yyoF1YYDqXavyKVY6FLEo=
+react@16.8.6:
+  version "16.8.6"
+  resolved "https://registry.npm.taobao.org/react/download/react-16.8.6.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Freact%2Fdownload%2Freact-16.8.6.tgz#ad6c3a9614fd3a4e9ef51117f54d888da01f2bbe"
+  integrity sha1-rWw6lhT9Ok6e9REX9U2IjaAfK74=
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     prop-types "^15.6.2"
-    scheduler "^0.13.1"
+    scheduler "^0.13.6"
 
 react@^16.7.0:
   version "16.8.5"
@@ -13956,10 +13956,18 @@ scan-directory@^1.0.0:
   resolved "http://registry.npm.taobao.org/scan-directory/download/scan-directory-1.0.0.tgz#46b6769dbd893d9bd7490ae9dcc43811a38b7fbb"
   integrity sha1-RrZ2nb2JPZvXSQrp3MQ4EaOLf7s=
 
-scheduler@^0.13.1, scheduler@^0.13.5:
+scheduler@^0.13.5:
   version "0.13.5"
   resolved "http://registry.npm.taobao.org/scheduler/download/scheduler-0.13.5.tgz#b7226625167041298af3b98088a9dbbf6d7733a8"
   integrity sha1-tyJmJRZwQSmK87mAiKnbv213M6g=
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+
+scheduler@^0.13.6:
+  version "0.13.6"
+  resolved "https://registry.npm.taobao.org/scheduler/download/scheduler-0.13.6.tgz#466a4ec332467b31a91b9bf74e5347072e4cd889"
+  integrity sha1-RmpOwzJGezGpG5v3TlNHBy5M2Ik=
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
