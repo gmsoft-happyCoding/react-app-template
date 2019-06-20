@@ -288,11 +288,10 @@ const webpackConfig = {
           {
             test: /\.(js|mjs|jsx|ts|tsx)$/,
             include: paths.appSrc,
-
             loader: require.resolve('babel-loader'),
             options: {
               customize: require.resolve('babel-preset-react-app/webpack-overrides'),
-
+              presets: ['react-app'],
               plugins: [
                 [
                   require.resolve('babel-plugin-named-asset-import'),

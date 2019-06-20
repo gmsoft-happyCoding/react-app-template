@@ -79,6 +79,12 @@ module.exports = (global = 'var') => ({
     commonjs: 'dva-core',
     commonjs2: 'dva-core',
   },
+  'dva-model-creator': {
+    [global]: 'DvaModelCreator',
+    amd: 'dva-model-creator',
+    commonjs: 'dva-model-creator',
+    commonjs2: 'dva-model-creator',
+  },
   'state-container': {
     [global]: 'StateContainer',
     amd: 'state-container',

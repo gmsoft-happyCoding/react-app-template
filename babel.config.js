@@ -1,5 +1,5 @@
 module.exports = {
-  presets: ['react-app'],
+  // presets: ['react-app'],
   plugins: [
     'react-hot-loader/babel',
     [

@@ -1,12 +1,10 @@
+import React, { useState, useEffect, useCallback } from 'react';
 import { Mode } from '@/enums/Mode';
-import whatToEatActions from '@/models/whatToEat/whatToEat.action';
-import whatToEatMode from '@/models/whatToEat/whatToEat.model';
-import { Food } from '@/types/Food.d';
+import * as whatToEatActions from '@/models/whatToEat/whatToEat.action';
+import whatToEatMode, { WhatToEatState, WHAT_TO_EAT } from '@/models/whatToEat/whatToEat.model';
 import { Button, Card, Input, Switch } from 'antd';
-import { stateContainer, bindActions } from '@/utils';
-import React, { useState, useEffect } from 'react';
-import { connect } from 'react-redux';
-import { ActionCreatorsMapObject } from 'redux';
+import { stateContainer } from '@/utils';
+import { useSelector, useDispatch } from 'react-redux';
 import styled from 'styled-components';
 import Cover from './Cover';
 
@@ -26,7 +24,7 @@ const ModeSwitch = styled.div`
   padding-top: 5px;
 `;
 
-interface OwnProps {
+interface Props {
   /**
    * 初始模式 -
    * 注意: 此处不能使用 Mode 只能这样写, 不然 docz 和 生成组件元数据时都不能正确的识别出类型
@@ -41,20 +39,12 @@ interface OwnProps {
   mode?: 'draw' | 'search';
 }
 
-interface StateProps {
-  food: Food;
-}
-
-interface DispatchProps {
-  whatToEatBoundActions: ActionCreatorsMapObject;
-}
-
-type Props = StateProps & DispatchProps & OwnProps;
-
-export const WhatToEat = (props: Props) => {
-  const { defaultMode, food, whatToEatBoundActions, mode: propMode } = props;
+const WhatToEat = (props: Props) => {
+  const { defaultMode, mode: propMode } = props;
 
   const [mode, setMode] = useState(defaultMode as Mode);
+
+  const food = useSelector((state: WhatToEatState) => state[WHAT_TO_EAT]);
 
   useEffect(() => {
     if (propMode) setMode(propMode as Mode);
@@ -64,7 +54,18 @@ export const WhatToEat = (props: Props) => {
     setMode(checked ? Mode.SEARCH : Mode.DRAW);
   };
 
-  const { draw, search } = whatToEatBoundActions;
+  const dispatch = useDispatch();
+
+  const draw = useCallback(() => {
+    dispatch(whatToEatActions.draw);
+  }, [dispatch]);
+
+  const search = useCallback(
+    keyWords => {
+      dispatch(whatToEatActions.search(keyWords));
+    },
+    [dispatch]
+  );
 
   return (
     <FoodCard
@@ -95,15 +96,8 @@ WhatToEat.defaultProps = {
   defaultMode: Mode.DRAW,
 };
 
-const mapStateToProps = ({ whatToEat }: any) => ({ food: whatToEat });
-
-const mapDispatchToProps = bindActions(whatToEatActions);
-
 /**
  * 描述...
  * @workflow
  */
-export default connect<StateProps, DispatchProps, OwnProps>(
-  mapStateToProps,
-  mapDispatchToProps
-)(WhatToEat);
+export default WhatToEat;

@@ -1,8 +1,3 @@
-/* bugs:
- * 依赖冲突: https://github.com/pedronauck/docz/issues/536
- * outside router: https://github.com/pedronauck/docz/pull/571
- */
-
 // docz 没有提供模板文件变量替换的, 只好自己生成然后写文件
 // 生成模板文件 public/docz.index.html
 require('./docz.template');
@@ -48,17 +43,9 @@ module.exports = {
   codeSandbox: false,
   wrapper: 'src/DocWrapper',
   indexHtml: 'public/index.docz.html',
-  // docz 内部也用了 react-hot-loader, 重复了
-  modifyBabelRc: (babelrc, args) => ({
-    ...babelrc,
-    plugins: babelrc.plugins.filter(plugin => plugin !== 'react-hot-loader/babel'),
-  }),
   modifyBundlerConfig: (config, dev, args) => {
     // 外部依赖
     config.externals = externals();
-    // docz 目前的bug还没有修复, router 暂时不作为外部依赖
-    // https://github.com/pedronauck/docz/pull/571
-    delete config.externals['react-router-dom'];
     // 加入 env/* 下的配置
     config.plugins.push(new webpack.DefinePlugin(env.stringified));
     // 路径别名
