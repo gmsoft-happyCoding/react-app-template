@@ -6605,10 +6605,10 @@ dva-loading@^2.0.6:
   dependencies:
     "@babel/runtime" "7.0.0-beta.46"
 
-dva-model-creator@^0.1.3:
-  version "0.1.3"
-  resolved "https://registry.npm.taobao.org/dva-model-creator/download/dva-model-creator-0.1.3.tgz#b331820e4bbb3eb5509f8c1b107462acac693943"
-  integrity sha1-szGCDku7PrVQn4wbEHRirKxpOUM=
+dva-model-creator@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.npm.taobao.org/dva-model-creator/download/dva-model-creator-0.1.4.tgz#bccade07077ed29fe4c09024a8a5bb49a8065600"
+  integrity sha1-vMreBwd+0p/kwJAkqKW7SagGVgA=
   dependencies:
     warning "^4.0.3"
 
