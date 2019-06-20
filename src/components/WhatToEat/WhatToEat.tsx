@@ -39,6 +39,10 @@ interface Props {
   mode?: 'draw' | 'search';
 }
 
+/**
+ * 描述...
+ * @workflow
+ */
 const WhatToEat = (props: Props) => {
   const { defaultMode, mode: propMode } = props;
 
@@ -96,8 +100,4 @@ WhatToEat.defaultProps = {
   defaultMode: Mode.DRAW,
 };
 
-/**
- * 描述...
- * @workflow
- */
 export default WhatToEat;
