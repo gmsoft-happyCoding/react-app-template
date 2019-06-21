@@ -3290,10 +3290,10 @@ ansi-styles@^2.2.1, ansi-styles@^3.2.0, ansi-styles@^3.2.1:
   dependencies:
     color-convert "^1.9.0"
 
-antd@3.19.5-custom.0:
-  version "3.19.5-custom.0"
-  resolved "http://192.168.2.11:4873/antd/-/antd-3.19.5-custom.0.tgz#4a39c639a95b30b6bfa817a8d983bf3066f8748f"
-  integrity sha512-UiOqqK1wvryJy49K9gUNV4t5B8OB9oBEFxF8bubFCE47y3Xt646EhPN9iUJ0kb5NPRp9yQyKahPO5c/MK13few==
+antd@3.19.5-custom.1:
+  version "3.19.5-custom.1"
+  resolved "http://192.168.2.11:4873/antd/-/antd-3.19.5-custom.1.tgz#1d501cdb23a2fe4efa3eaa7d8771ac1fd940a2a9"
+  integrity sha512-fY+iHz9F2iVTfm7X2ftIrOaOiO4LxDDnw/m7T7R5YwykMW6EwGIe63XXEaCQUVf4egZ2kHqk5wR9cqjo7/neRQ==
   dependencies:
     "@ant-design/create-react-context" "^0.2.4"
     "@ant-design/icons" "~2.0.0"
@@ -3312,7 +3312,7 @@ antd@3.19.5-custom.0:
     prop-types "^15.7.2"
     raf "^3.4.1"
     rc-animate "^2.8.3"
-    rc-calendar "~9.15.0"
+    rc-calendar "https://github.com/gmsoft-happyCoding/calendar"
     rc-cascader "~0.17.4"
     rc-checkbox "~2.1.6"
     rc-collapse "~1.11.3"
@@ -13363,10 +13363,9 @@ rc-animate@^3.0.0-rc.1:
     rc-util "^4.5.0"
     react-lifecycles-compat "^3.0.4"
 
-rc-calendar@~9.15.0:
+"rc-calendar@git+https://github.com/gmsoft-happyCoding/calendar.git":
   version "9.15.0"
-  resolved "http://192.168.2.11:4873/rc-calendar/-/rc-calendar-9.15.0.tgz#4ed253723aa875505d2d5738dcfd42eed1684405"
-  integrity sha1-TtJTcjqodVBdLVc43P1C7tFoRAU=
+  resolved "git+https://github.com/gmsoft-happyCoding/calendar.git#515b7cfe0303a70b2dc147aa7ba4ce64e213b47b"
   dependencies:
     babel-runtime "6.x"
     classnames "2.x"
