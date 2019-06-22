@@ -4,7 +4,7 @@ import * as whatToEatActions from '@/models/whatToEat/whatToEat.actions';
 import whatToEatMode, { WhatToEatState, WHAT_TO_EAT } from '@/models/whatToEat/whatToEat.model';
 import { Button, Card, Input, Switch } from 'antd';
 import { stateContainer } from '@/utils';
-import { useActions } from '@/hooks/useActions';
+import { useActions } from '@/hooks';
 import { useSelector } from 'react-redux';
 import styled from 'styled-components';
 import Cover from './Cover';
