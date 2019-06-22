@@ -2,7 +2,7 @@ import { DvaModelBuilder } from 'dva-model-creator';
 import { Food } from '@/types/Food.d';
 import { whatToEat } from '@/api';
 import { AxiosResponse } from 'axios';
-import * as whatToEatActions from './whatToEat.action';
+import * as whatToEatActions from './whatToEat.actions';
 import { WHAT_TO_EAT } from '@/constant/namespace';
 import { notification } from '@/utils';
 
@@ -11,7 +11,7 @@ export interface WhatToEatState {
   [WHAT_TO_EAT]: Food;
 }
 
-const defaultState = () => ({} as Food);
+const defaultState = () => ({ name: '', img: undefined });
 
 const model = new DvaModelBuilder<Food>(defaultState(), WHAT_TO_EAT)
   /**

@@ -1,10 +1,11 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Mode } from '@/enums/Mode';
-import * as whatToEatActions from '@/models/whatToEat/whatToEat.action';
+import * as whatToEatActions from '@/models/whatToEat/whatToEat.actions';
 import whatToEatMode, { WhatToEatState, WHAT_TO_EAT } from '@/models/whatToEat/whatToEat.model';
 import { Button, Card, Input, Switch } from 'antd';
 import { stateContainer } from '@/utils';
-import { useSelector, useDispatch } from 'react-redux';
+import { useActions } from '@/hooks/useActions';
+import { useSelector } from 'react-redux';
 import styled from 'styled-components';
 import Cover from './Cover';
 
@@ -46,35 +47,25 @@ interface Props {
 const WhatToEat = (props: Props) => {
   const { defaultMode, mode: propMode } = props;
 
-  const [mode, setMode] = useState(defaultMode as Mode);
-
-  const food = useSelector((state: WhatToEatState) => state[WHAT_TO_EAT]);
+  const [mode, setMode] = useState(defaultMode);
 
   useEffect(() => {
-    if (propMode) setMode(propMode as Mode);
+    if (propMode) setMode(propMode);
   }, [propMode]);
 
   const switchMode = (checked: boolean) => {
     setMode(checked ? Mode.SEARCH : Mode.DRAW);
   };
 
-  const dispatch = useDispatch();
+  const food = useSelector((state: WhatToEatState) => state[WHAT_TO_EAT]);
 
-  const draw = useCallback(() => {
-    dispatch(whatToEatActions.draw);
-  }, [dispatch]);
-
-  const search = useCallback(
-    keyWords => {
-      dispatch(whatToEatActions.search(keyWords));
-    },
-    [dispatch]
-  );
+  const { draw, search } = useActions(whatToEatActions);
 
   return (
     <FoodCard
       actions={[
         mode === Mode.DRAW ? (
+          // @ts-ignore
           <Button type="primary" block onClick={draw}>
             Let me see
           </Button>
