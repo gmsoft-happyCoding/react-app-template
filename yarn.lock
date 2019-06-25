@@ -8148,6 +8148,11 @@ globby@^6.1.0:
     pify "^2.0.0"
     pinkie-promise "^2.0.0"
 
+gm-react-hanger@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/gm-react-hanger/download/gm-react-hanger-2.0.0.tgz#54b11901b4dbcb258cc03713fa338484fc31fc0f"
+  integrity sha1-VLEZAbTbyyWMwDcT+jOEhPwx/A8=
+
 graceful-fs@^4.1.0, graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6:
   version "4.1.15"
   resolved "http://registry.npm.taobao.org/graceful-fs/download/graceful-fs-4.1.15.tgz#ffb703e1066e8a0eeaa4c8b80ba9253eeefbfb00"
@@ -13363,9 +13368,9 @@ rc-animate@^3.0.0-rc.1:
     rc-util "^4.5.0"
     react-lifecycles-compat "^3.0.4"
 
-"rc-calendar@git+https://github.com/gmsoft-happyCoding/calendar.git":
+"rc-calendar@https://github.com/gmsoft-happyCoding/calendar":
   version "9.15.0"
-  resolved "git+https://github.com/gmsoft-happyCoding/calendar.git#515b7cfe0303a70b2dc147aa7ba4ce64e213b47b"
+  resolved "https://github.com/gmsoft-happyCoding/calendar#515b7cfe0303a70b2dc147aa7ba4ce64e213b47b"
   dependencies:
     babel-runtime "6.x"
     classnames "2.x"
