@@ -9,8 +9,10 @@ import createFrameRoute from 'createFrameRoute';
 import uiRouter from 'ui-router';
 import angularBreadcrumb from 'angular-breadcrumb';
 
+const domainRegx = /(http(s)?:)?\/\/(?:[a-z0-9](?:[a-z0-9-_]{0,61}[a-z0-9])?(\.|:))+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]/;
+
 const frameRoute = createFrameRoute({
-  proxyDomain: process.env.REACT_APP_DOMAIN,
+  proxyDomain: domainRegx.exec(process.env.REACT_APP_PUBLIC_URL)[0],
 });
 
 const moduleId = 'template-app.router';
