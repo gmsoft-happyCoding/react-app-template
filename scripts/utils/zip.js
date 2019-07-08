@@ -7,7 +7,7 @@ const archiver = require('archiver');
 /**
  * 在当前项目根目录生产打包文件
  * @param {string} source
- * @param {string} zipFileName
+ * @param {string} suffix
  */
 function zip(source, suffix) {
   const projectRoot = process.cwd();
