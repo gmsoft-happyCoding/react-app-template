@@ -9,12 +9,12 @@ const archiver = require('archiver');
  * @param {string} source
  * @param {string} zipFileName
  */
-function zip(source, zipFileName = 'build') {
+function zip(source, suffix) {
   const projectRoot = process.cwd();
   const isMono = projectRoot.includes('packages');
   const projectName = path.basename(projectRoot);
   const dest = isMono ? path.join(projectRoot, '../..') : projectRoot;
-  const fileName = isMono ? `${projectName}-${zipFileName}` : zipFileName;
+  const fileName = suffix ? `${projectName}-${suffix}` : `${projectName}`;
   const outputFile = path.format({ dir: dest, name: fileName, ext: '.zip' });
 
   // create a file to stream archive data to.

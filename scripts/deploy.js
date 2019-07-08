@@ -35,7 +35,7 @@ async function deploy(whichDeploy) {
 
   switch (deployType) {
     case DEPLOY_TYPE.ZIP:
-      zip(paths.appBuild, whichDeploy);
+      zip(paths.appBuild);
       break;
     case DEPLOY_TYPE.SCP:
       // 部署服务器信息
