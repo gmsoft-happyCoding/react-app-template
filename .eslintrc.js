@@ -10,15 +10,13 @@ module.exports = {
     },
     useJSXTextNode: true,
   },
-  plugins: ['@typescript-eslint', 'react-hooks'],
+  plugins: ['@typescript-eslint', 'react-hooks', 'import'],
   env: {
     browser: true,
   },
   settings: {
     'import/resolver': {
-      webpack: {
-        config: path.resolve(__dirname, 'config/webpack.config.dev.js'),
-      },
+      "typescript": {},
     },
   },
   rules: {
