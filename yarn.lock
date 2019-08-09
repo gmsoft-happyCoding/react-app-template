@@ -3014,10 +3014,10 @@ ansi-wrap@0.1.0:
   resolved "https://registry.npm.taobao.org/ansi-wrap/download/ansi-wrap-0.1.0.tgz#a82250ddb0015e9a27ca82e82ea603bbfa45efaf"
   integrity sha1-qCJQ3bABXponyoLoLqYDu/pF768=
 
-antd@3.20.7-custom.0:
-  version "3.20.7-custom.0"
-  resolved "http://192.168.2.11:4873/antd/-/antd-3.20.7-custom.0.tgz#3b9a471cf6f0dec4635d7222879829c4088dbf2b"
-  integrity sha512-d22QxIHyiFqu+tsnsQuxrJ3EAx/mE7l8BADE6Yjyl1aGwFHNic3RECmbEVxsPNoWezFiygINygnZOBPLwVF89w==
+antd@3.21.2-custom.0:
+  version "3.21.2-custom.0"
+  resolved "http://192.168.2.11:4873/antd/-/antd-3.21.2-custom.0.tgz#76130cc664e4afd6d4bbc8f0f4ea3f3f0313aecf"
+  integrity sha512-q0eF2Tb+wNQZZ0LfmX1PrOXu39vceZs1oqr6xKi/lfDlg8TndOzZ3vUUAsbvzKdnrXx0aycR9t6LM4jWX4FJIg==
   dependencies:
     "@ant-design/create-react-context" "^0.2.4"
     "@ant-design/icons" "~2.1.1"
@@ -3036,7 +3036,7 @@ antd@3.20.7-custom.0:
     prop-types "^15.7.2"
     raf "^3.4.1"
     rc-animate "^2.8.3"
-    rc-calendar-gmsoft "^9.15.3"
+    rc-calendar-gmsoft "~9.15.5"
     rc-cascader "~0.17.4"
     rc-checkbox "~2.1.6"
     rc-collapse "~1.11.3"
@@ -3049,21 +3049,21 @@ antd@3.20.7-custom.0:
     rc-mentions "~0.3.1"
     rc-menu "~7.4.23"
     rc-notification "~3.3.1"
-    rc-pagination "~1.20.1"
+    rc-pagination "~1.20.5"
     rc-progress "~2.5.0"
     rc-rate "~2.5.0"
     rc-select "~9.2.0"
     rc-slider "~8.6.11"
     rc-steps "~3.4.1"
     rc-switch "~1.9.0"
-    rc-table "~6.6.0"
+    rc-table "~6.7.0"
     rc-tabs "~9.6.4"
     rc-time-picker "~3.7.1"
     rc-tooltip "~3.7.3"
     rc-tree "~2.1.0"
     rc-tree-select "~2.9.1"
     rc-trigger "^2.6.2"
-    rc-upload "~2.6.7"
+    rc-upload "~2.7.0"
     rc-util "^4.6.0"
     react-lazy-load "^3.0.13"
     react-lifecycles-compat "^3.0.4"
@@ -14889,10 +14889,10 @@ rc-animate@^3.0.0-rc.1:
     rc-util "^4.5.0"
     react-lifecycles-compat "^3.0.4"
 
-rc-calendar-gmsoft@^9.15.3:
-  version "9.15.3"
-  resolved "http://192.168.2.11:4873/rc-calendar-gmsoft/-/rc-calendar-gmsoft-9.15.3.tgz#f71337f54437eb36aae273b2654d7ab672fa7370"
-  integrity sha1-9xM39UQ36zaq4nOyZU16tnL6c3A=
+rc-calendar-gmsoft@~9.15.5:
+  version "9.15.5"
+  resolved "http://192.168.2.11:4873/rc-calendar-gmsoft/-/rc-calendar-gmsoft-9.15.5.tgz#0b1c9a25c26b7c98f9fb4c083069b9f03914e2dd"
+  integrity sha1-CxyaJcJrfJj5+0wIMGm58DkU4t0=
   dependencies:
     babel-runtime "6.x"
     classnames "2.x"
@@ -15068,7 +15068,7 @@ rc-notification@~3.3.1:
     rc-animate "2.x"
     rc-util "^4.0.4"
 
-rc-pagination@~1.20.1:
+rc-pagination@~1.20.5:
   version "1.20.5"
   resolved "http://192.168.2.11:4873/rc-pagination/-/rc-pagination-1.20.5.tgz#b64395a702e9fc452e26d0e491ccf7d9345309f7"
   integrity sha1-tkOVpwLp/EUuJtDkkcz32TRTCfc=
@@ -15146,10 +15146,10 @@ rc-switch@~1.9.0:
     prop-types "^15.5.6"
     react-lifecycles-compat "^3.0.4"
 
-rc-table@~6.6.0:
-  version "6.6.8"
-  resolved "http://192.168.2.11:4873/rc-table/-/rc-table-6.6.8.tgz#4b18bfebc499f37a2a33b2bccd0ddcf3ecd3a9b6"
-  integrity sha1-Sxi/68SZ83oqM7K8zQ3c8+zTqbY=
+rc-table@~6.7.0:
+  version "6.7.0"
+  resolved "http://192.168.2.11:4873/rc-table/-/rc-table-6.7.0.tgz#8aca002f84a43a2d51a4fcda0f7a51694154286d"
+  integrity sha1-isoAL4SkOi1RpPzaD3pRaUFUKG0=
   dependencies:
     babel-runtime "6.x"
     classnames "^2.2.5"
@@ -15267,10 +15267,10 @@ rc-trigger@^3.0.0-rc.2:
     rc-animate "^3.0.0-rc.1"
     rc-util "^4.4.0"
 
-rc-upload@~2.6.7:
-  version "2.6.8"
-  resolved "http://192.168.2.11:4873/rc-upload/-/rc-upload-2.6.8.tgz#54f2a94150d75cb53754fed3011962d54c3bc6c3"
-  integrity sha1-VPKpQVDXXLU3VP7TARli1Uw7xsM=
+rc-upload@~2.7.0:
+  version "2.7.0"
+  resolved "http://192.168.2.11:4873/rc-upload/-/rc-upload-2.7.0.tgz#f279b758655eb5f99ebf82a5a2648d80d88e0ff4"
+  integrity sha1-8nm3WGVetfmev4KlomSNgNiOD/Q=
   dependencies:
     babel-runtime "6.x"
     classnames "^2.2.5"
