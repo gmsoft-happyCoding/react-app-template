@@ -17374,10 +17374,10 @@ stealthy-require@^1.1.1:
   resolved "https://registry.npm.taobao.org/stealthy-require/download/stealthy-require-1.1.1.tgz#35b09875b4ff49f26a777e509b3090a3226bf24b"
   integrity sha1-NbCYdbT/SfJqd35QmzCQoyJr8ks=
 
-stormrage@^1.3.1:
-  version "1.3.1"
-  resolved "https://registry.npm.taobao.org/stormrage/download/stormrage-1.3.1.tgz#fa2304d2725318a0bd95a84178adc0e294fdba62"
-  integrity sha1-+iME0nJTGKC9lahBeK3A4pT9umI=
+stormrage@^1.3.5:
+  version "1.3.5"
+  resolved "https://registry.npm.taobao.org/stormrage/download/stormrage-1.3.5.tgz?cache=0&sync_timestamp=1568637557891&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fstormrage%2Fdownload%2Fstormrage-1.3.5.tgz#15b72780009d8208fd818bdf7e166fc0d5585a8f"
+  integrity sha1-FbcngACdggj9gYvffhZvwNVYWo8=
   dependencies:
     "@babel/core" "7.1.0"
     "@babel/plugin-proposal-export-default-from" "^7.2.0"
