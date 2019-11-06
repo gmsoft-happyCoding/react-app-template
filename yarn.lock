@@ -4919,10 +4919,10 @@ clone@^1.0.2:
   resolved "https://registry.npm.taobao.org/clone/download/clone-1.0.4.tgz#da309cc263df15994c688ca902179ca3c7cd7c7e"
   integrity sha1-2jCcwmPfFZlMaIypAheco8fNfH4=
 
-cloud-component@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.npm.taobao.org/cloud-component/download/cloud-component-0.0.3.tgz#d9ad0545b7b8a0233305348bab16ba73492ad318"
-  integrity sha1-2a0FRbe4oCMzBTSLqxa6c0kq0xg=
+cloud-component@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.npm.taobao.org/cloud-component/download/cloud-component-0.2.0.tgz#7a26e0bfaafe610fb7c55e74c2637cbde2efb5a0"
+  integrity sha1-eibgv6r+YQ+3xV50wmN8veLvtaA=
 
 co-from-stream@~0.0.0:
   version "0.0.0"
