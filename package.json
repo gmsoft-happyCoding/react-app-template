@@ -48,7 +48,7 @@
     "systemjs": "0.21.5"
   },
   "devDependencies": {
-    "stormrage": "^1.5.3"
+    "stormrage": "^1.5.5"
   },
   "resolutions": {
     "webpack": "4.19.1"
