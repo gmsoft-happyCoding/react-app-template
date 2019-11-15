@@ -57,3 +57,5 @@ interface Window {
     emit: (eventKey: EventKey, ...args: any[]) => void;
   };
 }
+
+type Omit = Pick<T, Exclude<keyof T, K>>;
