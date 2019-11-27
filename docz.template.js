@@ -29,7 +29,7 @@ const scripts = [
   'reselect/4.0.0/reselect.js',
   'react-virtualized/9.21.0/react-virtualized.js',
   'react-virtualized-tree/2.0.2/react-virtualized-tree.js',
-  'dva-core/1.5.0-beta.2/dva-core.js',
+  'dva-core/2.0.1/dva-core.js',
   'dva-model-creator/0.1.4/dva-model-creator.js',
   'immer/1.8.0/immer.umd.js',
   'state-container/1.0.0/state-container.js',
