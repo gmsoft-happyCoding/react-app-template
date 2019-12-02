@@ -1,7 +1,7 @@
 import { DvaModelBuilder } from 'dva-model-creator';
+import { AxiosResponse } from 'axios';
 import { Food } from '@/types/Food.d';
 import { whatToEat } from '@/api';
-import { AxiosResponse } from 'axios';
 import * as whatToEatActions from './whatToEat.actions';
 import { WHAT_TO_EAT } from '@/constant/namespace';
 import { notification } from '@/utils';
