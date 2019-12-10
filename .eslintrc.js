@@ -23,6 +23,7 @@ module.exports = {
     // 变量声明的情况推断不出来, 暂时禁用掉
     // https://github.com/yannickcr/eslint-plugin-react/issues/2353
     'react/prop-types': 'off',
+    'react/jsx-props-no-spreading': 'off',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-foreign-prop-types.md
