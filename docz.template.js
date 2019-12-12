@@ -8,7 +8,7 @@ const getClientEnvironment = require('./config/env');
 const env = getClientEnvironment();
 const cdnServer = env.raw.REACT_APP_CDN_SERVER;
 
-const links = ['antd/3.23.4-custom.0/antd.css'];
+const links = ['antd/3.26.2-custom.0/antd.css'];
 
 const scripts = [
   'polyfill/1.0.2/polyfill.js',
@@ -17,7 +17,7 @@ const scripts = [
   'moment/2.22.2/moment.js',
   'moment/2.22.2/locale.zh-cn.js',
   'moment/use-locale.js',
-  'antd/3.23.4-custom.0/antd.js',
+  'antd/3.26.2-custom.0/antd.js',
   'styled-components/4.1.1/styled-components.js',
   'history/4.7.2/history.js',
   'react-router-dom/4.3.1/react-router-dom.js',
