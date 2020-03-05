@@ -9033,10 +9033,12 @@ globrex@^0.1.1:
   resolved "https://registry.npm.taobao.org/globrex/download/globrex-0.1.2.tgz#dd5d9ec826232730cd6793a5e33a9302985e6098"
   integrity sha1-3V2eyCYjJzDNZ5Ol4zqTApheYJg=
 
-gm-react-hanger@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npm.taobao.org/gm-react-hanger/download/gm-react-hanger-2.0.0.tgz#54b11901b4dbcb258cc03713fa338484fc31fc0f"
-  integrity sha1-VLEZAbTbyyWMwDcT+jOEhPwx/A8=
+gm-react-hanger@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.npm.taobao.org/gm-react-hanger/download/gm-react-hanger-2.1.2.tgz#c0fa9dfd36e0f726e9dd8aee4e70bd145f2833c9"
+  integrity sha1-wPqd/Tbg9ybp3YruTnC9FF8oM8k=
+  dependencies:
+    history-helper "^1.0.3"
 
 got@^6.3.0:
   version "6.7.1"
@@ -9422,6 +9424,11 @@ hex-color-regex@^1.1.0:
   version "1.1.0"
   resolved "https://registry.npm.taobao.org/hex-color-regex/download/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
   integrity sha1-TAb8y0YC/iYCs8k9+C1+fb8aio4=
+
+history-helper@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.npm.taobao.org/history-helper/download/history-helper-1.0.3.tgz#10a4acfad6486b818cff5c2ea8b7225beb3d4d42"
+  integrity sha1-EKSs+tZIa4GM/1wuqLciW+s9TUI=
 
 history@^4.6.3, history@^4.7.2, history@^4.9.0:
   version "4.10.1"
