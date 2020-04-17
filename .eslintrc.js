@@ -10,7 +10,7 @@ module.exports = {
     },
     useJSXTextNode: true,
   },
-  plugins: ['@typescript-eslint', 'react-hooks', 'import'],
+  plugins: ['@typescript-eslint', 'react-hooks'],
   env: {
     browser: true,
   },
