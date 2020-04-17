@@ -14,11 +14,6 @@ module.exports = {
   env: {
     browser: true,
   },
-  settings: {
-    'import/resolver': {
-      typescript: {},
-    },
-  },
   rules: {
     // 变量声明的情况推断不出来, 暂时禁用掉
     // https://github.com/yannickcr/eslint-plugin-react/issues/2353
@@ -62,5 +57,6 @@ module.exports = {
     'react/jsx-filename-extension': ['error', { extensions: ['.jsx', '.tsx'] }],
     'import/prefer-default-export': 'off',
     'implicit-arrow-linebreak': 'off',
+    'import/no-unresolved': 'off',
   },
 };
