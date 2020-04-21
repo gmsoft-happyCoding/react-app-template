@@ -121,4 +121,10 @@ module.exports = (global = 'var') => ({
     commonjs: 'react-virtualized-tree',
     commonjs2: 'react-virtualized-tree',
   },
+  qs: {
+    [global]: 'Qs',
+    amd: 'qs',
+    commonjs: 'qs',
+    commonjs2: 'qs',
+  },
 });
