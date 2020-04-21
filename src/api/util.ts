@@ -1,11 +1,15 @@
 /* eslint-disable */
-import axios, { AxiosRequestConfig, AxiosResponse } from "axios";
-import { defaultsDeep } from "lodash";
-import { WithPathOpts } from "./Opts.d";
+import axios, { AxiosRequestConfig, AxiosResponse } from 'axios';
+import { defaultsDeep } from 'lodash';
+import { WithPathOpts } from './Opts.d';
+import qs from 'qs';
 
 const instance = axios.create({
   withCredentials: true,
-  headers: { "X-Requested-With": "XMLHttpRequest" }
+  headers: { 'X-Requested-With': 'XMLHttpRequest' },
+  paramsSerializer: function(params) {
+    return qs.stringify(params, { arrayFormat: 'repeat' });
+  },
 });
 
 type Conf = AxiosRequestConfig & { opts?: Partial<WithPathOpts> };
@@ -19,7 +23,7 @@ function createAPI(baseURL?: string) {
         {
           url: conf.url,
           baseURL: baseURL,
-          method: conf.method
+          method: conf.method,
         },
         conf.opts
       )
@@ -33,7 +37,7 @@ function convertRESTAPI(url: string, opts: WithPathOpts): string {
   const pathKeys = Object.keys(opts.path);
 
   pathKeys.forEach(key => {
-    const r = new RegExp("(:" + key + "|{" + key + "})", "g");
+    const r = new RegExp('(:' + key + '|{' + key + '})', 'g');
     url = url.replace(r, opts.path[key]);
   });
 
@@ -81,5 +85,5 @@ export {
   useResponseInterceptor,
   ejectRequestInterceptor,
   ejectResponseInterceptor,
-  mergeDefaults
+  mergeDefaults,
 };
