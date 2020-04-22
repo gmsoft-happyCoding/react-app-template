@@ -1,4 +1,3 @@
-/* eslint-disable */
 import { createAPI } from '../util';
 
 // mock server: 'http://192.168.2.11:7300/mock/5c514bf9cd2f550e9dfbb515/'

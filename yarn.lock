@@ -1411,6 +1411,11 @@
     unique-filename "^1.1.1"
     which "^1.3.1"
 
+"@gmsoft/ui@^1.3.4":
+  version "1.3.4"
+  resolved "https://registry.npm.taobao.org/@gmsoft/ui/download/@gmsoft/ui-1.3.4.tgz#eaf278d5dd10a1158403ca1b8b35ea66f1be6341"
+  integrity sha1-6vJ41d0QoRWEA8obizXqZvG+Y0E=
+
 "@hutson/parse-repository-url@^3.0.0":
   version "3.0.2"
   resolved "https://registry.npm.taobao.org/@hutson/parse-repository-url/download/@hutson/parse-repository-url-3.0.2.tgz#98c23c950a3d9b6c8f0daed06da6c3af06981340"

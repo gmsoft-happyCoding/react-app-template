@@ -6,8 +6,9 @@ import styled from 'styled-components';
 import Cover from './Cover';
 import { Mode } from '@/enums/Mode';
 import * as whatToEatActions from '@/models/whatToEat/whatToEat.actions';
-import whatToEatMode, { WhatToEatState, WHAT_TO_EAT } from '@/models/whatToEat/whatToEat.model';
+import whatToEatMode, { WhatToEatState } from '@/models/whatToEat/whatToEat.model';
 import { stateContainer } from '@/utils';
+import { WHAT_TO_EAT } from '@/constant/namespace';
 
 const { Search } = Input;
 
@@ -59,7 +60,7 @@ const WhatToEat = (props: Props) => {
 
   const food = useSelector((state: WhatToEatState) => state[WHAT_TO_EAT]);
 
-  const { draw, search } = useActions(whatToEatActions);
+  const { draw, searchFood } = useActions(whatToEatActions);
 
   return (
     <FoodCard
@@ -70,7 +71,11 @@ const WhatToEat = (props: Props) => {
             Let me see
           </Button>
         ) : (
-          <Search style={{ width: 'auto' }} onSearch={search} placeholder="输入关键字 - 回车" />
+          <Search
+            style={{ width: 'auto' }}
+            onSearch={searchFood.started}
+            placeholder="输入关键字 - 回车"
+          />
         ),
         <ModeSwitch>
           手动搜索:{' '}
