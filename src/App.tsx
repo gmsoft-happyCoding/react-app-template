@@ -15,9 +15,9 @@ const App = () => (
     <Router history={stateContainer._history}>
       <>
         <WhatToEat defaultMode={Mode.DRAW} />
-        {/* <CloudWhatToEat /> */}
+        <CloudWhatToEat />
         {/* 通过组件名字 从 registry.gmsoftdev.com 加载 */}
-        {/* <CloudComponent name="test-project/WhatToEat" defaultMode="search" /> */}
+        <CloudComponent name="test-project/WhatToEat" defaultMode="search" />
       </>
     </Router>
   </Provider>
