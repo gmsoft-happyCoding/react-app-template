@@ -58,5 +58,6 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'implicit-arrow-linebreak': 'off',
     'import/no-unresolved': 'off',
+    'import/extensions': 'off',
   },
 };

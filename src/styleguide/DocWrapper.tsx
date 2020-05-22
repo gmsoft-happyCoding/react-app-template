@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 import { Provider } from 'react-redux';
-import { stateContainer } from './utils';
+import { stateContainer } from '../utils';
 
 type Props = {
   children: ReactElement<any>;

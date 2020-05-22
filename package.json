@@ -3,7 +3,7 @@
   "scripts": {
     "start": "stormrage start",
     "test": "stormrage test",
-    "docz": "stormrage docz",
+    "doc": "stormrage doc",
     "genapi": "stormrage genapi",
     "bad": "stormrage bad"
   },
@@ -50,9 +50,6 @@
     "systemjs": "0.21.5"
   },
   "devDependencies": {
-    "stormrage": "^1.6.0"
-  },
-  "resolutions": {
-    "webpack": "4.19.1"
+    "stormrage": "^2.0.4"
   }
 }
