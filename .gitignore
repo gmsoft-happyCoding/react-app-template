@@ -75,5 +75,4 @@ typings/
 *.zip
 .vscode/
 build/
-.docz/
-public/index.docz.html
+

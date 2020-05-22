@@ -12,11 +12,9 @@
 
 启动项目单元测试
 
-### `yarn run docz`
+### `yarn run doc`
 
-启动项目 docz 开发调试, 默认端口 3000
-
-docz 是什么? 详见: https://www.docz.site/documentation
+启动项目 doc 开发调试, 默认端口 6060
 
 ### `yarn run bad`
 
@@ -70,7 +68,7 @@ password - 服务器登录密码
 1. /config/webpack.config.dev.js
 2. /config/webpack.config.prod.js
 3. /tsconfig.json
-4. /doczrc.js
+4. /styleguide.config.js
 5. /jest.config.js
 ```
 
