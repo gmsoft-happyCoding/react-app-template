@@ -3,12 +3,12 @@ import { Button, Card, Input, Switch } from 'antd';
 import { useActions } from 'gm-react-hanger';
 import { useSelector } from 'react-redux';
 import styled from 'styled-components';
-import Cover from './Cover';
 import { Mode } from '@/enums/Mode';
 import * as whatToEatActions from '@/models/whatToEat/whatToEat.actions';
 import whatToEatMode, { WhatToEatState } from '@/models/whatToEat/whatToEat.model';
 import { stateContainer } from '@/utils';
 import { WHAT_TO_EAT } from '@/constant/namespace';
+import Cover from './Cover';
 
 const { Search } = Input;
 

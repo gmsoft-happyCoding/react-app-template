@@ -1,9 +1,9 @@
 import { DvaModelBuilder } from 'dva-model-creator';
 import { AxiosResponse } from 'axios';
-import { draw, searchFood } from '../whatToEat.actions';
-import { State } from '../whatToEat.model';
 import { whatToEat } from '@/api';
 import { Food } from '@/types/Food';
+import { draw, searchFood } from '../whatToEat.actions';
+import { State } from '../whatToEat.model';
 
 export default (modelBuilder: DvaModelBuilder<State>) => {
   /**
