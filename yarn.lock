@@ -16445,10 +16445,10 @@ schema-utils@^2.2.0, schema-utils@^2.6.6:
     ajv "^6.12.2"
     ajv-keywords "^3.4.1"
 
-scp2-gmsoft@0.3.1:
-  version "0.3.1"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/scp2-gmsoft/-/scp2-gmsoft-0.3.1.tgz#072d1caa044eea7c8b836ee7b7cf5f2f48b3e5a1"
-  integrity sha1-By0cqgRO6nyLg27nt89fL0iz5aE=
+scp2-gmsoft@0.3.2:
+  version "0.3.2"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/scp2-gmsoft/-/scp2-gmsoft-0.3.2.tgz#733c86e882d0cec956ed1bb2f5b0b717f3d25d8e"
+  integrity sha512-m9gVvfh4+CKPObgqGcIAavz6XJOt3fmAslNi82vWpyHRKlHHi2fa50XwutsznKdfTeMZOF5JcuoJ5c7dRgUhew==
   dependencies:
     async "~0.9.0"
     glob "~7.0.3"
@@ -17212,10 +17212,10 @@ stealthy-require@^1.1.1:
   resolved "http://192.168.2.10:8081/repository/npm.gm/stealthy-require/-/stealthy-require-1.1.1.tgz#35b09875b4ff49f26a777e509b3090a3226bf24b"
   integrity sha1-NbCYdbT/SfJqd35QmzCQoyJr8ks=
 
-stormrage@^2.0.5:
-  version "2.0.9"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/stormrage/-/stormrage-2.0.9.tgz#dfb7eea299d22f6004747721c2449a02a0a3c8dc"
-  integrity sha1-37fuopnSL2AEdHchwkSaAqCjyNw=
+stormrage@^2.0.10:
+  version "2.0.10"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/stormrage/-/stormrage-2.0.10.tgz#85f2c9f7a0909cfc6d9257c0a6a124234ba0bf64"
+  integrity sha512-3varK9WEgMIRpXM50RvHO/v7o320WfXDKNGQCZi9waS8DRxs84gdbUdVMqGk7FFgqNrLucxXYM/ZFzQqjxrOUQ==
   dependencies:
     "@babel/core" "^7.7.4"
     "@babel/plugin-proposal-export-default-from" "^7.7.4"
@@ -17300,7 +17300,7 @@ stormrage@^2.0.5:
     react-styleguidist "^11.0.6"
     resolve "1.8.1"
     sass-loader "7.1.0"
-    scp2-gmsoft "0.3.1"
+    scp2-gmsoft "0.3.2"
     semi "^4.0.5"
     style-loader "0.23.0"
     tapable "^1.1.3"
