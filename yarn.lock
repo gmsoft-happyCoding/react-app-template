@@ -15441,7 +15441,7 @@ react-slick@~0.25.2:
     lodash.debounce "^4.0.8"
     resize-observer-polyfill "^1.5.0"
 
-react-styleguidist@^11.0.6:
+react-styleguidist@11.0.8:
   version "11.0.8"
   resolved "http://192.168.2.10:8081/repository/npm.gm/react-styleguidist/-/react-styleguidist-11.0.8.tgz#68edbaf6b71d529a07be208ad148ad6040b7d9d9"
   integrity sha512-ckqBfipqgFmCl5/Lk5AnaLRbizOwd34YEUCsGLYvMwinzeemoDt6jUgojJhZDnytFzvaIutEqCaXSW72c6X4TQ==
@@ -17201,10 +17201,10 @@ stealthy-require@^1.1.1:
   resolved "http://192.168.2.10:8081/repository/npm.gm/stealthy-require/-/stealthy-require-1.1.1.tgz#35b09875b4ff49f26a777e509b3090a3226bf24b"
   integrity sha1-NbCYdbT/SfJqd35QmzCQoyJr8ks=
 
-stormrage@^2.0.10:
-  version "2.0.10"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/stormrage/-/stormrage-2.0.10.tgz#85f2c9f7a0909cfc6d9257c0a6a124234ba0bf64"
-  integrity sha512-3varK9WEgMIRpXM50RvHO/v7o320WfXDKNGQCZi9waS8DRxs84gdbUdVMqGk7FFgqNrLucxXYM/ZFzQqjxrOUQ==
+stormrage@^2.0.14:
+  version "2.0.14"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/stormrage/-/stormrage-2.0.14.tgz#3123617cb79fb5145730f4f51073c181894c7429"
+  integrity sha512-arM4dc2MMKef5xu4K4Cift/MyEsel6s/C8qne+lB2THcfvPferK597UIt2wFn3Ho+B0l4kXQAwVFvC+zbMDPMA==
   dependencies:
     "@babel/core" "^7.7.4"
     "@babel/plugin-proposal-export-default-from" "^7.7.4"
@@ -17286,7 +17286,7 @@ stormrage@^2.0.10:
     react-dev-utils "^9.1.0"
     react-docgen-typescript "^1.16.2"
     react-hot-loader "^4.11.1"
-    react-styleguidist "^11.0.6"
+    react-styleguidist "11.0.8"
     resolve "1.8.1"
     sass-loader "7.1.0"
     scp2-gmsoft "0.3.2"
