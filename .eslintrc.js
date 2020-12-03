@@ -59,5 +59,12 @@ module.exports = {
     'implicit-arrow-linebreak': 'off',
     'import/no-unresolved': 'off',
     'import/extensions': 'off',
+    'react/static-property-placement': 'off',
+    indent: 'off',
+    'jsx-a11y/click-events-have-key-events': 'off',
+    'jsx-a11y/no-static-element-interactions': 'off',
+    'jsx-a11y/anchor-is-valid': 'off',
+    'react/jsx-wrap-multilines': 'off',
+    'react/jsx-closing-tag-location': 'off',
   },
 };
