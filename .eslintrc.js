@@ -15,6 +15,12 @@ module.exports = {
     browser: true,
   },
   rules: {
+    // https://github.com/typescript-eslint/typescript-eslint/issues/2483
+    'no-shadow': 'off',
+    '@typescript-eslint/no-shadow': 'error',
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/README.md#extension-rules
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': 'error',
     // 变量声明的情况推断不出来, 暂时禁用掉
     // https://github.com/yannickcr/eslint-plugin-react/issues/2353
     'react/prop-types': 'off',
