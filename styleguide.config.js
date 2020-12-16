@@ -14,6 +14,7 @@ const links = ['antd/3.23.4-custom.0/antd.css'];
 const scripts = [
   'polyfill/1.0.5/polyfill.js',
   'react/17.0.1/react.development.js',
+  'react-is/17.0.1/react-is.development.js',
   'react-dom/17.0.1/react-dom.development.js',
   'moment/2.22.2/moment.js',
   'moment/2.22.2/locale.zh-cn.js',

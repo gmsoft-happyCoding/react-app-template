@@ -7,6 +7,12 @@ module.exports = (global = 'var') => ({
     commonjs: 'react',
     commonjs2: 'react',
   },
+  'react-is': {
+    [global]: 'ReactIs',
+    amd: 'react-is',
+    commonjs: 'react-is',
+    commonjs2: 'react-is',
+  },
   'react-dom': {
     [global]: 'ReactDOM',
     amd: 'react-dom',

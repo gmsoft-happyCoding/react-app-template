@@ -19,7 +19,7 @@
     "@types/react-redux": "^7.1.0",
     "@types/react-router-dom": "^4.3.1",
     "@types/redux-actions": "^2.3.1",
-    "@types/styled-components": "^4.1.3",
+    "@types/styled-components": "^5.1.5",
     "antd": "3.26.2-custom.0",
     "axios": "0.18.1",
     "cloud-component": "^0.3.0",
@@ -47,10 +47,10 @@
     "redux-saga": "0.16.2",
     "reselect": "4.0.0",
     "state-container": "1.1.0",
-    "styled-components": "^4.1.3",
+    "styled-components": "^5.2.1",
     "systemjs": "0.21.5"
   },
   "devDependencies": {
-    "stormrage": "^2.2.0"
+    "stormrage": "^2.3.0"
   }
 }
