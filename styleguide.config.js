@@ -9,7 +9,7 @@ const getClientEnvironment = require('./config/env');
 const env = getClientEnvironment();
 const cdnServer = env.raw.REACT_APP_CDN_SERVER;
 
-const links = ['antd/3.23.4-custom.0/antd.css'];
+const links = ['antd/3.26.20-custom.0/antd.css'];
 
 const scripts = [
   'polyfill/1.0.5/polyfill.js',
