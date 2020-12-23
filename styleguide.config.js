@@ -42,7 +42,10 @@ const scripts = [
 
 module.exports = {
   styleguideDir: 'build/doc',
-  webpackConfig: require('./config/webpack.config.dev.js'),
+  webpackConfig:
+    process.env.NODE_ENV === 'production'
+      ? require('./config/webpack.config.prod.js')
+      : require('./config/webpack.config.dev.js'),
   // WARNING: inspect Styleguidist Webpack config before modifying it,
   // otherwise you may break Styleguidist
   dangerouslyUpdateWebpackConfig(webpackConfig) {
