@@ -3097,10 +3097,10 @@ ansi-wrap@0.1.0:
   resolved "http://192.168.2.10:8081/repository/npm.gm/ansi-wrap/-/ansi-wrap-0.1.0.tgz#a82250ddb0015e9a27ca82e82ea603bbfa45efaf"
   integrity sha1-qCJQ3bABXponyoLoLqYDu/pF768=
 
-antd@3.26.20-custom.0:
-  version "3.26.20-custom.0"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/antd/-/antd-3.26.20-custom.0.tgz#8115d130e299fae78daced67f64da1eae471531b"
-  integrity sha512-AVO62P0QT4Fa5N+1FpuiCeLEzqif3vi/EPJtmjYKRzB1YNGdLUy+irHp8Js5X9bTIMYuyPm8tJfo35cniOm3Qw==
+antd@3.26.20-custom.1:
+  version "3.26.20-custom.1"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/antd/-/antd-3.26.20-custom.1.tgz#57d4a9a176939821044896c1e98baec40d66be90"
+  integrity sha512-VXF+ctcf7Gq6PA2xAJjjCN7loEFW/l86DMc5uynDSJxu6pBIntSSfuYvOMXiEKUmSTgmFPwa8kzhI08pJiv46w==
   dependencies:
     "@ant-design/create-react-context" "^0.2.4"
     "@ant-design/icons" "~2.1.1"
@@ -3147,7 +3147,7 @@ antd@3.26.20-custom.0:
     rc-tooltip "~3.7.3"
     rc-tree "~2.1.0"
     rc-tree-select "~2.9.1"
-    rc-trigger "^2.6.2"
+    rc-trigger "2.6.5-custom.0"
     rc-upload "~2.9.1"
     rc-util "^4.16.1"
     react-lazy-load "^3.0.13"
@@ -15546,6 +15546,19 @@ rc-tree@~2.1.0:
     rc-util "^4.5.1"
     react-lifecycles-compat "^3.0.4"
     warning "^4.0.3"
+
+rc-trigger@2.6.5-custom.0:
+  version "2.6.5-custom.0"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/rc-trigger/-/rc-trigger-2.6.5-custom.0.tgz#33968c87fc871d20da6b7eaef4e6560b899d7d62"
+  integrity sha512-xoFrQataZfKsP6Oobvwvo6HvIZkQ3XziVXPpn1y7AulPNBW2za7S4VSn4mdwQgQ/Zp8pCtnfML9Cf+GHwE/2yw==
+  dependencies:
+    babel-runtime "6.x"
+    classnames "^2.2.6"
+    prop-types "15.x"
+    rc-align "^2.4.0"
+    rc-animate "2.x"
+    rc-util "^4.4.0"
+    react-lifecycles-compat "^3.0.4"
 
 rc-trigger@^2.2.0, rc-trigger@^2.2.2, rc-trigger@^2.3.0, rc-trigger@^2.5.1, rc-trigger@^2.5.4, rc-trigger@^2.6.2:
   version "2.6.5"

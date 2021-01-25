@@ -20,7 +20,7 @@
     "@types/react-router-dom": "^4.3.1",
     "@types/redux-actions": "^2.3.1",
     "@types/styled-components": "^5.1.5",
-    "antd": "3.26.20-custom.0",
+    "antd": "3.26.20-custom.1",
     "axios": "0.18.1",
     "cloud-component": "^0.3.0",
     "dva": "^2.4.1",
