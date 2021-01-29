@@ -17671,10 +17671,10 @@ stealthy-require@^1.1.1:
   resolved "http://192.168.2.10:8081/repository/npm.gm/stealthy-require/-/stealthy-require-1.1.1.tgz#35b09875b4ff49f26a777e509b3090a3226bf24b"
   integrity sha1-NbCYdbT/SfJqd35QmzCQoyJr8ks=
 
-stormrage@^2.5.0:
-  version "2.5.0"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/stormrage/-/stormrage-2.5.0.tgz#8c30939455253b39b3a6b38a5c257e18ee2fea34"
-  integrity sha512-CkXcuIsDBJjfztohZHMYWYmwOBv3NAw5FYYXk+qSBk6ixNvsu5usN7V//WHVs1jjMVycaYynuuZFFLTv/c/PDg==
+stormrage@^2.5.2:
+  version "2.5.2"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/stormrage/-/stormrage-2.5.2.tgz#2a028be41bb3f90d3c0f4f478446476dffd5ea27"
+  integrity sha512-NktIEWwpVCdnQeva+m0Hgx6eMhkutVin1jvLYpTlUYBxhn7fGl5GuTupR3Xkv3ylumXIo35rE9T9i8yi9KKzYg==
   dependencies:
     "@babel/core" "^7.7.4"
     "@babel/plugin-proposal-export-default-from" "^7.7.4"

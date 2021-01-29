@@ -51,6 +51,6 @@
     "systemjs": "0.21.5"
   },
   "devDependencies": {
-    "stormrage": "^2.5.0"
+    "stormrage": "^2.5.2"
   }
 }
