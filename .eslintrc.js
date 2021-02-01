@@ -2,7 +2,7 @@
 const path = require('path');
 
 module.exports = {
-  extends: ['airbnb'],
+  extends: ['airbnb', 'prettier'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
