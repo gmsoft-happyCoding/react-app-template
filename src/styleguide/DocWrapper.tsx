@@ -6,8 +6,8 @@ type Props = {
   children: ReactElement<any>;
 };
 
-const Wrapper = ({ children }: Props) => (
+const DocWrapper = ({ children }: Props) => (
   <Provider store={stateContainer._store}>{children}</Provider>
 );
 
-export default Wrapper;
+export default DocWrapper;
