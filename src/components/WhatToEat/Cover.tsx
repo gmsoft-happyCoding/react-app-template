@@ -29,7 +29,7 @@ interface ImageProps extends Props {
   className?: string;
 }
 
-const Image = ({ url, name, className }: ImageProps) => (
+const Image = ({ name, className }: ImageProps) => (
   <div className={className}>
     <div className="img" />
     <p className="name">{name}</p>
