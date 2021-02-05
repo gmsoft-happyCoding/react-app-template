@@ -5320,11 +5320,6 @@ confusing-browser-globals@^1.0.10:
   resolved "http://192.168.2.10:8081/repository/npm.gm/confusing-browser-globals/-/confusing-browser-globals-1.0.10.tgz#30d1e7f3d1b882b25ec4933d1d1adac353d20a59"
   integrity sha512-gNld/3lySHwuhaVluJUKLePYirM3QNCKzVxqAdhJII9/WXKVX5PURzMVJspS1jTslSqjeuG4KMVTSouit5YPHA==
 
-confusing-browser-globals@^1.0.9:
-  version "1.0.9"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/confusing-browser-globals/-/confusing-browser-globals-1.0.9.tgz#72bc13b483c0276801681871d4898516f8f54fdd"
-  integrity sha512-KbS1Y0jMtyPgIxjO7ZzMAuUpAKMt1SzCL9fsrKsX6b0zJPTaT0SiSPmewwVZg9UAO83HVIlEhZF84LIjZ0lmAw==
-
 connect-history-api-fallback@^1.6.0:
   version "1.6.0"
   resolved "http://192.168.2.10:8081/repository/npm.gm/connect-history-api-fallback/-/connect-history-api-fallback-1.6.0.tgz#8b32089359308d111115d81cad3fceab888f97bc"
@@ -7131,35 +7126,40 @@ escope@^3.1.0, escope@^3.2.0, escope@^3.3.0:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
-eslint-config-airbnb-base@^14.2.0:
-  version "14.2.0"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/eslint-config-airbnb-base/-/eslint-config-airbnb-base-14.2.0.tgz#fe89c24b3f9dc8008c9c0d0d88c28f95ed65e9c4"
-  integrity sha512-Snswd5oC6nJaevs3nZoLSTvGJBvzTfnBqOIArkf3cbyTyq9UD79wOk8s+RiL6bhca0p/eRO6veczhf6A/7Jy8Q==
+eslint-config-airbnb-base@^14.2.1:
+  version "14.2.1"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/eslint-config-airbnb-base/-/eslint-config-airbnb-base-14.2.1.tgz#8a2eb38455dc5a312550193b319cdaeef042cd1e"
+  integrity sha512-GOrQyDtVEc1Xy20U7vsB2yAoB4nBlfH5HZJeatRXHleO+OS5Ot+MWij4Dpltw4/DyIkqUfqz1epfhVR5XWWQPA==
   dependencies:
-    confusing-browser-globals "^1.0.9"
-    object.assign "^4.1.0"
+    confusing-browser-globals "^1.0.10"
+    object.assign "^4.1.2"
     object.entries "^1.1.2"
 
-eslint-config-airbnb@^18.0.1:
-  version "18.2.0"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/eslint-config-airbnb/-/eslint-config-airbnb-18.2.0.tgz#8a82168713effce8fc08e10896a63f1235499dcd"
-  integrity sha512-Fz4JIUKkrhO0du2cg5opdyPKQXOI2MvF8KUvN2710nJMT6jaRUpRE2swrJftAjVGL7T1otLM5ieo5RqS1v9Udg==
+eslint-config-airbnb@^18.2.0:
+  version "18.2.1"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/eslint-config-airbnb/-/eslint-config-airbnb-18.2.1.tgz#b7fe2b42f9f8173e825b73c8014b592e449c98d9"
+  integrity sha512-glZNDEZ36VdlZWoxn/bUR1r/sdFKPd1mHPbqUtkctgNG4yT2DLLtJ3D+yCV+jzZCc2V1nBVkmdknOJBZ5Hc0fg==
   dependencies:
-    eslint-config-airbnb-base "^14.2.0"
-    object.assign "^4.1.0"
+    eslint-config-airbnb-base "^14.2.1"
+    object.assign "^4.1.2"
     object.entries "^1.1.2"
+
+eslint-config-gmsoft@^1.0.1:
+  version "1.0.1"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/eslint-config-gmsoft/-/eslint-config-gmsoft-1.0.1.tgz#b5aa9a05c1ee52a2460c3fbe676c1ca743f0efa0"
+  integrity sha512-4tF77mg2zMv82bGhB1B+vk9D9Xbp8gwBBrdBiDJN6oJ9w0XyGPTuxFMT3PUTmqv55BDAuT/A/JK43hrA3QG5xw==
+  dependencies:
+    eslint-config-airbnb "^18.2.0"
+    eslint-config-prettier "^7.0.0"
+    eslint-plugin-import "2.22.1"
+    eslint-plugin-jsx-a11y "6.2.3"
+    eslint-plugin-react "^7.21.5"
+    eslint-plugin-react-hooks "^4.2.0"
 
 eslint-config-prettier@^7.0.0:
   version "7.0.0"
   resolved "http://192.168.2.10:8081/repository/npm.gm/eslint-config-prettier/-/eslint-config-prettier-7.0.0.tgz#c1ae4106f74e6c0357f44adb076771d032ac0e97"
   integrity sha512-8Y8lGLVPPZdaNA7JXqnvETVC7IiVRgAP6afQu9gOQRn90YY3otMNh+x7Vr2vMePQntF+5erdSUBqSzCmU/AxaQ==
-
-eslint-config-react-app@^6.0.0:
-  version "6.0.0"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/eslint-config-react-app/-/eslint-config-react-app-6.0.0.tgz#ccff9fc8e36b322902844cbd79197982be355a0e"
-  integrity sha512-bpoAAC+YRfzq0dsTk+6v9aHm/uqnDwayNAXleMypGl6CpxI9oXXscVHo4fk3eJPIn+rsbtNetB4r/ZIidFIE8A==
-  dependencies:
-    confusing-browser-globals "^1.0.10"
 
 eslint-import-resolver-node@^0.3.4:
   version "0.3.4"
@@ -13299,7 +13299,7 @@ object.assign@^4.0.1, object.assign@^4.1.0:
     has-symbols "^1.0.0"
     object-keys "^1.0.11"
 
-object.assign@^4.1.1:
+object.assign@^4.1.1, object.assign@^4.1.2:
   version "4.1.2"
   resolved "http://192.168.2.10:8081/repository/npm.gm/object.assign/-/object.assign-4.1.2.tgz#0ed54a342eceb37b38ff76eb831a0e788cb63940"
   integrity sha512-ixT2L5THXsApyiUPYKmW+2EHpXXe5Ii3M+f4e+aJFAHao5amFRW6J0OO6c/LU8Be47utCx2GL89hxGB6XSmKuQ==
@@ -17671,10 +17671,10 @@ stealthy-require@^1.1.1:
   resolved "http://192.168.2.10:8081/repository/npm.gm/stealthy-require/-/stealthy-require-1.1.1.tgz#35b09875b4ff49f26a777e509b3090a3226bf24b"
   integrity sha1-NbCYdbT/SfJqd35QmzCQoyJr8ks=
 
-stormrage@^2.5.2:
-  version "2.5.2"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/stormrage/-/stormrage-2.5.2.tgz#2a028be41bb3f90d3c0f4f478446476dffd5ea27"
-  integrity sha512-NktIEWwpVCdnQeva+m0Hgx6eMhkutVin1jvLYpTlUYBxhn7fGl5GuTupR3Xkv3ylumXIo35rE9T9i8yi9KKzYg==
+stormrage@^2.5.3:
+  version "2.5.3"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/stormrage/-/stormrage-2.5.3.tgz#1132c27e476c2040c4714bff3df5c2b4ec7a8cb9"
+  integrity sha512-aPSFU7y2hEHtNztHhrjOH1BBAu8oPzS/tvzy2EEeY4iWhkbUrMJjSRIgXCDEh9jM+V2xR4j2Opk30m1efwwr2g==
   dependencies:
     "@babel/core" "^7.7.4"
     "@babel/plugin-proposal-export-default-from" "^7.7.4"
@@ -17708,13 +17708,7 @@ stormrage@^2.5.2:
     download-git-repo "^1.1.0"
     easy-mock-cli "^0.4.3"
     eslint "^7.15.0"
-    eslint-config-airbnb "^18.0.1"
-    eslint-config-prettier "^7.0.0"
-    eslint-config-react-app "^6.0.0"
-    eslint-plugin-import "2.22.1"
-    eslint-plugin-jsx-a11y "6.2.3"
-    eslint-plugin-react "^7.21.5"
-    eslint-plugin-react-hooks "^4.2.0"
+    eslint-config-gmsoft "^1.0.1"
     eslint-webpack-plugin "^2.4.1"
     file-loader "2.0.0"
     fis-parser-jdists "^2.2.3"
