@@ -31,14 +31,12 @@ interface Props {
    * 初始模式
    * @workflow - 此注解标识该prop, 需要工作流设计器配置
    * 为生成元数据提供枚举值
-   * @enumType draw | search
    * @default draw
    */
   defaultMode: Mode;
   /**
    * 模式
    * 组件mount后, 可通过 mode 改变组件模式
-   * @enumType draw | search
    */
   mode?: Mode;
 }

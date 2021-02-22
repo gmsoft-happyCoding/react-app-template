@@ -1,5 +1,5 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
 /* eslint-disable global-require */
-const fs = require('fs');
 const path = require('path');
 const systemModules = require('./config/systemModules');
 const externals = require('./config/externals');
@@ -49,6 +49,7 @@ module.exports = {
   // WARNING: inspect Styleguidist Webpack config before modifying it,
   // otherwise you may break Styleguidist
   dangerouslyUpdateWebpackConfig(webpackConfig) {
+    // eslint-disable-next-line no-param-reassign
     webpackConfig.externals = externals();
     return webpackConfig;
   },
@@ -63,7 +64,9 @@ module.exports = {
   pagePerSection: true,
   skipComponentsWithoutExample: true,
   usageMode: 'expand',
-  propsParser: require('react-docgen-typescript').withCustomConfig('./tsconfig.json').parse,
+  propsParser: require('react-docgen-typescript').withCustomConfig('./tsconfig.json', {
+    shouldExtractValuesFromUnion: true,
+  }).parse,
   template: {
     head: {
       raw: process.env.NODE_ENV === 'production' ? '<base href="doc/">' : '',
