@@ -1,6 +1,8 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { Router } from 'react-router-dom';
+import { ConfigProvider } from 'antd';
+import zhCN from 'antd/es/locale/zh_CN';
 import CloudComponent, { loadComponent } from '@/components/CloudComponent';
 import WhatToEat from './components/WhatToEat';
 import { Mode } from './enums/Mode';
@@ -10,16 +12,18 @@ import { stateContainer } from './utils';
 const CloudWhatToEat = loadComponent({ name: 'test-project/WhatToEat' });
 
 const App = () => (
-  <Provider store={stateContainer._store}>
-    <Router history={stateContainer._history}>
-      <>
-        <WhatToEat defaultMode={Mode.DRAW} />
-        <CloudWhatToEat />
-        {/* 通过组件名字 从 registry.gmsoftdev.com 加载 */}
-        <CloudComponent name="test-project/WhatToEat" defaultMode="search" />
-      </>
-    </Router>
-  </Provider>
+  <ConfigProvider locale={zhCN}>
+    <Provider store={stateContainer._store}>
+      <Router history={stateContainer._history}>
+        <>
+          <WhatToEat defaultMode={Mode.DRAW} />
+          <CloudWhatToEat />
+          {/* 通过组件名字 从 registry.gmsoftdev.com 加载 */}
+          <CloudComponent name="test-project/WhatToEat" defaultMode="search" />
+        </>
+      </Router>
+    </Provider>
+  </ConfigProvider>
 );
 
 export default App;
