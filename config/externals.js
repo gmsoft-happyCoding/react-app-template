@@ -91,6 +91,12 @@ module.exports = (global = 'var') => ({
     commonjs: 'dva-model-creator',
     commonjs2: 'dva-model-creator',
   },
+  '@gmsoft/event-bus': {
+    [global]: 'EventBus',
+    amd: '@gmsoft/event-bus',
+    commonjs: '@gmsoft/event-bus',
+    commonjs2: '@gmsoft/event-bus',
+  },
   'state-container': {
     [global]: 'StateContainer',
     amd: 'state-container',

@@ -1383,6 +1383,11 @@
   resolved "http://192.168.2.10:8081/repository/npm.gm/@gmsoft/dva-theme-plugin/-/dva-theme-plugin-1.0.5.tgz#59a07ebe83ca8d0db1cd3d48956e42ca75390352"
   integrity sha512-y4WrDDZgVhiHdhg0Da8gXRiKF8L105r9Adc/7y/rKFLAPpoz28QaN1Txrqha3SKd5hLcrs6HGUwRMu+jd3WNrg==
 
+"@gmsoft/event-bus@1.2.0":
+  version "1.2.0"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/@gmsoft/event-bus/-/event-bus-1.2.0.tgz#a3cd594c3fe3cc27339dacbe5a951b5f0b58cf4e"
+  integrity sha512-WsjowTNjF5hO8AG6yzla+Tio6oY53sxPIfQ4ZTScwKoGx0qJ155N404R1aK4AUaKYZPSu8M3Zx1Iavl1Hx4XyQ==
+
 "@gmsoft/ui@^1.3.4":
   version "1.5.0"
   resolved "http://192.168.2.10:8081/repository/npm.gm/@gmsoft/ui/-/ui-1.5.0.tgz#d29fe476ef5c4da012626b45982653103bf0fb6b"
