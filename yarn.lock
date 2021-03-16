@@ -1378,10 +1378,10 @@
     unique-filename "^1.1.1"
     which "^1.3.1"
 
-"@gmsoft/dva-theme-plugin@^1.0.5":
-  version "1.0.5"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/@gmsoft/dva-theme-plugin/-/dva-theme-plugin-1.0.5.tgz#59a07ebe83ca8d0db1cd3d48956e42ca75390352"
-  integrity sha512-y4WrDDZgVhiHdhg0Da8gXRiKF8L105r9Adc/7y/rKFLAPpoz28QaN1Txrqha3SKd5hLcrs6HGUwRMu+jd3WNrg==
+"@gmsoft/dva-theme-plugin@1.1.2":
+  version "1.1.2"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/@gmsoft/dva-theme-plugin/-/dva-theme-plugin-1.1.2.tgz#38db84d04b45747a7cefbf7a6e4ead4fbf35cd20"
+  integrity sha512-UEPYjelgBBwHanaTsZxD7ZmhrEzRahtFznhlPvo5OEMeJ7TPyH6M1Ohc+5i2cjzm2YlRV6zVIGGj3lFXaeWi5w==
 
 "@gmsoft/event-bus@1.2.0":
   version "1.2.0"
@@ -17643,12 +17643,12 @@ stat-mode@^0.2.0:
   resolved "http://192.168.2.10:8081/repository/npm.gm/stat-mode/-/stat-mode-0.2.2.tgz#e6c80b623123d7d80cf132ce538f346289072502"
   integrity sha1-5sgLYjEj19gM8TLOU480YokHJQI=
 
-state-container@1.1.0:
-  version "1.1.0"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/state-container/-/state-container-1.1.0.tgz#2a34b592702368b6702beed62e9d9e0e546aca68"
-  integrity sha512-G5v7pHVqw+eWgzjOIiF5ib/Jndo/aewAWte3cW/KMfqPSx5lvG2/LHgCvntmxR27AybVORCWPhVBYVnIwtmdkQ==
+state-container@1.2.0:
+  version "1.2.0"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/state-container/-/state-container-1.2.0.tgz#df1d3c7eefb22defe31425870cfdd8587f9f1f7a"
+  integrity sha512-xNlv946BFPtmhxCNGSPfteoZP3OE5DKEvhLWt6sdWYpttCvo997NOibrsoK6stEdJHVppp6bICtfCVm2um8P6g==
   dependencies:
-    "@gmsoft/dva-theme-plugin" "^1.0.5"
+    "@gmsoft/dva-theme-plugin" "1.1.2"
     dva-core "^2.0.1"
     dva-loading "^2.0.6"
     react-router-redux "4.0.8"
