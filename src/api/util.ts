@@ -7,15 +7,15 @@ import qs from 'qs';
 const instance = axios.create({
   withCredentials: true,
   headers: { 'X-Requested-With': 'XMLHttpRequest' },
-  paramsSerializer: function(params) {
-    return qs.stringify(params, { arrayFormat: 'repeat' });
+  paramsSerializer: function (params) {
+    return qs.stringify(params, { arrayFormat: 'repeat', allowDots: true });
   },
 });
 
 type Conf = AxiosRequestConfig & { opts?: Partial<WithPathOpts> };
 
 function createAPI(baseURL?: string) {
-  return function(conf: Conf) {
+  return function (conf: Conf) {
     conf = conf || {};
     return instance(
       Object.assign(
