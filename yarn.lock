@@ -15823,7 +15823,7 @@ react-router-redux@5.0.0-alpha.9:
     prop-types "^15.6.0"
     react-router "^4.2.0"
 
-react-router@5.2.0, react-router@^5.2.0:
+react-router@5.2.0:
   version "5.2.0"
   resolved "http://192.168.2.10:8081/repository/npm.gm/react-router/-/react-router-5.2.0.tgz#424e75641ca8747fbf76e5ecca69781aa37ea293"
   integrity sha512-smz1DUuFHRKdcJC0jobGo8cVbhO3x50tCL4icacOlcwDOEQPq4TMqwx3sY1TP+DvtTgz4nm3thuo7A+BK2U0Dw==
