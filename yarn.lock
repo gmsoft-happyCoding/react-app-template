@@ -2356,6 +2356,11 @@
   resolved "http://192.168.2.10:8081/repository/npm.gm/@types/lodash/-/lodash-4.14.158.tgz#b38ea8b6fe799acd076d7a8d7ab71c26ef77f785"
   integrity sha512-InCEXJNTv/59yO4VSfuvNrZHt7eeNtWQEgnieIA+mIC+MOWM9arOWG2eQ8Vhk6NbOre6/BidiXhkZYeDY9U35w==
 
+"@types/lodash@^4.14.168":
+  version "4.14.168"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/@types/lodash/-/lodash-4.14.168.tgz#fe24632e79b7ade3f132891afff86caa5e5ce008"
+  integrity sha512-oVfRvqHV/V6D1yifJbVRU3TMp8OT6o6BG+U9MkwuJ3U8/CsDHvalRpsxBqivn71ztOFZBTfJMvETbqHiaNSj7Q==
+
 "@types/mdast@^3.0.0":
   version "3.0.3"
   resolved "http://192.168.2.10:8081/repository/npm.gm/@types/mdast/-/mdast-3.0.3.tgz#2d7d671b1cd1ea3deb306ea75036c2a0407d2deb"
@@ -5008,10 +5013,12 @@ clone@^1.0.2:
   resolved "http://192.168.2.10:8081/repository/npm.gm/clone/-/clone-1.0.4.tgz#da309cc263df15994c688ca902179ca3c7cd7c7e"
   integrity sha1-2jCcwmPfFZlMaIypAheco8fNfH4=
 
-cloud-component@^0.3.0:
-  version "0.3.0"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/cloud-component/-/cloud-component-0.3.0.tgz#f4f39b9b26be1c231f778e9a8ffc1ae44d5dd4f2"
-  integrity sha512-/YUAXdDArYQLjky/Li10QWUcyNoU/t6dj0xiZ8OmQ+WBBKR1T3YZr/x98oP6m4CoaFdppwSftqXL6Xa6bgsrHA==
+cloud-component@^0.5.0:
+  version "0.5.0"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/cloud-component/-/cloud-component-0.5.0.tgz#c31357a65ff9880dd7344798a139c37f943325ed"
+  integrity sha512-x3z1DqvYCd8CjDdaLO93S7VQkc9I31QLeKsONdT+69mhXLjqcPxzSb5v4r/q5JwzW/UKcZGqs7UqXR9L5dGPog==
+  dependencies:
+    "@types/lodash" "^4.14.168"
 
 clsx@^1.0.4:
   version "1.1.1"
