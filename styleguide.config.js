@@ -66,7 +66,7 @@ module.exports = {
   skipComponentsWithoutExample: true,
   usageMode: 'expand',
   propsParser: require('react-docgen-typescript').withCustomConfig('./tsconfig.json', {
-    shouldExtractValuesFromUnion: true,
+    shouldExtractLiteralValuesFromEnum: true,
   }).parse,
   template: {
     head: {
