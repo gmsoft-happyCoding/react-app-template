@@ -1,4 +1,4 @@
-/* eslint-disable global-require */
+/* eslint-disable @typescript-eslint/no-require-imports */
 const DeployType = require('./common/deploy-type');
 
 module.exports = {
