@@ -9046,12 +9046,12 @@ glogg@^1.0.2:
   dependencies:
     sparkles "^1.0.0"
 
-gm-react-hanger@^2.1.2:
-  version "2.3.0"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/gm-react-hanger/-/gm-react-hanger-2.3.0.tgz#a44c49612b41648aa55e85917950dee34411e10c"
-  integrity sha512-Rjzehl6lev48RgUcSGSRNoT6nFi9Lg17NqgssNpup+Hi+WF1Kxi7Ys1PjMAZSJYNpcn9RmzNHyLPq0cK+NXG7A==
+gm-react-hanger@^2.3.3:
+  version "2.3.3"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/gm-react-hanger/-/gm-react-hanger-2.3.3.tgz#6b0ed705b9f48d38860b3b8f8722599bc34ea1dd"
+  integrity sha512-QpJhnJlUQQxJdQP97ORn8/Yx+lhMH0A8H632quipSw6a5N3zOcMW/vDqZMsgK++VVsGc70MVpOaRwKtMMI94JA==
   dependencies:
-    history-helper "^1.0.3"
+    history-helper "1.1.1"
 
 good-listener@^1.2.2:
   version "1.2.2"
@@ -9384,10 +9384,10 @@ hex-color-regex@^1.1.0:
   resolved "http://192.168.2.10:8081/repository/npm.gm/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
   integrity sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==
 
-history-helper@^1.0.3:
-  version "1.0.3"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/history-helper/-/history-helper-1.0.3.tgz#10a4acfad6486b818cff5c2ea8b7225beb3d4d42"
-  integrity sha512-An5c1+amaudKRAFIrFB1yYWCw23YMdeH2LMXor/J3uFzM6/BQcvOGug2Gxgu9rUHcUW3SWyKuc8OUYu17GnyjQ==
+history-helper@1.1.1:
+  version "1.1.1"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/history-helper/-/history-helper-1.1.1.tgz#a9f7871a225bcdcbbdde17e541beacb665f4bb1e"
+  integrity sha512-Fy5fMtPVaU90P2V50BkmzrnkCmI7UY26Vb4+l8V42sKde0CPNiBKHPQa3UOOsmtzKpSctfEMAnOvMH0325/Hwg==
 
 history@^4.6.3, history@^4.7.2, history@^4.9.0:
   version "4.10.1"
