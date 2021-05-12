@@ -1,12 +1,11 @@
 import React, { useContext, useMemo } from 'react';
 import { useSelector } from 'react-redux';
-import { Switch, Route } from 'react-router-dom';
-
+import { Switch, Route, Redirect } from 'react-router-dom';
 import { PUBLIC_METHODS } from '@/constant/namespace';
 import { publicMethodsState } from '@/models/publicMethods/index.d';
 import LoadingBlock from '@/components/LoadingBlock';
-
-import { RouteContext, getRouteConf, defVal } from './routeRegisterCenter';
+import NotFound from '@/app/404/404';
+import { RouteContext, getRouteConf, defVal, pathConf } from './routeRegisterCenter';
 import { Layout } from './style';
 
 function HomeContent() {
@@ -30,6 +29,8 @@ function HomeContent() {
             {renderConf.map(item => (
               <Route key={item.path} path={item.path} component={item.component} />
             ))}
+            <Route key={pathConf.ROUTE_404} path={pathConf.ROUTE_404} component={NotFound} />
+            <Redirect to={pathConf.ROUTE_404} />
           </Switch>
         </React.Suspense>
       </Layout>

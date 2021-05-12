@@ -8,6 +8,8 @@ const pathConf = {
   /** 测试模块定义 */
   ROUTE_MODULE_A: '/module-a',
   ROUTE_MODULE_COMMON: '/module-common',
+  /** 404错误页 */
+  ROUTE_404: '/404',
 };
 
 /** 基础功能定义 */
