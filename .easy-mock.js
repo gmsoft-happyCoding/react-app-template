@@ -7,18 +7,16 @@ module.exports = {
   template: 'gmsoft-happyCoding/axios-ts',
   projects: [
     {
-      // easy-mock project id http://easy-mock.gm/project/5c514bf9cd2f550e9dfbb515
-      id: '5c514bf9cd2f550e9dfbb515',
-      name: 'whatToEat',
-      // urlPreprocessor: url => url.replace('/demo-gateway', ''),
-      // 如果baseUrl为字符串请使用 "'baseUrl'"
-      baseUrl: 'process.env.REACT_APP_API_GATEWAY_BASE',
+      id: '5bc45680acb9922af8f7f803',
+      name: 'login',
+      urlPreprocessor: url => url.replace('/djc-gateway', ''),
+      baseUrl: 'process.env.REACT_APP_DJC_GATEWAY',
     },
     {
-      // easy-mock project http://easy-mock.gm/project/5c7c941504e77820f451b643
-      id: '5c7c941504e77820f451b643',
-      name: 'componentRegistry',
-      baseUrl: 'process.env.REACT_APP_COMPONENT_REGISTRY_SERVER',
+      id: '5e20129203b7ea0b2a310a7d',
+      name: 'newOrg',
+      urlPreprocessor: url => url.replace('/djc-gateway', ''),
+      baseUrl: 'process.env.REACT_APP_DJC_GATEWAY',
     },
   ],
 };

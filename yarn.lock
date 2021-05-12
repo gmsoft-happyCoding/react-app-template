@@ -1388,6 +1388,15 @@
   resolved "http://192.168.2.10:8081/repository/npm.gm/@gmsoft/event-bus/-/event-bus-1.2.0.tgz#a3cd594c3fe3cc27339dacbe5a951b5f0b58cf4e"
   integrity sha512-WsjowTNjF5hO8AG6yzla+Tio6oY53sxPIfQ4ZTScwKoGx0qJ155N404R1aK4AUaKYZPSu8M3Zx1Iavl1Hx4XyQ==
 
+"@gmsoft/tools@^1.5.4":
+  version "1.5.4"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/@gmsoft/tools/-/tools-1.5.4.tgz#1e5408a7810b75eaa45f6a6207272aed5bd57c8f"
+  integrity sha512-xoELJFTzj3nFhhMErf15QugAn+YWvoI3CsFyi5qkd5aKX2kTDzJTOiaxRmY15mcGooBI9hDXDKKeF115zSk7RQ==
+  dependencies:
+    decimal.js-light "^2.5.0"
+    js-sha1 "^0.6.0"
+    ua-parser-js "^0.7.19"
+
 "@gmsoft/ui@^1.3.4":
   version "1.5.0"
   resolved "http://192.168.2.10:8081/repository/npm.gm/@gmsoft/ui/-/ui-1.5.0.tgz#d29fe476ef5c4da012626b45982653103bf0fb6b"
@@ -6142,6 +6151,11 @@ decamelize@^1.0.0, decamelize@^1.1.0, decamelize@^1.1.1, decamelize@^1.1.2, deca
   version "1.2.0"
   resolved "http://192.168.2.10:8081/repository/npm.gm/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
   integrity sha1-9lNNFRSCabIDUue+4m9QH5oZEpA=
+
+decimal.js-light@^2.5.0:
+  version "2.5.1"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/decimal.js-light/-/decimal.js-light-2.5.1.tgz#134fd32508f19e208f4fb2f8dac0d2626a867934"
+  integrity sha512-qIMFpTMZmny+MMIitAB6D7iVPEorVw6YQRWkvarTkT4tBeSLLiHzcwj6q0MmYSFCiVpiqPJTJEYIrpcPzVEIvg==
 
 decimal.js@^10.2.0:
   version "10.2.0"
@@ -11129,6 +11143,11 @@ js-levenshtein@^1.1.3:
   version "1.1.6"
   resolved "http://192.168.2.10:8081/repository/npm.gm/js-levenshtein/-/js-levenshtein-1.1.6.tgz#c6cee58eb3550372df8deb85fad5ce66ce01d59d"
   integrity sha512-X2BB11YZtrRqY4EnQcLX5Rh373zbK4alC1FW7D7MBhL2gtcC17cTnr6DmfHZeS0s2rTHjUTMMHfG7gO8SSdw+g==
+
+js-sha1@^0.6.0:
+  version "0.6.0"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/js-sha1/-/js-sha1-0.6.0.tgz#adbee10f0e8e18aa07cdea807cf08e9183dbc7f9"
+  integrity sha512-01gwBFreYydzmU9BmZxpVk6svJJHrVxEN3IOiGl6VO93bVKYETJ0sIth6DASI6mIFdt7NmfX9UiByRzsYHGU9w==
 
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
@@ -18790,6 +18809,11 @@ ua-parser-js@^0.7.18:
   version "0.7.21"
   resolved "http://192.168.2.10:8081/repository/npm.gm/ua-parser-js/-/ua-parser-js-0.7.21.tgz#853cf9ce93f642f67174273cc34565ae6f308777"
   integrity sha512-+O8/qh/Qj8CgC6eYBVBykMrNtp5Gebn4dlGD/kKXVkJNDwyrAwSIqwz8CDf+tsAIWVycKcku6gIXJ0qwx/ZXaQ==
+
+ua-parser-js@^0.7.19:
+  version "0.7.28"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/ua-parser-js/-/ua-parser-js-0.7.28.tgz#8ba04e653f35ce210239c64661685bf9121dec31"
+  integrity sha512-6Gurc1n//gjp9eQNXjD9O3M/sMwVtN5S8Lv9bvOYBfKfDNiIIhqiyi01vMBO45u4zkDE420w/e0se7Vs+sIg+g==
 
 uglify-js@2.4.15:
   version "2.4.15"

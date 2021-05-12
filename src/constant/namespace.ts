@@ -1,4 +1,2 @@
-/**
- * 今天吃什么
- */
-export const WHAT_TO_EAT = 'whatToEat';
+/** 公共Model */
+export const PUBLIC_METHODS = 'publicMethods';
