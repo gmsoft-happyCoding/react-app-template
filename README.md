@@ -1,5 +1,10 @@
 这项目使用 [stormrage](https://github.com/gmsoft-happyCoding/stormrage) 初始化
 
+~~~
+# 使用当前项目模板进行初始化
+stormrage init -t github:gmsoft-happyCoding/react-app-template#has-router
+~~~
+
 ## 可用的脚本
 
 在此目录中你可以使用以下脚本:
