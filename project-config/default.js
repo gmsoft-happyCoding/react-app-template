@@ -7,8 +7,6 @@ module.exports = {
     REACT_APP_CDN_SERVER: '//cdn.gm',
     // 组件注册服务器
     REACT_APP_COMPONENT_REGISTRY_SERVER: '//registry.gmsofttest.com',
-
-    REACT_APP_DJC_GATEWAY_BASE: '//localhost/djc-gateway',
   },
   // plugins: [require('./plugins/plugin-demo')],
 };

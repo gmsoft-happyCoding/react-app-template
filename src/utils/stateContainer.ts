@@ -9,9 +9,6 @@ const stateContainer = create({
     /* eslint-disable no-console */
     console.error(err);
   },
-  createGlobalContextOpts: {
-    djcGatewayBaseUrl: process.env.REACT_APP_DJC_GATEWAY_BASE,
-  },
 });
 
 export default stateContainer;
