@@ -46,7 +46,7 @@
     "redux-actions": "2.6.4",
     "redux-saga": "0.16.2",
     "reselect": "4.0.0",
-    "state-container": "1.2.0",
+    "state-container": "1.3.0",
     "styled-components": "^5.2.1",
     "systemjs": "0.21.5"
   },

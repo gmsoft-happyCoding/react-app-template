@@ -10,6 +10,7 @@ module.exports = {
     REACT_APP_COMPONENT_REGISTRY_SERVER: '//registry.gmsofttest.com',
     // 网关服务器base路径
     REACT_APP_API_GATEWAY_BASE: '//www.test.com/demo/demo-gateway',
+    REACT_APP_DJC_GATEWAY_BASE: '//www.test.com/djc-gateway',
     // 发布部署, 建议配置不然每次都需要交互设置
     REACT_APP_DEPLOY_TYPE: DeployType.SCP,
     /**
