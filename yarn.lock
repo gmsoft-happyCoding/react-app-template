@@ -1385,10 +1385,10 @@
     unique-filename "^1.1.1"
     which "^1.3.1"
 
-"@gmsoft/dva-global-context-plugin@1.2.0":
-  version "1.2.0"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/@gmsoft/dva-global-context-plugin/-/dva-global-context-plugin-1.2.0.tgz#63a4a2fc7f0824014d1f876921796e77115b9447"
-  integrity sha512-ncFh9IvbVUdp4QY437gu3L+hc2pXA8wO6+QMRiF7vwyqWa8SwmPlDcezmbKd2k6bq23VV2wMAeAOHyxbsGEB1Q==
+"@gmsoft/dva-global-context-plugin@1.3.0":
+  version "1.3.0"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/@gmsoft/dva-global-context-plugin/-/dva-global-context-plugin-1.3.0.tgz#e63c6ff9c9755263f494437ce72d0e36a150a215"
+  integrity sha512-OhtvkVaCI4X3vRgAUnRyZGRVIzNttoTD8f+e5Z+rliGl9iISCc6InSkG+eKsdpTXBvVU9UxjhQ4cdEpxlbg3LQ==
 
 "@gmsoft/dva-theme-plugin@1.4.0":
   version "1.4.0"
@@ -17661,10 +17661,10 @@ stat-mode@^0.2.0:
 
 state-container@1.4.0:
   version "1.4.0"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/state-container/-/state-container-1.4.0.tgz#28adae273066579928784dee4141847269cb33ee"
-  integrity sha512-yzrF+KDZiproFWPd9nctLX0NyClfC8pH8m6lMj0asm1FBeuB9y4XHUVa28O8JSK3U1ygyG3PYNgN3/RRbn98RQ==
+  resolved "http://192.168.2.10:8081/repository/npm.gm/state-container/-/state-container-1.4.0.tgz#7dd349019da47722f61503ea340be5faddb588a7"
+  integrity sha512-gnfTKcHnGBb5xKZkzRzCobky3PY6a8X7DOF7c+qDehAu5q7SpUVc+YefW6JicG1lS3lNYbF+4JRqeHYDbq4adg==
   dependencies:
-    "@gmsoft/dva-global-context-plugin" "1.2.0"
+    "@gmsoft/dva-global-context-plugin" "1.3.0"
     "@gmsoft/dva-theme-plugin" "1.4.0"
     dva "^2.4.1"
     dva-core "^2.0.1"
