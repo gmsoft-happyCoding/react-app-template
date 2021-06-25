@@ -8,6 +8,7 @@ declare namespace NodeJS {
     PUBLIC_URL: string;
     REACT_APP_PUBLIC_URL: string;
     REACT_APP_API_GATEWAY_BASE: string;
+    REACT_APP_DJC_GATEWAY_BASE: string;
   }
 }
 

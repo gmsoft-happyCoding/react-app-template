@@ -38,6 +38,7 @@ const scripts = [
   'axios/0.18.1/axios.js',
   'state-container/1.4.0/state-container.js',
   'qs/6.9.3/qs.js',
+  'auth-sdk/1.0.0/auth-sdk.umd.js',
   'systemjs/0.21.5/system.src.js',
 ];
 

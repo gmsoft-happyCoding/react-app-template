@@ -11,6 +11,8 @@ module.exports = {
     REACT_APP_COMPONENT_REGISTRY_SERVER: '//registry.gec123.com',
     // 网关服务器base路径
     REACT_APP_API_GATEWAY_BASE: '//www.gec123.com/demo/demo-gateway',
+    // 基础服务网关
+    REACT_APP_DJC_GATEWAY_BASE: '//www.gec123.com/djc-gateway',
     // 发布部署, 建议配置不然每次都需要交互设置
     REACT_APP_DEPLOY_TYPE: DeployType.ZIP,
     /**
