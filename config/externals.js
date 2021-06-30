@@ -139,4 +139,10 @@ module.exports = (global = 'var') => ({
     commonjs: 'qs',
     commonjs2: 'qs',
   },
+  '@gmsoft/auth-sdk': {
+    [global]: 'AuthSDK',
+    amd: '@gmsoft/auth-sdk',
+    commonjs: '@gmsoft/auth-sdk',
+    commonjs2: '@gmsoft/auth-sdk',
+  },
 });
