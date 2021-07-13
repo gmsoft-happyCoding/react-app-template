@@ -1408,10 +1408,12 @@
     state-container "^1.4.0"
     styled-components "^5.3.0"
 
-"@gmsoft/dva-global-context-plugin@1.5.0":
-  version "1.5.0"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/@gmsoft/dva-global-context-plugin/-/dva-global-context-plugin-1.5.0.tgz#293a4f26ff04200192f9e6e463c0a36bd55615ee"
-  integrity sha512-mR66GrFSRowCckAHYutHXiu1DFo+QxTfr21tBMv4cTHjlZISweJXvBiCoy1SVyYI4Gwu+vz1uj6cC/etTirBmg==
+"@gmsoft/dva-global-context-plugin@1.7.0":
+  version "1.7.0"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/@gmsoft/dva-global-context-plugin/-/dva-global-context-plugin-1.7.0.tgz#cd72f7f2c49fdda22e6021f978e7e7ec1bb9a0b3"
+  integrity sha512-nbfEuMqKWO/LpS4roGDwV9abk5pQI9HAXZFvQqCdZyZOWbEuWlECrQBz/oYWrPtMfcWltL0jmb4Nq+y2+cFtow==
+  dependencies:
+    react-redux "7.1.0"
 
 "@gmsoft/dva-theme-plugin@1.4.0":
   version "1.4.0"
@@ -15845,7 +15847,7 @@ react-icons@^3.8.0:
   dependencies:
     camelcase "^5.0.0"
 
-react-is@^16.12.0, react-is@^16.13.1, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.9.0:
+react-is@^16.12.0, react-is@^16.13.1, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.6, react-is@^16.9.0:
   version "16.13.1"
   resolved "http://192.168.2.10:8081/repository/npm.gm/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
@@ -15876,6 +15878,18 @@ react-redux@5.0.7:
     lodash-es "^4.17.5"
     loose-envify "^1.1.0"
     prop-types "^15.6.0"
+
+react-redux@7.1.0:
+  version "7.1.0"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/react-redux/-/react-redux-7.1.0.tgz#72af7cf490a74acdc516ea9c1dd80e25af9ea0b2"
+  integrity sha512-hyu/PoFK3vZgdLTg9ozbt7WF3GgX5+Yn3pZm5/96/o4UueXA+zj08aiSC9Mfj2WtD1bvpIb3C5yvskzZySzzaw==
+  dependencies:
+    "@babel/runtime" "^7.4.5"
+    hoist-non-react-statics "^3.3.0"
+    invariant "^2.2.4"
+    loose-envify "^1.4.0"
+    prop-types "^15.7.2"
+    react-is "^16.8.6"
 
 react-redux@^7.1.0:
   version "7.2.0"
@@ -17788,14 +17802,15 @@ stat-mode@^0.2.0:
 
 state-container@1.4.0, state-container@^1.4.0:
   version "1.4.0"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/state-container/-/state-container-1.4.0.tgz#59dbb76c858f5de7212d02e60c74eafc04732ed5"
-  integrity sha512-Md5uhJF9biI69Fs4TVNg+BkIKwcuNxhL21hAEXFLuA46ZRCmcp6BH3O6Wxf+/0eMJrgubuol9xpxco0fob1bGA==
+  resolved "http://192.168.2.10:8081/repository/npm.gm/state-container/-/state-container-1.4.0.tgz#93e5c5d39aee08fb587a6c21e766505b3ee762ed"
+  integrity sha512-VFamxKmgRa3TcKrPHUJMO579M0uOsIoj71oMfU8WxeVyx8xXfZLlbJiQA2vgGIPfWOJxrphlKc6Qc5SRD01+iA==
   dependencies:
-    "@gmsoft/dva-global-context-plugin" "1.5.0"
+    "@gmsoft/dva-global-context-plugin" "1.7.0"
     "@gmsoft/dva-theme-plugin" "1.4.0"
     dva "^2.4.1"
     dva-core "^2.0.1"
     dva-loading "^2.0.6"
+    react-redux "7.1.0"
     react-router-redux "4.0.8"
     redux "^4.1.0"
 
