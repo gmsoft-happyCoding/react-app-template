@@ -1394,8 +1394,8 @@
 
 "@gmsoft/auth-sdk@^1.0.0":
   version "1.0.0"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/@gmsoft/auth-sdk/-/auth-sdk-1.0.0.tgz#d6a0bbcf3c4463b1d1a3bf66542ae48ca042af80"
-  integrity sha512-4JkBcSfbBcap/O1WNRryKqn5P3QxzRi58SRYLrGUkNEMwSBh4Aposv+gvkXANdd4PuTG+D3olcsNQl6BZW1Zww==
+  resolved "http://192.168.2.10:8081/repository/npm.gm/@gmsoft/auth-sdk/-/auth-sdk-1.0.0.tgz#4427525c99dc0fad793630893616e1401dbc9bd0"
+  integrity sha512-KAf0ytTAvY02nvp393O3IA1qkNQCM9rJ/u2ESCBBTdXVmvWoJxKVubwPrr0hr5TBkzCR2RDNAsZWlrAafyk4+g==
   dependencies:
     "@gmsoft/ui" "^1.12.3"
     antd "3.26.20-custom.2"
