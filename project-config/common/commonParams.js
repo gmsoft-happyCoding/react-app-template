@@ -22,6 +22,7 @@ const getBaseParams = opt => {
     REACT_APP_GENERATE_SOURCEMAP: true,
     REACT_APP_DEPLOY_TYPE: DeployType.SCP,
     // ====================== 项目配置 ======================
+    REACT_APP_DOMAIN: domain,
     // 应用部署的域名和子路径
     REACT_APP_PUBLIC_URL: `//${domain}/${publickDir}`,
     // CDN服务器地址
@@ -32,7 +33,7 @@ const getBaseParams = opt => {
     // ====================== 网关配置 ======================
     // 私有网关
     REACT_APP_PRIVATE_GATEWAY: `//${domain}/private-gateway`,
-    // 大家采网关
+    // 大家采网关特别说明：政府采购以及内网调用政府采购与内网domain, 行采家则使用大家采domain作为大家采网关的调用Host
     REACT_APP_DJC_GATEWAY: `//${domain}/djc-gateway`,
     // 政采网关
     REACT_APP_GWEBSITE: `//${zcjDomain}/gwebsite`,

@@ -7,8 +7,13 @@ declare namespace NodeJS {
     NODE_ENV: 'development' | 'production' | 'test';
     PUBLIC_URL: string;
     REACT_APP_PUBLIC_URL: string;
-    REACT_APP_API_GATEWAY_BASE: string;
-    REACT_APP_DJC_GATEWAY_BASE: string;
+    REACT_APP_DOMAIN: string;
+    REACT_APP_COMPONENT_REGISTRY_SERVER: string;
+    REACT_APP_PRIVATE_GATEWAY: string;
+    REACT_APP_DJC_GATEWAY: string;
+    REACT_APP_GWEBSITE: string;
+    REACT_APP_YW_GATEWAY: string;
+    REACT_APP_XCJ_GATEWAY: string;
   }
 }
 

@@ -1,9 +1,20 @@
 import { cloneDeep, get } from 'lodash';
 import history from '@/utils/history';
+import { axiosSSOInterceptor } from '@gmsoft/auth-sdk';
+import { stateContainer } from '@/utils';
 import { useRequestInterceptor, useResponseInterceptor } from './util';
 
 import * as login from './login';
 import * as newOrg from './newOrg';
+
+// 要放到所有拦截器的前面
+useResponseInterceptor(
+  undefined,
+  axiosSSOInterceptor({
+    djcGatewayBaseUrl: process.env.REACT_APP_DJC_GATEWAY,
+    dispatch: stateContainer._store.dispatch,
+  })
+);
 
 // 添加请求拦截器
 useRequestInterceptor(

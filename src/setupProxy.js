@@ -2,30 +2,34 @@
 const proxy = require('http-proxy-middleware');
 
 const proxyRules = {
-  test: [
+  test1: [
     {
       path: '/gwebsite',
-      target: 'http://192.168.2.12:7050',
+      target: 'https://www.cqzcjtest1.gm',
     },
     {
       path: '/djc-gateway',
-      target: 'http://192.168.2.12:8071',
+      target: 'https://www.cqzcjtest1.gm',
     },
     {
       path: '/yw-gateway',
-      target: 'http://192.168.2.12:8086',
+      target: 'https://www.cqzcjtest1.gm',
+    },
+    {
+      path: '/gateway',
+      target: 'https://www.cqzcjtest1.gm',
     },
     {
       path: '/trade',
-      target: 'http://192.168.2.12:8050',
+      target: 'https://www.cqzcjtest1.gm',
     },
     {
       path: '/finance',
-      target: 'http://www.cqzcjtest.com',
+      target: 'https://www.xcjtest1.gm',
     },
     {
       path: '/baseconf',
-      target: 'http://192.168.2.12:8050',
+      target: 'https://www.cqzcjtest1.gm',
     },
   ],
   show: [
@@ -51,6 +55,10 @@ const proxyRules = {
     },
     {
       path: '/baseconf',
+      target: 'https://www.cqzcjshow.com',
+    },
+    {
+      path: '/gateway',
       target: 'https://www.cqzcjshow.com',
     },
   ],

@@ -8,7 +8,7 @@ module.exports = async context => {
       name: 'proxyPlatform',
       message: 'Please choose environment for data proxy:',
       choices: [
-        { name: 'test', value: 'test' },
+        { name: 'test1', value: 'test1' },
         { name: 'show', value: 'show' },
       ],
       default: 'test',

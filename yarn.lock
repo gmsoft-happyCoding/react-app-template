@@ -1392,10 +1392,10 @@
     unique-filename "^1.1.1"
     which "^1.3.1"
 
-"@gmsoft/auth-sdk@^1.0.0":
-  version "1.0.0"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/@gmsoft/auth-sdk/-/auth-sdk-1.0.0.tgz#d6a0bbcf3c4463b1d1a3bf66542ae48ca042af80"
-  integrity sha512-4JkBcSfbBcap/O1WNRryKqn5P3QxzRi58SRYLrGUkNEMwSBh4Aposv+gvkXANdd4PuTG+D3olcsNQl6BZW1Zww==
+"@gmsoft/auth-sdk@1.1.0":
+  version "1.1.0"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/@gmsoft/auth-sdk/-/auth-sdk-1.1.0.tgz#6f0d3114391005aa8e7dc5aa9839d562c468da97"
+  integrity sha512-3BZ4cmLC0VnJW90gjCJUFY5WVIEArOGRcyPloz4JOy/qRLIb4nX4hKsrRQbNj96Y+Zllo85p34m5DI4i6SyZiQ==
   dependencies:
     "@gmsoft/ui" "^1.12.3"
     antd "3.26.20-custom.2"
@@ -1405,13 +1405,32 @@
     react-dom "^17.0.0"
     react-redux "^7.2.4"
     redux "^4.1.0"
-    state-container "^1.4.0"
+    state-container "1.5.0"
     styled-components "^5.3.0"
 
-"@gmsoft/dva-global-context-plugin@1.3.0":
-  version "1.3.0"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/@gmsoft/dva-global-context-plugin/-/dva-global-context-plugin-1.3.0.tgz#e63c6ff9c9755263f494437ce72d0e36a150a215"
-  integrity sha512-OhtvkVaCI4X3vRgAUnRyZGRVIzNttoTD8f+e5Z+rliGl9iISCc6InSkG+eKsdpTXBvVU9UxjhQ4cdEpxlbg3LQ==
+"@gmsoft/auth-sdk@^1.2.0":
+  version "1.2.0"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/@gmsoft/auth-sdk/-/auth-sdk-1.2.0.tgz#33f27ccb0c33e9861f3139a8cef1fc971180ca65"
+  integrity sha512-h6ban3AHVlKi7I2Se7XtWfpUFhhfS+pkkiq84LLzADmKFt5GvGCG2cX/nxuJivSYPxtHG131B3xCE/Ee8jvT2w==
+  dependencies:
+    "@gmsoft/ui" "^1.12.3"
+    antd "3.26.20-custom.2"
+    axios "0.18.1"
+    qs "^6.10.1"
+    react "^17.0.0"
+    react-dom "^17.0.0"
+    react-redux "^7.2.4"
+    redux "^4.1.0"
+    state-container "1.5.0"
+    styled-components "^5.3.0"
+
+"@gmsoft/dva-global-context-plugin@1.9.1":
+  version "1.9.1"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/@gmsoft/dva-global-context-plugin/-/dva-global-context-plugin-1.9.1.tgz#1cfd005d7806b0df73383b27144f89655f42afe6"
+  integrity sha512-fb8eXFn48EYnoZjjTnwc0MgtH00BvDf1v8iBjBDcVBd8Cq5pc/geRotr5E+bdF3k+4i1Lusox5zpW/cq204Uhw==
+  dependencies:
+    "@gmsoft/auth-sdk" "1.1.0"
+    react-redux "7.1.0"
 
 "@gmsoft/dva-theme-plugin@1.4.0":
   version "1.4.0"
@@ -8366,6 +8385,11 @@ fis3-parser-less-gmsoft@^0.1.4:
   integrity sha512-a3v6d/Kp4LzKVJNJwjOOoxZahw54Dev1G2fdQfp+vWPJhnsE9gDBjq6Ej/6FaAutRuM5uCok6yXwkiiAj/VFHQ==
   dependencies:
     less "^2.7.1"
+
+fis3-parser-replacer@^1.0.1:
+  version "1.0.1"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/fis3-parser-replacer/-/fis3-parser-replacer-1.0.1.tgz#cf03538c7400e9b3817bd0922efdc253516a0ca4"
+  integrity sha512-cTmjL0zZMyD0WgOE3ovNXneN7zJQ+DBasVnYEHCprLjKb1vC2A5ZQuhv1/RrMiMq7OWKNsy/Mkd0rLqeJdv8mQ==
 
 fis3-parser-typescript-gmsoft@^1.2.4:
   version "1.2.4"
@@ -15845,7 +15869,7 @@ react-icons@^3.8.0:
   dependencies:
     camelcase "^5.0.0"
 
-react-is@^16.12.0, react-is@^16.13.1, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.9.0:
+react-is@^16.12.0, react-is@^16.13.1, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.6, react-is@^16.9.0:
   version "16.13.1"
   resolved "http://192.168.2.10:8081/repository/npm.gm/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
@@ -15876,6 +15900,18 @@ react-redux@5.0.7:
     lodash-es "^4.17.5"
     loose-envify "^1.1.0"
     prop-types "^15.6.0"
+
+react-redux@7.1.0:
+  version "7.1.0"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/react-redux/-/react-redux-7.1.0.tgz#72af7cf490a74acdc516ea9c1dd80e25af9ea0b2"
+  integrity sha512-hyu/PoFK3vZgdLTg9ozbt7WF3GgX5+Yn3pZm5/96/o4UueXA+zj08aiSC9Mfj2WtD1bvpIb3C5yvskzZySzzaw==
+  dependencies:
+    "@babel/runtime" "^7.4.5"
+    hoist-non-react-statics "^3.3.0"
+    invariant "^2.2.4"
+    loose-envify "^1.4.0"
+    prop-types "^15.7.2"
+    react-is "^16.8.6"
 
 react-redux@^7.1.0:
   version "7.2.0"
@@ -17786,16 +17822,17 @@ stat-mode@^0.2.0:
   resolved "http://192.168.2.10:8081/repository/npm.gm/stat-mode/-/stat-mode-0.2.2.tgz#e6c80b623123d7d80cf132ce538f346289072502"
   integrity sha1-5sgLYjEj19gM8TLOU480YokHJQI=
 
-state-container@1.4.0, state-container@^1.4.0:
-  version "1.4.0"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/state-container/-/state-container-1.4.0.tgz#7dd349019da47722f61503ea340be5faddb588a7"
-  integrity sha512-gnfTKcHnGBb5xKZkzRzCobky3PY6a8X7DOF7c+qDehAu5q7SpUVc+YefW6JicG1lS3lNYbF+4JRqeHYDbq4adg==
+state-container@1.5.0, state-container@^1.5.0:
+  version "1.5.0"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/state-container/-/state-container-1.5.0.tgz#49d57499376ea7599f366c062d00b37f299ccf3d"
+  integrity sha512-LQwIyc+MamSZgCqGfNEu6OzbvWcHewALkm+/lhjiMvuC8XrsGDpAj9s3/W9Kutnp9wUzBhYd57P7T8ITInWXSw==
   dependencies:
-    "@gmsoft/dva-global-context-plugin" "1.3.0"
+    "@gmsoft/dva-global-context-plugin" "1.9.1"
     "@gmsoft/dva-theme-plugin" "1.4.0"
     dva "^2.4.1"
     dva-core "^2.0.1"
     dva-loading "^2.0.6"
+    react-redux "7.1.0"
     react-router-redux "4.0.8"
     redux "^4.1.0"
 
@@ -17822,10 +17859,10 @@ stealthy-require@^1.1.1:
   resolved "http://192.168.2.10:8081/repository/npm.gm/stealthy-require/-/stealthy-require-1.1.1.tgz#35b09875b4ff49f26a777e509b3090a3226bf24b"
   integrity sha1-NbCYdbT/SfJqd35QmzCQoyJr8ks=
 
-stormrage@^2.7.8:
-  version "2.7.8"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/stormrage/-/stormrage-2.7.8.tgz#da3a2fd015e84123876d2e580a8a835dbb24ab72"
-  integrity sha512-ZhJ8SL81dSYxje+r+p1rFIs52t1WAQoj/hpGh3v+Yp7XuGAJWapEPecF2DgeyZdlX7rJK9MvnBgnDkRaPHMOag==
+stormrage@^2.8.0:
+  version "2.9.1"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/stormrage/-/stormrage-2.9.1.tgz#eca5cd43ce94ea76c74cbac7cf927b8a22bc62d2"
+  integrity sha512-ieoaJO3vkcsC/b3OHBwxaRFr2+kiS09CuZLLV92q4AJJU0atevOde2bxjsq348KlXsjS60VbbcSOVeyUsg1iIQ==
   dependencies:
     "@babel/core" "^7.7.4"
     "@babel/plugin-proposal-export-default-from" "^7.7.4"
@@ -17874,6 +17911,7 @@ stormrage@^2.7.8:
     fis3-packager-deps-pack "^0.1.2"
     fis3-parser-html-uri "^1.0.2"
     fis3-parser-less-gmsoft "^0.1.4"
+    fis3-parser-replacer "^1.0.1"
     fis3-parser-typescript-gmsoft "^1.2.4"
     fis3-postpackager-loader "^2.1.11"
     fis3-preprocessor-compatible-ie-css2js "^1.0.3"

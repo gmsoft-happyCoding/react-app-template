@@ -5,7 +5,7 @@ import { axiosSSOInterceptor } from '@gmsoft/auth-sdk';
 useResponseInterceptor(
   undefined,
   axiosSSOInterceptor({
-    djcGatewayBaseUrl: process.env.REACT_APP_DJC_GATEWAY_BASE,
+    djcGatewayBaseUrl: process.env.REACT_APP_DJC_GATEWAY,
     dispatch: stateContainer._store.dispatch,
   })
 );
