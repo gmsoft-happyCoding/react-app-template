@@ -38,6 +38,8 @@ useRequestInterceptor(
       }
     }
 
+    newConfig.params = { ...newConfig.params, __platDomain__: window.location.host };
+
     return newConfig;
   },
   error =>
