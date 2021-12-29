@@ -120,6 +120,7 @@ const webpackConfig = {
   // In production, we only want to load the app code.
   entry: [paths.appIndexJs],
   output: {
+    jsonpFunction: `webpackJsonp${require(paths.appPackageJson).name}`,
     // The build folder.
     path: paths.appBuild,
     // Generated JS file names (with nested folders).
