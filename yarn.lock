@@ -1472,8 +1472,8 @@
 
 "@gmsoft/tt-sdk@^1.1.0":
   version "1.1.0"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/@gmsoft/tt-sdk/-/tt-sdk-1.1.0.tgz#c8c4ec6476cf1d228871c394db8c3ef4faee9543"
-  integrity sha512-ntp7TxGu05Z5uxXIpy7gvI/Ab70qXb6NPq5POGI0sRoVXIFczp93Dk6qPu6vjDifTzLHnQu2jF+JFHbBNk2S5w==
+  resolved "http://192.168.2.10:8081/repository/npm.gm/@gmsoft/tt-sdk/-/tt-sdk-1.1.0.tgz#287fda4a992a066f303b23d3a02f3439fbf299ed"
+  integrity sha512-5ACugDa6z6pin8iiybalpulUVHUqKU0Vi3c0c3kjVUgieIKanZD99J07tOXS/fIZrgQRCUdGyoILNLkInzbcGA==
   dependencies:
     "@ant-design/colors" "^6.0.0"
     "@ctrl/tinycolor" "^3.4.0"
