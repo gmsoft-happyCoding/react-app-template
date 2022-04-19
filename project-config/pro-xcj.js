@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
 const DeployType = require('./common/deploy-type');
 
-const domain = 'xcjdev1.gm';
+const domain = 'gec123.com';
 
 module.exports = {
   envs: {
