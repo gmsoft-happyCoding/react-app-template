@@ -12,7 +12,7 @@
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <!-- antd css -->
-    <link href="%REACT_APP_CDN_SERVER%/antd/3.26.20-custom.2/antd.css" rel="stylesheet" />
+    <link href="%REACT_APP_CDN_SERVER%/antd/3.26.20-custom.3/antd.min.css" rel="stylesheet" />
     <!-- polyfill -->
     <script crossorigin src="%REACT_APP_CDN_SERVER%/polyfill/1.0.6/polyfill.min.js"></script>
     <!-- 
@@ -30,7 +30,7 @@
     <!-- 
       antd 非常有可能经常升级, 单独请求
     -->
-    <script crossorigin src="%REACT_APP_CDN_SERVER%/antd/3.26.20-custom.2/antd.min.js"></script>
+    <script crossorigin src="%REACT_APP_CDN_SERVER%/antd/3.26.20-custom.3/antd.min.js"></script>
     <!-- 
       history
       react-router-dom
@@ -58,7 +58,7 @@
       @gmsoft/auth-sdk
       systemjs
      -->
-    <script src="%REACT_APP_CDN_SERVER%/??dva-core/2.0.1/dva-core.min.js,dva-model-creator/0.4.3/dva-model-creator.min.js,immer/1.8.0/immer.umd.js,event-bus/1.2.0/event-bus.umd.js,axios/0.18.1/axios.min.js,state-container/1.5.0/state-container.min.js,qs/6.9.3/qs.js,auth-sdk/1.3.0/auth-sdk.umd.js,systemjs/0.21.5/system.js"></script>
+    <script src="%REACT_APP_CDN_SERVER%/??dva-core/2.0.1/dva-core.min.js,dva-model-creator/0.4.3/dva-model-creator.min.js,immer/1.8.0/immer.umd.js,event-bus/1.2.0/event-bus.umd.js,axios/0.18.1/axios.min.js,state-container/1.5.0/state-container.min.js,qs/6.9.3/qs.js,auth-sdk/1.3.0/auth-sdk.umd.js,tt-sdk/1.1.0/tt-sdk.umd.js,systemjs/0.21.5/system.js"></script>
     <!-- cdn 加载的库设置为 SystemJS 的模块, 这样 SystemJS 加载其他模块(组件)时可以找到这些公共依赖库 -->
     <script>
       <%= systemModules %>

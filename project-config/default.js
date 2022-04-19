@@ -8,7 +8,7 @@ module.exports = {
     // CDN服务器地址
     REACT_APP_CDN_SERVER: '//cdn.gm',
     // 组件注册服务器
-    REACT_APP_COMPONENT_REGISTRY_SERVER: '//registry.gmsofttest.com',
+    REACT_APP_COMPONENT_REGISTRY_SERVER: '//registry.xcjdev1.gm',
   },
   // plugins: [require('./plugins/plugin-demo')],
 };

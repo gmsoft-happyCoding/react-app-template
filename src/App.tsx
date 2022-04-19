@@ -1,13 +1,14 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { Router } from 'react-router-dom';
-import CloudComponent, { loadComponent } from '@/components/CloudComponent';
 import { useRestore } from 'gm-react-hanger';
+import { Themeable } from '@gmsoft/tt-sdk';
+import CloudComponent, { loadComponent } from '@/components/CloudComponent';
 import WhatToEat from './components/WhatToEat';
 import { Mode } from './enums/Mode';
 import { stateContainer } from './utils';
 
-// 通过组件名字 从 registry.gmsoftdev.com 加载
+// 通过组件名字 从 registry.xcjdev1.gm 加载
 const CloudWhatToEat = loadComponent({ name: 'test-project/WhatToEat' });
 
 const App = () => {
@@ -20,14 +21,16 @@ const App = () => {
 
   return (
     <Provider store={stateContainer._store}>
-      <Router history={stateContainer._history}>
-        <>
-          <WhatToEat defaultMode={Mode.DRAW} />
-          <CloudWhatToEat />
-          {/* 通过组件名字 从 registry.gmsoftdev.com 加载 */}
-          <CloudComponent name="test-project/WhatToEat" defaultMode="search" />
-        </>
-      </Router>
+      <Themeable djcGatewayBaseUrl={process.env.REACT_APP_DJC_GATEWAY_BASE} colorScheme="light">
+        <Router history={stateContainer._history}>
+          <>
+            <WhatToEat defaultMode={Mode.DRAW} />
+            <CloudWhatToEat />
+            {/* 通过组件名字 从 registry.xcjdev1.gm 加载 */}
+            <CloudComponent name="test-project/WhatToEat" defaultMode="search" />
+          </>
+        </Router>
+      </Themeable>
     </Provider>
   );
 };

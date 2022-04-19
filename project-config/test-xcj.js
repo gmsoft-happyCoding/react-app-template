@@ -7,7 +7,7 @@ module.exports = {
     // 应用部署的域名和子路径
     REACT_APP_PUBLIC_URL: '//www.test.com/{{projectName}}',
     // 组件注册服务器
-    REACT_APP_COMPONENT_REGISTRY_SERVER: '//registry.gmsofttest.com',
+    REACT_APP_COMPONENT_REGISTRY_SERVER: '//registry.xcjdev1.gm',
     // 网关服务器base路径
     REACT_APP_API_GATEWAY_BASE: '//www.test.com/demo/demo-gateway',
     // 基础服务网关

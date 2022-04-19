@@ -145,4 +145,10 @@ module.exports = (global = 'var') => ({
     commonjs: '@gmsoft/auth-sdk',
     commonjs2: '@gmsoft/auth-sdk',
   },
+  '@gmsoft/tt-sdk': {
+    [global]: 'TTSDK',
+    amd: '@gmsoft/tt-sdk',
+    commonjs: '@gmsoft/tt-sdk',
+    commonjs2: '@gmsoft/tt-sdk',
+  },
 });
