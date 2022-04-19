@@ -1,17 +1,19 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
 const DeployType = require('./common/deploy-type');
 
+const domain = 'xcjdev1.gm';
+
 module.exports = {
   envs: {
     REACT_APP_GENERATE_SOURCEMAP: true,
     // 应用部署的域名和子路径
-    REACT_APP_PUBLIC_URL: '//www.test.com/{{projectName}}',
+    REACT_APP_PUBLIC_URL: `//www.${domain}/{{projectName}}`,
     // 组件注册服务器
-    REACT_APP_COMPONENT_REGISTRY_SERVER: '//registry.xcjdev1.gm',
+    REACT_APP_COMPONENT_REGISTRY_SERVER: `//registry.${domain}`,
     // 网关服务器base路径
-    REACT_APP_API_GATEWAY_BASE: '//www.test.com/demo/demo-gateway',
+    REACT_APP_API_GATEWAY_BASE: `//www.${domain}/demo-gateway`,
     // 基础服务网关
-    REACT_APP_DJC_GATEWAY_BASE: '//www.test.com/djc-gateway',
+    REACT_APP_DJC_GATEWAY_BASE: `//www.${domain}/djc-gateway`,
     // 发布部署, 建议配置不然每次都需要交互设置
     REACT_APP_DEPLOY_TYPE: DeployType.SCP,
     /**
