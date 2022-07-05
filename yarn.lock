@@ -2355,10 +2355,10 @@
     js-sha1 "^0.6.0"
     ua-parser-js "^0.7.19"
 
-"@gmsoft/tt-sdk@^1.1.0":
-  version "1.1.0"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/@gmsoft/tt-sdk/-/tt-sdk-1.1.0.tgz#084a4c7fcf53f608edc6f9cf26c04c432fc68a07"
-  integrity sha512-55Px+QR+ugc1WM3uerHMcR3j9YD9JzuK7OcYGDNYvsFOMEOo/Jt2e3HMboCApIxx0uPHM1efuSaXMqIF7a95aA==
+"@gmsoft/tt-sdk@^1.2.0":
+  version "1.2.0"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/@gmsoft/tt-sdk/-/tt-sdk-1.2.0.tgz#e9d4d1d0434b77684070796f25e7dfbab16415de"
+  integrity sha512-ZDa3/I30zlF4GDYD+XSCemNCsW4wjy1qKReXhREvVQ8CiT793MJgAtjBvZncHoVI5P9Efmj+63in2d8K9+Uq+Q==
   dependencies:
     "@ant-design/colors" "^6.0.0"
     "@ctrl/tinycolor" "^3.4.0"
