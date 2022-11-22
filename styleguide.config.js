@@ -39,7 +39,7 @@ const scripts = [
   'state-container/1.5.0/state-container.js',
   'qs/6.9.3/qs.js',
   'auth-sdk/1.4.0/auth-sdk.umd.js',
-  'tt-sdk/1.2.0/tt-sdk.umd.js',
+  'tt-sdk/1.3.0/tt-sdk.umd.js',
   'systemjs/0.21.5/system.src.js',
 ];
 
