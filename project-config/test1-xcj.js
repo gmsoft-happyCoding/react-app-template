@@ -21,8 +21,7 @@ module.exports = {
      * see: https://192.168.2.10:8080/svn/GovProEleTrade/安装与配置/部署配置/发布配置 or your .deployrc config info
      */
     REACT_APP_DEPLOY_MACHINES: [
-      { machine: 'machine1', where: [{ rootKey: 'nginx.websrc', path: '{{projectName}}' }] },
-      { machine: 'machine2', where: [{ rootKey: 'nginx.websrc', path: '{{projectName}}' }] },
+      { machine: 'machine01', where: [{ rootKey: 'nginx.websrc', path: '{{projectName}}' }] },
     ],
   },
 };
