@@ -24,7 +24,7 @@
     "@types/react-router-dom": "^5.1.7",
     "@types/redux-actions": "^2.3.1",
     "@types/styled-components": "^5.1.5",
-    "antd": "3.26.20-custom.3",
+    "antd": "3.26.20-custom.4",
     "axios": "0.18.1",
     "cloud-component": "^0.5.0",
     "dva": "^2.4.1",

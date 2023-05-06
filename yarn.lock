@@ -4306,10 +4306,10 @@ antd@3.26.20-custom.2:
     shallowequal "^1.1.0"
     warning "~4.0.3"
 
-antd@3.26.20-custom.3:
-  version "3.26.20-custom.3"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/antd/-/antd-3.26.20-custom.3.tgz#76962e44acb2d00fd77ee9a0bb5a7fb83e6d7143"
-  integrity sha512-zhHk79DjINE6hzcIf9bjKSPZ1mrfsISD22sG+60xsNauKWw/gd+7hJb69Ta2hLvXi6MzxkafqSEG1cieOWQKMw==
+antd@3.26.20-custom.4:
+  version "3.26.20-custom.4"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/antd/-/antd-3.26.20-custom.4.tgz#27861b185b9ac1432c46d4acabcbd6567f70fdf2"
+  integrity sha512-Pic28wbS3E2ECgTkHiB/4SeV9ij/VD//U38VnzBP/hTMLq73DLjZng/A4qgA9PjMmmOSKhb5aZKfwoFxqUo24g==
   dependencies:
     "@ant-design/create-react-context" "^0.2.4"
     "@ant-design/icons" "~2.1.1"
@@ -4329,7 +4329,7 @@ antd@3.26.20-custom.3:
     prop-types "^15.7.2"
     raf "^3.4.1"
     rc-animate "^2.10.2"
-    rc-calendar-gmsoft "~9.15.8"
+    rc-calendar-gmsoft "9.15.10"
     rc-cascader "~0.17.4"
     rc-checkbox "~2.1.6"
     rc-collapse "~1.11.3"
@@ -16459,6 +16459,19 @@ rc-animate@^3.0.0-rc.1:
     classnames "^2.2.6"
     raf "^3.4.0"
     rc-util "^5.0.1"
+
+rc-calendar-gmsoft@9.15.10:
+  version "9.15.10"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/rc-calendar-gmsoft/-/rc-calendar-gmsoft-9.15.10.tgz#87ef640f68f3a05226e3897dff96bdfb9e74168b"
+  integrity sha512-mIH0HSXiI2gSBbUBgQ3udv7hRS/3O4ueAGQAKNKNbS4Eo49azSWIr3hFb+to1/Sr/V2emAk6PPzRb58Y8NuAmQ==
+  dependencies:
+    babel-runtime "6.x"
+    classnames "2.x"
+    moment "2.x"
+    prop-types "^15.5.8"
+    rc-trigger "^2.2.0"
+    rc-util "^4.1.1"
+    react-lifecycles-compat "^3.0.4"
 
 rc-calendar-gmsoft@~9.15.8:
   version "9.15.8"
