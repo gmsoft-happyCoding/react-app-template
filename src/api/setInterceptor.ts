@@ -3,6 +3,7 @@ import { axiosTokenInterceptor } from '@gmsoft/auth-sdk';
 import { AxiosInstance } from 'axios';
 
 export default (instance: AxiosInstance) => {
+  // @ts-ignore
   instance.interceptors.request.use(axiosTokenInterceptor());
 
   const errorHandler = error => {

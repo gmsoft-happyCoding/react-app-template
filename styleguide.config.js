@@ -35,7 +35,7 @@ const scripts = [
   'dva-model-creator/0.4.3/dva-model-creator.js',
   'immer/1.8.0/immer.umd.js',
   'event-bus/1.2.0/event-bus.umd.js',
-  'axios/0.18.1/axios.js',
+  'axios/0.24.0/axios.js',
   'state-container/1.5.0/state-container.js',
   'qs/6.9.3/qs.js',
   'auth-sdk/1.6.0/auth-sdk.umd.js',
