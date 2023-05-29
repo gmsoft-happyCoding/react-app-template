@@ -24,7 +24,7 @@ const typescriptFormatter = require('react-dev-utils/typescriptFormatter');
 const getClientEnvironment = require('./env');
 const paths = require('./paths');
 const externals = require('./externals');
-const systemModules = require('./systemModules');
+const systemScripts = require('./systemScripts');
 
 // Webpack uses `publicPath` to determine where the app is being served from.
 // It requires a trailing slash, or the file assets will get an incorrect path.
@@ -133,6 +133,7 @@ const webpackConfig = {
     // Point sourcemap entries to original disk location (format as URL on Windows)
     devtoolModuleFilenameTemplate: info =>
       path.relative(paths.appSrc, info.absoluteResourcePath).replace(/\\/g, '/'),
+    libraryTarget: 'umd',
   },
   optimization: {
     minimizer: [
@@ -411,7 +412,7 @@ const webpackConfig = {
       inject: true,
       template: paths.appHtml,
       templateParameters: {
-        systemModules,
+        systemScripts,
       },
       minify: {
         removeComments: true,
@@ -506,18 +507,18 @@ const webpackConfig = {
         silent: true,
         formatter: typescriptFormatter,
       }),
-      new ESLintPlugin({
-        // Plugin options
-        extensions: ['js', 'mjs', 'jsx', 'ts', 'tsx'],
-        formatter: require.resolve('react-dev-utils/eslintFormatter'),
-        eslintPath: require.resolve('eslint'),
-        context: paths.appSrc,
-        cache: true,
-        cacheLocation: path.resolve(paths.appNodeModules, '.cache/.eslintcache'),
-        // ESLint class options
-        cwd: paths.appPath,
-        resolvePluginsRelativeTo: __dirname,
-      }),
+    new ESLintPlugin({
+      // Plugin options
+      extensions: ['js', 'mjs', 'jsx', 'ts', 'tsx'],
+      formatter: require.resolve('react-dev-utils/eslintFormatter'),
+      eslintPath: require.resolve('eslint'),
+      context: paths.appSrc,
+      cache: true,
+      cacheLocation: path.resolve(paths.appNodeModules, '.cache/.eslintcache'),
+      // ESLint class options
+      cwd: paths.appPath,
+      resolvePluginsRelativeTo: __dirname,
+    }),
   ].filter(Boolean),
   // Some libraries import Node modules but don't use them in the browser.
   // Tell Webpack to provide empty mocks for them so importing them works.

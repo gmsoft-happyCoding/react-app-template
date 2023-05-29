@@ -20,7 +20,7 @@ const typescriptFormatter = require('react-dev-utils/typescriptFormatter');
 const paths = require('./paths');
 const getClientEnvironment = require('./env');
 const externals = require('./externals');
-const systemModules = require('./systemModules');
+const systemScripts = require('./systemScripts');
 
 // Webpack uses `publicPath` to determine where the app is being served from.
 // In development, we always serve from the root. This makes config easier.
@@ -105,6 +105,7 @@ module.exports = {
     // Point sourcemap entries to original disk location (format as URL on Windows)
     devtoolModuleFilenameTemplate: info =>
       path.resolve(info.absoluteResourcePath).replace(/\\/g, '/'),
+    libraryTarget: 'umd',
   },
   optimization: {
     // Automatically split vendor and commons
@@ -310,7 +311,7 @@ module.exports = {
       inject: true,
       template: paths.appHtml,
       templateParameters: {
-        systemModules,
+        systemScripts,
       },
     }),
     // Makes some environment variables available in index.html.

@@ -19614,11 +19614,6 @@ symbol-tree@^3.2.2:
   resolved "http://192.168.2.10:8081/repository/npm.gm/symbol-tree/-/symbol-tree-3.2.4.tgz#430637d248ba77e078883951fb9aa0eed7c63fa2"
   integrity sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==
 
-systemjs@0.21.5:
-  version "0.21.5"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/systemjs/-/systemjs-0.21.5.tgz#2fcef4edfe744003da4787f3f3d45d73f94462d2"
-  integrity sha512-GWzZhN/x7Fsae2CYkz2GF7OgOS+YDgKulcgd5L1kTogZHMKDrPx5T8zI8I0y5RoU9Dx78Z7j1XMfuFa1thD84A==
-
 table@^5.2.3:
   version "5.4.6"
   resolved "http://192.168.2.10:8081/repository/npm.gm/table/-/table-5.4.6.tgz#1292d19500ce3f86053b05f0e8e7e4a3bb21079e"

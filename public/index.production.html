@@ -13,57 +13,12 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <!-- antd css -->
     <link href="%REACT_APP_CDN_SERVER%/antd/3.26.20-custom.4/antd.min.css" rel="stylesheet" />
+
     <!-- polyfill -->
     <script crossorigin src="%REACT_APP_CDN_SERVER%/polyfill/1.0.6/polyfill.min.js"></script>
-    <!-- 
-      可能会经常升级的放到一组
-      react
-      react-is
-      react-dom
-      moment
-      styled-components
-    -->
-    <script
-      crossorigin
-      src="%REACT_APP_CDN_SERVER%/??react/17.0.1/react.production.min.js,react-is/17.0.1/react-is.production.min.js,react-dom/17.0.1/react-dom.production.min.js,moment/2.27.0/moment.min.js,moment/2.27.0/locale.zh-cn.js,moment/use-locale.js,styled-components/5.2.1/styled-components.min.js"
-    ></script>
-    <!-- 
-      antd 非常有可能经常升级, 单独请求
-    -->
-    <script crossorigin src="%REACT_APP_CDN_SERVER%/antd/3.26.20-custom.4/antd.min.js"></script>
-    <!-- 
-      history
-      react-router-dom
-      redux
-      redux-saga
-      react-router-redux
-      react-redux
-      redux-actions
-      reselect 
-      react-virtualized
-      react-virtualized-tree
-    -->
-    <script
-      crossorigin
-      src="%REACT_APP_CDN_SERVER%/??history/4.7.2/history.min.js,react-router-dom/5.2.0/react-router-dom.min.js,redux/4.0.1/redux.min.js,redux-saga/0.16.2/redux-saga.min.js,react-router-redux/4.0.8/ReactRouterRedux.min.js,react-redux/7.1.0/react-redux.min.js,redux-actions/2.6.4/redux-actions.min.js,reselect/4.0.0/reselect.min.js,react-virtualized/9.21.0/react-virtualized.min.js,react-virtualized-tree/2.0.2/react-virtualized-tree.min.js"
-    ></script>
-    <!-- 
-      dva-core
-      dva-model-creator
-      immer
-      event-bus
-      state-container
-      axios
-      qs
-      @gmsoft/auth-sdk
-      @gmsoft/tt-sdk
-      systemjs
-     -->
-    <script src="%REACT_APP_CDN_SERVER%/??dva-core/2.0.1/dva-core.min.js,dva-model-creator/0.4.3/dva-model-creator.min.js,immer/1.8.0/immer.umd.js,event-bus/1.2.0/event-bus.umd.js,axios/0.24.0/axios.min.js,state-container/1.5.0/state-container.min.js,qs/6.9.3/qs.js,auth-sdk/1.6.0/auth-sdk.umd.js,tt-sdk/1.4.0/tt-sdk.umd.js,systemjs/0.21.5/system.js"></script>
-    <!-- cdn 加载的库设置为 SystemJS 的模块, 这样 SystemJS 加载其他模块(组件)时可以找到这些公共依赖库 -->
-    <script>
-      <%= systemModules %>
-    </script>
+
+    <!-- 加载 systemjs 相关脚本 -->
+    <%= systemScripts %>
     <!--
       Notice the use of % PUBLIC_URL % in the tags above. It will be replaced with the URL of the`public` folder
       during the build. Only files inside the`public` folder can be referenced from the HTML. Unlike "/favicon.ico" or
