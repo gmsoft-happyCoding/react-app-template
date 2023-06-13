@@ -1,10 +1,13 @@
 business:
-  # 项目名称
+  # （必须）项目名：此名称将决定make产生的成品文件在成品库中的名称，deploy阶段将使用此名称作为项目名进行部署
   project-name: '{{projectName}}'
-  # 部署路径
-  public-url: '//${hosts.zcj}/{{projectName}}'
-  # 标记军医大环境
-  isJYD: true
+  # （必须）项目部署位置
+  public-url: //localhost:3000/{{projectName}}
+  CDN_SERVER: //cdn.gm
+  COMPONENT_REGISTRY_SERVER: //registry.cqzcjtest1.gm
+  ZCJ_DOMAIN: //www.cqzcjtest1.gm
+  XCJ_DOMAIN: //www.xcjtest1.gm
+
 # 网关配置
 gateway:
   djc: /djc-gateway
