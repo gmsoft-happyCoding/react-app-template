@@ -4,6 +4,9 @@
   "private": true,
   "scripts": {
     "start": "stormrage start",
+    "start-next": "stormrage start -n",
+    "make": "stormrage make",
+    "deploy": "stormrage deploy {{projectDeployName}}",
     "test": "stormrage test",
     "doc": "stormrage doc",
     "genapi": "stormrage genapi",
