@@ -12,7 +12,7 @@ import angularBreadcrumb from 'angular-breadcrumb';
 const domainRegx = /(http(s)?:)?\/\/(?:[a-z0-9](?:[a-z0-9-_]{0,61}[a-z0-9])?(\.|:))+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]/;
 
 const frameRoute = createFrameRoute({
-  proxyDomain: domainRegx.exec(process.env.REACT_APP_PUBLIC_URL)[0],
+  proxyDomain: domainRegx.exec(process.env['business.public-url'])[0],
 });
 
 const moduleId = 'template-app.router';

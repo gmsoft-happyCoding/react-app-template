@@ -17,15 +17,10 @@ function getBasePath(url?: string) {
   const result = regx.exec(url);
   if (!result) return '';
   /* eslint-disable indent */
-  return result[1]
-    ? `/${result[2]
-        .split('/')
-        .slice(2)
-        .join('/')}`
-    : result[2];
+  return result[1] ? `/${result[2].split('/').slice(2).join('/')}` : result[2];
 }
 
 export default () => {
-  const basePath = getBasePath(process.env.REACT_APP_PUBLIC_URL);
+  const basePath = getBasePath(process.env['business.public-url']);
   return `${basePath === '/' ? '' : basePath}`;
 };

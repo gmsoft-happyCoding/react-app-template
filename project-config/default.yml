@@ -1,0 +1,36 @@
+business:
+  # 项目名称
+  project-name: '{{projectName}}'
+  # 部署路径
+  public-url: '//${hosts.zcj}/{{projectName}}'
+  # 标记军医大环境
+  isJYD: true
+# 网关配置
+gateway:
+  djc: /djc-gateway
+  xcj: /xcj-gateway
+  yw: /yw-gateway
+  zcj: /gwebsite
+# 域名配置
+hosts:
+  account: account.xcjtest1.gm
+  cdn: cdn.gm
+  component-registry-server: registry.xcjtest1.gm
+  djc: www.djctest1.gm
+  djc-domain: djctest1.gm
+  file: www.xcjtest1.gm
+  fp: fp.cqzcjtest1.gm
+  glxt-domain: 192.168.2.22
+  xcj: www.xcjtest1.gm
+  xcj-domain: xcjtest1.gm
+  xcjsc: xcjsc.xcjtest1.gm
+  xunbi: xunbi.cqzcjtest1.gm
+  xygh: xygh.xcjtest1.gm
+  zcj: www.cqzcjtest1.gm
+  zcj-domain: cqzcjtest1.gm
+# PDF预览地址
+pdf-preview:
+  xcj: //www.xcjtest1.gm/pdf-viewer?disableAutoFetch=true&disableStream=true&
+  xcj-print: //www.xcjtest1.gm/pdf-viewer?disableAutoFetch=false&disableStream=true&
+  zcj: //www.cqzcjtest1.gm/pdf-viewer?disableAutoFetch=true&disableStream=true&
+  zcj-print: //www.cqzcjtest1.gm/pdf-viewer?disableAutoFetch=false&disableStream=true&

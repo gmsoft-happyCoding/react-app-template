@@ -6,7 +6,7 @@ const externals = require('./config/externals');
 const getClientEnvironment = require('./config/env');
 
 const env = getClientEnvironment();
-const cdnServer = env.raw.REACT_APP_CDN_SERVER;
+const cdnServer = env.raw['business.CDN_SERVER'];
 
 const links = ['antd/3.26.20-custom.4/antd.css'];
 

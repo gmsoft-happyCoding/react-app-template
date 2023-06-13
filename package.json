@@ -1,5 +1,6 @@
 {
   "name": "{{projectName}}",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "stormrage start",
@@ -53,6 +54,6 @@
     "styled-components": "^5.2.1"
   },
   "devDependencies": {
-    "stormrage": "2.9.6"
+    "stormrage": "^3.0.0-beta.10"
   }
 }

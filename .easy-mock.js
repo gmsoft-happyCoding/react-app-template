@@ -12,13 +12,13 @@ module.exports = {
       name: 'whatToEat',
       // urlPreprocessor: url => url.replace('/demo-gateway', ''),
       // 如果baseUrl为字符串请使用 "'baseUrl'"
-      baseUrl: 'process.env.REACT_APP_API_GATEWAY_BASE',
+      baseUrl: "process.env['gateway.djc']",
     },
     {
       // easy-mock project http://easy-mock.gm/project/5c7c941504e77820f451b643
       id: '5c7c941504e77820f451b643',
       name: 'componentRegistry',
-      baseUrl: 'process.env.REACT_APP_COMPONENT_REGISTRY_SERVER',
+      baseUrl: "process.env['business.COMPONENT_REGISTRY_SERVER']",
     },
   ],
 };
