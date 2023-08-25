@@ -155,8 +155,8 @@ module.exports = () => ({
     commonjs: '@gmsoft/event-bus',
     commonjs2: '@gmsoft/event-bus',
     cdn: {
-      development: `${process.env.REACT_APP_CDN_SERVER}/event-bus/1.2.0/event-bus.umd.js`,
-      production: `${process.env.REACT_APP_CDN_SERVER}/event-bus/1.2.0/event-bus.umd.js`,
+      development: `${process.env.REACT_APP_CDN_SERVER}/event-bus/1.3.2/event-bus.umd.js`,
+      production: `${process.env.REACT_APP_CDN_SERVER}/event-bus/1.3.2/event-bus.umd.js`,
     },
   },
   'state-container': {
