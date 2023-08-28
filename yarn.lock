@@ -2328,10 +2328,10 @@
     state-container "1.5.0"
     styled-components "^5.3.0"
 
-"@gmsoft/auth-sdk@1.6.0":
-  version "1.6.0"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/@gmsoft/auth-sdk/-/auth-sdk-1.6.0.tgz#8928fe15fd7fba534dfd3f3c8b458ad67795902d"
-  integrity sha512-xVwpY3NTp6icxB+un1oQjXMBB5z/K6+4ZGB5WIAaXCI/yl/iQ0tOU+3uL5rsKczm7AmmddweDgqmR0ncEYF0RA==
+"@gmsoft/auth-sdk@1.6.1":
+  version "1.6.1"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/@gmsoft/auth-sdk/-/auth-sdk-1.6.1.tgz#e9d063e7c93ab9d734430e74462bd48d6dd4b99d"
+  integrity sha512-9DQhbijhXvC/HTZntXhcIQZYWno9KvsVQ4r6tix2NCMViIk9LlV7qv4W2It01kZ8MmJNjzCAvXKBz/Anog6+mg==
   dependencies:
     "@gmsoft/ui" "^1.12.3"
     antd "3.26.20-custom.2"

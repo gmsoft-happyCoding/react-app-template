@@ -225,8 +225,8 @@ module.exports = () => ({
     commonjs: '@gmsoft/auth-sdk',
     commonjs2: '@gmsoft/auth-sdk',
     cdn: {
-      development: `${process.env.REACT_APP_CDN_SERVER}/auth-sdk/1.6.0/auth-sdk.umd.js`,
-      production: `${process.env.REACT_APP_CDN_SERVER}/auth-sdk/1.6.0/auth-sdk.umd.js`,
+      development: `${process.env.REACT_APP_CDN_SERVER}/auth-sdk/1.6.1/auth-sdk.umd.js`,
+      production: `${process.env.REACT_APP_CDN_SERVER}/auth-sdk/1.6.1/auth-sdk.umd.js`,
     },
   },
   '@gmsoft/tt-sdk': {
