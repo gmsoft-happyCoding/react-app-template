@@ -53,6 +53,6 @@
     "styled-components": "^5.2.1"
   },
   "devDependencies": {
-    "stormrage": "2.9.6"
+    "stormrage": "2.9.10"
   }
 }
