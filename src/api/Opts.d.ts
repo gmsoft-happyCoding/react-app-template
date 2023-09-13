@@ -1,7 +1,10 @@
-import { AxiosRequestConfig } from "axios";
+import { AxiosRequestConfig } from 'axios';
 
 // 如果有额外的配置项, 请在此声明类型
-type Extend = {};
+type Extend = {
+  // 拦截器不显错误信息
+  interceptorIgnoreError?: true;
+};
 
 interface PathParam {
   path: { [key: string]: string };
