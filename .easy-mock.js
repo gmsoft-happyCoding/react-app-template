@@ -18,7 +18,7 @@ module.exports = {
       // easy-mock project http://easy-mock.gm/project/5c7c941504e77820f451b643
       id: '5c7c941504e77820f451b643',
       name: 'componentRegistry',
-      baseUrl: "process.env['hosts.component-registry-server']",
+      baseUrl: "process.env['business.component-registry-server']",
     },
   ],
 };

@@ -1,12 +1,19 @@
-hosts:
+business:
+  # （必须）项目部署位置
+  public-url: //localhost:3000/{{projectName}}-app
 
+  # 组件注册地址
+  component-registry-server: //registry.xcjdev1.gm
+
+  # CDN服务器地址
+  cdn: //cdn.gm
+
+hosts:
   # 部署域
   domain: ${hosts.zw-domain}
-
-  #  CDN服务器地址
-  component-registry-server: ${hosts.component-registry-server}
-
 
 gateway:
   # 网关服务器base路径
   REACT_APP_API_GATEWAY_BASE: 'http://easy-mock.gm/mock/5c514bf9cd2f550e9dfbb515/'
+
+  djc: '/djc-gateway'

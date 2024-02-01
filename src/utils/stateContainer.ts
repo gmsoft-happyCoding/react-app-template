@@ -3,7 +3,7 @@ import history from './history';
 
 const stateContainer = create({
   history,
-  NODE_ENV: process.env['NODE_ENV'],
+  NODE_ENV: process.env.NODE_ENV,
   useGlobalContextPlugin: true,
   globalContextOpts: {
     appName: '{{projectName}}',
