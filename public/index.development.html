@@ -2,7 +2,7 @@
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="shortcut icon" href="%business.public-url%/favicon.ico" />
     <meta name="description" content="{{ projectDescription }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="theme-color" content="#000000" />
@@ -10,12 +10,12 @@
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="manifest" href="%business.public-url%/manifest.json" />
     <!-- antd css -->
-    <link href="%REACT_APP_CDN_SERVER%/antd/3.26.20-custom.4/antd.css" rel="stylesheet" />
+    <link href="%host.cdn%/antd/3.26.20-custom.4/antd.css" rel="stylesheet" />
 
     <!-- polyfill -->
-    <script crossorigin src="%REACT_APP_CDN_SERVER%/polyfill/1.0.6/polyfill.js"></script>
+    <script crossorigin src="%host.cdn%/polyfill/1.0.6/polyfill.js"></script>
 
     <!-- 加载 systemjs 相关脚本 -->
     <%= systemScripts %>

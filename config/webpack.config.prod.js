@@ -160,6 +160,7 @@ const webpackConfig = {
             // Pending futher investigation:
             // https://github.com/terser-js/terser/issues/120
             inline: 2,
+            evaluate: false,
           },
           mangle: {
             safari10: true,

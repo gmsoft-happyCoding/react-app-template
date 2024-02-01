@@ -5,8 +5,8 @@ module.exports = () => ({
     commonjs: 'react',
     commonjs2: 'react',
     cdn: {
-      development: `${process.env.REACT_APP_CDN_SERVER}/react/17.0.1/react.development.js`,
-      production: `${process.env.REACT_APP_CDN_SERVER}/react/17.0.1/react.production.min.js`,
+      development: `${process.env['hosts.cdn']}/react/17.0.1/react.development.js`,
+      production: `${process.env['hosts.cdn']}/react/17.0.1/react.production.min.js`,
     },
   },
   'react-is': {
@@ -15,8 +15,8 @@ module.exports = () => ({
     commonjs: 'react-is',
     commonjs2: 'react-is',
     cdn: {
-      development: `${process.env.REACT_APP_CDN_SERVER}/react-is/17.0.1/react-is.development.js`,
-      production: `${process.env.REACT_APP_CDN_SERVER}/react-is/17.0.1/react-is.production.min.js`,
+      development: `${process.env['hosts.cdn']}/react-is/17.0.1/react-is.development.js`,
+      production: `${process.env['hosts.cdn']}/react-is/17.0.1/react-is.production.min.js`,
     },
   },
   'react-dom': {
@@ -25,8 +25,8 @@ module.exports = () => ({
     commonjs: 'react-dom',
     commonjs2: 'react-dom',
     cdn: {
-      development: `${process.env.REACT_APP_CDN_SERVER}/react-dom/17.0.1/react-dom.development.js`,
-      production: `${process.env.REACT_APP_CDN_SERVER}/react-dom/17.0.1/react-dom.production.min.js`,
+      development: `${process.env['hosts.cdn']}/react-dom/17.0.1/react-dom.development.js`,
+      production: `${process.env['hosts.cdn']}/react-dom/17.0.1/react-dom.production.min.js`,
     },
   },
   'styled-components': {
@@ -35,8 +35,8 @@ module.exports = () => ({
     commonjs: 'styled-components',
     commonjs2: 'styled-components',
     cdn: {
-      development: `${process.env.REACT_APP_CDN_SERVER}/styled-components/5.2.1/styled-components.js`,
-      production: `${process.env.REACT_APP_CDN_SERVER}/styled-components/5.2.1/styled-components.min.js`,
+      development: `${process.env['hosts.cdn']}/styled-components/5.2.1/styled-components.js`,
+      production: `${process.env['hosts.cdn']}/styled-components/5.2.1/styled-components.min.js`,
     },
   },
   antd: {
@@ -45,8 +45,8 @@ module.exports = () => ({
     commonjs: 'antd',
     commonjs2: 'antd',
     cdn: {
-      development: `${process.env.REACT_APP_CDN_SERVER}/antd/3.26.20-custom.4/antd.js`,
-      production: `${process.env.REACT_APP_CDN_SERVER}/antd/3.26.20-custom.4/antd.min.js`,
+      development: `${process.env['hosts.cdn']}/antd/3.26.20-custom.4/antd.js`,
+      production: `${process.env['hosts.cdn']}/antd/3.26.20-custom.4/antd.min.js`,
     },
   },
   moment: {
@@ -55,8 +55,8 @@ module.exports = () => ({
     commonjs: 'moment',
     commonjs2: 'moment',
     cdn: {
-      development: `${process.env.REACT_APP_CDN_SERVER}/moment/2.29.4/moment.js`,
-      production: `${process.env.REACT_APP_CDN_SERVER}/moment/2.29.4/moment.min.js`,
+      development: `${process.env['hosts.cdn']}/moment/2.29.4/moment.js`,
+      production: `${process.env['hosts.cdn']}/moment/2.29.4/moment.min.js`,
     },
   },
   history: {
@@ -65,8 +65,8 @@ module.exports = () => ({
     commonjs: 'history',
     commonjs2: 'history',
     cdn: {
-      development: `${process.env.REACT_APP_CDN_SERVER}/history/4.7.2/history.js`,
-      production: `${process.env.REACT_APP_CDN_SERVER}/history/4.7.2/history.min.js`,
+      development: `${process.env['hosts.cdn']}/history/4.7.2/history.js`,
+      production: `${process.env['hosts.cdn']}/history/4.7.2/history.min.js`,
     },
   },
   'react-router-dom': {
@@ -75,8 +75,8 @@ module.exports = () => ({
     commonjs: 'react-router-dom',
     commonjs2: 'react-router-dom',
     cdn: {
-      development: `${process.env.REACT_APP_CDN_SERVER}/react-router-dom/5.2.0/react-router-dom.js`,
-      production: `${process.env.REACT_APP_CDN_SERVER}/react-router-dom/5.2.0/react-router-dom.min.js`,
+      development: `${process.env['hosts.cdn']}/react-router-dom/5.2.0/react-router-dom.js`,
+      production: `${process.env['hosts.cdn']}/react-router-dom/5.2.0/react-router-dom.min.js`,
     },
   },
   redux: {
@@ -85,8 +85,8 @@ module.exports = () => ({
     commonjs: 'redux',
     commonjs2: 'redux',
     cdn: {
-      development: `${process.env.REACT_APP_CDN_SERVER}/redux/4.0.1/redux.js`,
-      production: `${process.env.REACT_APP_CDN_SERVER}/redux/4.0.1/redux.min.js`,
+      development: `${process.env['hosts.cdn']}/redux/4.0.1/redux.js`,
+      production: `${process.env['hosts.cdn']}/redux/4.0.1/redux.min.js`,
     },
   },
   'redux-saga': {
@@ -95,8 +95,8 @@ module.exports = () => ({
     commonjs: 'redux-saga',
     commonjs2: 'redux-saga',
     cdn: {
-      development: `${process.env.REACT_APP_CDN_SERVER}/redux-saga/0.16.2/redux-saga.js`,
-      production: `${process.env.REACT_APP_CDN_SERVER}/redux-saga/0.16.2/redux-saga.min.js`,
+      development: `${process.env['hosts.cdn']}/redux-saga/0.16.2/redux-saga.js`,
+      production: `${process.env['hosts.cdn']}/redux-saga/0.16.2/redux-saga.min.js`,
     },
   },
   'react-router-redux': {
@@ -105,8 +105,8 @@ module.exports = () => ({
     commonjs: 'react-router-redux',
     commonjs2: 'react-router-redux',
     cdn: {
-      development: `${process.env.REACT_APP_CDN_SERVER}/react-router-redux/4.0.8/ReactRouterRedux.js`,
-      production: `${process.env.REACT_APP_CDN_SERVER}/react-router-redux/4.0.8/ReactRouterRedux.min.js`,
+      development: `${process.env['hosts.cdn']}/react-router-redux/4.0.8/ReactRouterRedux.js`,
+      production: `${process.env['hosts.cdn']}/react-router-redux/4.0.8/ReactRouterRedux.min.js`,
     },
   },
   'react-redux': {
@@ -115,8 +115,8 @@ module.exports = () => ({
     commonjs: 'react-redux',
     commonjs2: 'react-redux',
     cdn: {
-      development: `${process.env.REACT_APP_CDN_SERVER}/react-redux/7.1.0/react-redux.js`,
-      production: `${process.env.REACT_APP_CDN_SERVER}/react-redux/7.1.0/react-redux.min.js`,
+      development: `${process.env['hosts.cdn']}/react-redux/7.1.0/react-redux.js`,
+      production: `${process.env['hosts.cdn']}/react-redux/7.1.0/react-redux.min.js`,
     },
   },
   'redux-actions': {
@@ -125,8 +125,8 @@ module.exports = () => ({
     commonjs: 'redux-actions',
     commonjs2: 'redux-actions',
     cdn: {
-      development: `${process.env.REACT_APP_CDN_SERVER}/redux-actions/2.6.4/redux-actions.js`,
-      production: `${process.env.REACT_APP_CDN_SERVER}/redux-actions/2.6.4/redux-actions.min.js`,
+      development: `${process.env['hosts.cdn']}/redux-actions/2.6.4/redux-actions.js`,
+      production: `${process.env['hosts.cdn']}/redux-actions/2.6.4/redux-actions.min.js`,
     },
   },
   'dva-core': {
@@ -135,8 +135,8 @@ module.exports = () => ({
     commonjs: 'dva-core',
     commonjs2: 'dva-core',
     cdn: {
-      development: `${process.env.REACT_APP_CDN_SERVER}/dva-core/2.0.1/dva-core.js`,
-      production: `${process.env.REACT_APP_CDN_SERVER}/dva-core/2.0.1/dva-core.min.js`,
+      development: `${process.env['hosts.cdn']}/dva-core/2.0.1/dva-core.js`,
+      production: `${process.env['hosts.cdn']}/dva-core/2.0.1/dva-core.min.js`,
     },
   },
   'dva-model-creator': {
@@ -145,8 +145,8 @@ module.exports = () => ({
     commonjs: 'dva-model-creator',
     commonjs2: 'dva-model-creator',
     cdn: {
-      development: `${process.env.REACT_APP_CDN_SERVER}/dva-model-creator/0.4.3/dva-model-creator.js`,
-      production: `${process.env.REACT_APP_CDN_SERVER}/dva-model-creator/0.4.3/dva-model-creator.min.js`,
+      development: `${process.env['hosts.cdn']}/dva-model-creator/0.4.3/dva-model-creator.js`,
+      production: `${process.env['hosts.cdn']}/dva-model-creator/0.4.3/dva-model-creator.min.js`,
     },
   },
   '@gmsoft/event-bus': {
@@ -155,8 +155,8 @@ module.exports = () => ({
     commonjs: '@gmsoft/event-bus',
     commonjs2: '@gmsoft/event-bus',
     cdn: {
-      development: `${process.env.REACT_APP_CDN_SERVER}/event-bus/1.4.0/event-bus.umd.js`,
-      production: `${process.env.REACT_APP_CDN_SERVER}/event-bus/1.4.0/event-bus.umd.js`,
+      development: `${process.env['hosts.cdn']}/event-bus/1.4.0/event-bus.umd.js`,
+      production: `${process.env['hosts.cdn']}/event-bus/1.4.0/event-bus.umd.js`,
     },
   },
   'state-container': {
@@ -165,8 +165,8 @@ module.exports = () => ({
     commonjs: 'state-container',
     commonjs2: 'state-container',
     cdn: {
-      development: `${process.env.REACT_APP_CDN_SERVER}/state-container/1.5.0/state-container.js`,
-      production: `${process.env.REACT_APP_CDN_SERVER}/state-container/1.5.0/state-container.min.js`,
+      development: `${process.env['hosts.cdn']}/state-container/1.5.0/state-container.js`,
+      production: `${process.env['hosts.cdn']}/state-container/1.5.0/state-container.min.js`,
     },
   },
   axios: {
@@ -175,8 +175,8 @@ module.exports = () => ({
     commonjs: 'axios',
     commonjs2: 'axios',
     cdn: {
-      development: `${process.env.REACT_APP_CDN_SERVER}/axios/0.24.0/axios.js`,
-      production: `${process.env.REACT_APP_CDN_SERVER}/axios/0.24.0/axios.min.js`,
+      development: `${process.env['hosts.cdn']}/axios/0.24.0/axios.js`,
+      production: `${process.env['hosts.cdn']}/axios/0.24.0/axios.min.js`,
     },
   },
   reselect: {
@@ -185,8 +185,8 @@ module.exports = () => ({
     commonjs: 'reselect',
     commonjs2: 'reselect',
     cdn: {
-      development: `${process.env.REACT_APP_CDN_SERVER}/reselect/4.0.0/reselect.js`,
-      production: `${process.env.REACT_APP_CDN_SERVER}/reselect/4.0.0/reselect.min.js`,
+      development: `${process.env['hosts.cdn']}/reselect/4.0.0/reselect.js`,
+      production: `${process.env['hosts.cdn']}/reselect/4.0.0/reselect.min.js`,
     },
   },
   'react-virtualized': {
@@ -195,8 +195,8 @@ module.exports = () => ({
     commonjs: 'react-virtualized',
     commonjs2: 'react-virtualized',
     cdn: {
-      development: `${process.env.REACT_APP_CDN_SERVER}/react-virtualized/9.21.0/react-virtualized.js`,
-      production: `${process.env.REACT_APP_CDN_SERVER}/react-virtualized/9.21.0/react-virtualized.min.js`,
+      development: `${process.env['hosts.cdn']}/react-virtualized/9.21.0/react-virtualized.js`,
+      production: `${process.env['hosts.cdn']}/react-virtualized/9.21.0/react-virtualized.min.js`,
     },
   },
   'react-virtualized-tree': {
@@ -205,8 +205,8 @@ module.exports = () => ({
     commonjs: 'react-virtualized-tree',
     commonjs2: 'react-virtualized-tree',
     cdn: {
-      development: `${process.env.REACT_APP_CDN_SERVER}/react-virtualized-tree/2.0.2/react-virtualized-tree.js`,
-      production: `${process.env.REACT_APP_CDN_SERVER}/react-virtualized-tree/2.0.2/react-virtualized-tree.min.js`,
+      development: `${process.env['hosts.cdn']}/react-virtualized-tree/2.0.2/react-virtualized-tree.js`,
+      production: `${process.env['hosts.cdn']}/react-virtualized-tree/2.0.2/react-virtualized-tree.min.js`,
     },
   },
   qs: {
@@ -215,8 +215,8 @@ module.exports = () => ({
     commonjs: 'qs',
     commonjs2: 'qs',
     cdn: {
-      development: `${process.env.REACT_APP_CDN_SERVER}/qs/6.9.3/qs.js`,
-      production: `${process.env.REACT_APP_CDN_SERVER}/qs/6.9.3/qs.js`,
+      development: `${process.env['hosts.cdn']}/qs/6.9.3/qs.js`,
+      production: `${process.env['hosts.cdn']}/qs/6.9.3/qs.js`,
     },
   },
   '@gmsoft/auth-sdk': {
@@ -225,8 +225,8 @@ module.exports = () => ({
     commonjs: '@gmsoft/auth-sdk',
     commonjs2: '@gmsoft/auth-sdk',
     cdn: {
-      development: `${process.env.REACT_APP_CDN_SERVER}/auth-sdk/1.6.1/auth-sdk.umd.js`,
-      production: `${process.env.REACT_APP_CDN_SERVER}/auth-sdk/1.6.1/auth-sdk.umd.js`,
+      development: `${process.env['hosts.cdn']}/auth-sdk/1.6.1/auth-sdk.umd.js`,
+      production: `${process.env['hosts.cdn']}/auth-sdk/1.6.1/auth-sdk.umd.js`,
     },
   },
   '@gmsoft/tt-sdk': {
@@ -235,8 +235,8 @@ module.exports = () => ({
     commonjs: '@gmsoft/tt-sdk',
     commonjs2: '@gmsoft/tt-sdk',
     cdn: {
-      development: `${process.env.REACT_APP_CDN_SERVER}/tt-sdk/1.4.0/tt-sdk.umd.js`,
-      production: `${process.env.REACT_APP_CDN_SERVER}/tt-sdk/1.4.0/tt-sdk.umd.js`,
+      development: `${process.env['hosts.cdn']}/tt-sdk/1.4.0/tt-sdk.umd.js`,
+      production: `${process.env['hosts.cdn']}/tt-sdk/1.4.0/tt-sdk.umd.js`,
     },
   },
 });

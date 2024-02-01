@@ -1,0 +1,24 @@
+business:
+
+  # （必须）项目名：此名称将决定make产生的成品文件在成品库中的名称，deploy阶段将使用此名称作为项目名进行部署
+  project-name: "{{projectName}}-app"
+
+  # （必须）项目部署位置
+  public-url: //${hosts.zw-domain}/"{{projectName}}-app"
+
+
+hosts:
+
+  # 部署域
+  domain: ${hosts.zw-domain}
+
+  #  CDN服务器地址
+  component-registry-server: ${hosts.component-registry-server}
+
+
+gateway:
+  # 部署域下的 /djc-gateway 网关path
+  DJC_GATEWAY: //${hosts.djc}/djc-gateway
+
+  # 网关服务器base路径
+  REACT_APP_API_GATEWAY_BASE: 'http://easy-mock.gm/mock/5c514bf9cd2f550e9dfbb515/',
