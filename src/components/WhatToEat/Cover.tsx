@@ -19,9 +19,15 @@ const Asking = styled.div`
   font-size: 10vh;
   text-align: center;
   padding: 30px;
-  text-shadow: rgb(175, 212, 212) 0px 1px 0px, rgb(159, 203, 203) 0px 2px 0px,
-    rgb(139, 193, 193) 0px 3px 0px, rgb(122, 184, 184) 0px 4px 0px, rgba(0, 0, 0, 0.2) 0px 5px 1px,
-    rgba(0, 0, 0, 0.3) 0px 0px 10px, rgba(0, 0, 0, 0.4) 0px 3px 5px, rgba(0, 0, 0, 0.5) 0px 6px 5px,
+  text-shadow:
+    rgb(175, 212, 212) 0px 1px 0px,
+    rgb(159, 203, 203) 0px 2px 0px,
+    rgb(139, 193, 193) 0px 3px 0px,
+    rgb(122, 184, 184) 0px 4px 0px,
+    rgba(0, 0, 0, 0.2) 0px 5px 1px,
+    rgba(0, 0, 0, 0.3) 0px 0px 10px,
+    rgba(0, 0, 0, 0.4) 0px 3px 5px,
+    rgba(0, 0, 0, 0.5) 0px 6px 5px,
     rgba(0, 0, 0, 0.6) 0px 10px 10px;
 `;
 
@@ -53,9 +59,7 @@ const ImageBox = styled(Image)`
 
 export default ({ url, name }: Props) =>
   url ? (
-    <>
-      <ImageBox url={url} name={name} />
-    </>
+    <ImageBox url={url} name={name} />
   ) : (
     <Asking>
       今天吃什么
