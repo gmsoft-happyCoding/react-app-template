@@ -7,5 +7,5 @@ business:
   dev-plat-domain: www.xcjdev1.gm
 
 gateway:
-  demo: 'http://easy-mock.gm/mock/5c514bf9cd2f550e9dfbb515'
-  djc: 'https://www.xcjdev1.gm/djc-gateway'
+  demo: http://easy-mock.gm/mock/5c514bf9cd2f550e9dfbb515
+  djc: https://www.xcjdev1.gm/djc-gateway
