@@ -26,6 +26,6 @@ function getBasePath(url?: string) {
 }
 
 export default () => {
-  const basePath = getBasePath(process.env.REACT_APP_PUBLIC_URL);
+  const basePath = getBasePath(process.env["business.public-url"]);
   return `${basePath === '/' ? '' : basePath}`;
 };
