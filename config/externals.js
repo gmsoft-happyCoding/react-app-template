@@ -235,8 +235,8 @@ module.exports = () => ({
     commonjs: '@gmsoft/tt-sdk',
     commonjs2: '@gmsoft/tt-sdk',
     cdn: {
-      development: `${process.env['business.cdn']}/tt-sdk/1.4.0/tt-sdk.umd.js`,
-      production: `${process.env['business.cdn']}/tt-sdk/1.4.0/tt-sdk.umd.js`,
+      development: `${process.env['business.cdn']}/tt-sdk/1.6.0/tt-sdk.umd.js`,
+      production: `${process.env['business.cdn']}/tt-sdk/1.6.0/tt-sdk.umd.js`,
     },
   },
 });
