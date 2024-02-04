@@ -9,7 +9,7 @@ const url = require('url');
 const appDirectory = fs.realpathSync(process.cwd());
 const resolveApp = relativePath => path.resolve(appDirectory, relativePath);
 
-const envPublicUrl = process.env.PUBLIC_URL || process.env["business.public-url"];
+const envPublicUrl = process.env.PUBLIC_URL || process.env['business.public-url'];
 
 function ensureSlash(inputPath, needsSlash) {
   const hasSlash = inputPath.endsWith('/');
@@ -86,4 +86,3 @@ module.exports = {
 };
 
 module.exports.moduleFileExtensions = moduleFileExtensions;
-

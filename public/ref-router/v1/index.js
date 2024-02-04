@@ -9,10 +9,12 @@ import createFrameRoute from 'createFrameRoute';
 import uiRouter from 'ui-router';
 import angularBreadcrumb from 'angular-breadcrumb';
 
-const domainRegx = /(http(s)?:)?\/\/(?:[a-z0-9](?:[a-z0-9-_]{0,61}[a-z0-9])?(\.|:))+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]/;
+// eslint-disable-next-line max-len
+const domainRegx =
+  /(http(s)?:)?\/\/(?:[a-z0-9](?:[a-z0-9-_]{0,61}[a-z0-9])?(\.|:))+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]/;
 
 const frameRoute = createFrameRoute({
-  proxyDomain: domainRegx.exec(process.env["business.public-url"])[0],
+  proxyDomain: domainRegx.exec(process.env['business.public-url'])[0],
 });
 
 const moduleId = 'template-app.router';
