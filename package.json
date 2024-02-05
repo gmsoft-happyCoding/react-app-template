@@ -1,5 +1,5 @@
 {
-  "name": "{{projectName}}-app",
+  "name": "{{projectName}}",
   "version": "1.0.0",
   "private": true,
   "scripts": {
