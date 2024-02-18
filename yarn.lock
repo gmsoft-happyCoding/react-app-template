@@ -8714,10 +8714,10 @@ eslint-config-airbnb@19.0.2:
     object.assign "^4.1.2"
     object.entries "^1.1.5"
 
-eslint-config-gmsoft@2.2.4:
-  version "2.2.4"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/eslint-config-gmsoft/-/eslint-config-gmsoft-2.2.4.tgz#f364d411055a48993f55c2b23a56ce6f6e0f5616"
-  integrity sha512-mFnYyGPQEfM0dFI/LmsSVIkq3sPntoryeeI2ykCpMjhNc3W1mzW1C3OhWTMY3+4Qpqc5HcYTJz6aV4i3sv8O2g==
+eslint-config-gmsoft@2.2.5:
+  version "2.2.5"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/eslint-config-gmsoft/-/eslint-config-gmsoft-2.2.5.tgz#9334f82d63f9509bd5919093aefb3dc790c65a3e"
+  integrity sha512-Z+qyy5PdlyqM07290cFFc8NtewsQnPI04c+7GTx2Gtkk+Lb/rjAtEcwMhzxCQlH5pdVGRcf6/sYECrS+XoGQrg==
   dependencies:
     "@typescript-eslint/eslint-plugin" "6.20.0"
     "@typescript-eslint/parser" "6.20.0"
@@ -19756,10 +19756,10 @@ stealthy-require@^1.1.1:
   resolved "http://192.168.2.10:8081/repository/npm.gm/stealthy-require/-/stealthy-require-1.1.1.tgz#35b09875b4ff49f26a777e509b3090a3226bf24b"
   integrity sha1-NbCYdbT/SfJqd35QmzCQoyJr8ks=
 
-stormrage@3.0.0-beta.45:
-  version "3.0.0-beta.45"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/stormrage/-/stormrage-3.0.0-beta.45.tgz#a4a03f41fd09ad467f7f3ade94d3cff9dcae7d94"
-  integrity sha512-cTUUJ76dXjkg2YPWqdSbbQHOaMQxy6Kw5yNvWMJZxL9bb5AICLLe1IrokoegaS2vZuqyvzWd4WHdZLENirjz2A==
+stormrage@3.0.0-beta.46:
+  version "3.0.0-beta.46"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/stormrage/-/stormrage-3.0.0-beta.46.tgz#670f123e8e47822054578ed26cfdce3b91d3cd6e"
+  integrity sha512-3b7VcYhq9wc3qR9cJN6EMNJiQ0gBiVfvydoWrya5NsJmEaCh6C18LOmmSFFMJMBWEQAwomBRHL7RBOahpFnq4g==
   dependencies:
     "@babel/core" "^7.7.4"
     "@babel/plugin-proposal-export-default-from" "^7.7.4"
@@ -19794,7 +19794,7 @@ stormrage@3.0.0-beta.45:
     download-git-repo "^1.1.0"
     easy-mock-cli "^0.4.3"
     eslint "^8.56.0"
-    eslint-config-gmsoft "2.2.4"
+    eslint-config-gmsoft "2.2.5"
     eslint-webpack-plugin "2.7.0"
     file-loader "2.0.0"
     fis-parser-jdists "^2.2.3"
