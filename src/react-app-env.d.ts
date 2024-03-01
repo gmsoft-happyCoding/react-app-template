@@ -5,9 +5,9 @@
 declare namespace NodeJS {
   interface ProcessEnv {
     NODE_ENV: 'development' | 'production' | 'test';
-    PUBLIC_URL: string;
-    ['gateway.djc']: string;
-    ['business.component-registry-server']: string;
+    'business.public-url': string;
+    'gateway.djc': string;
+    'business.component-registry-server': string;
   }
 }
 
