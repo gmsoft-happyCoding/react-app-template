@@ -17615,10 +17615,10 @@ react-docgen-displayname-handler@^3.0.0:
   dependencies:
     ast-types "0.13.3"
 
-react-docgen-typescript@^1.22.0:
-  version "1.22.0"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/react-docgen-typescript/-/react-docgen-typescript-1.22.0.tgz#00232c8e8e47f4437cac133b879b3e9437284bee"
-  integrity sha512-MPLbF8vzRwAG3GcjdL+OHQlhgtWsLTXs+7uJiHfEeT3Ur7IsZaNYqRTLQ9sj2nB6M6jylcPCeCmH7qbszJmecg==
+react-docgen-typescript@^2.2.2:
+  version "2.2.2"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/react-docgen-typescript/-/react-docgen-typescript-2.2.2.tgz#4611055e569edc071204aadb20e1c93e1ab1659c"
+  integrity sha512-tvg2ZtOpOi6QDwsb3GZhOjDkkX0h8Z2gipvTg6OVMUyoYoURhEiRNePT8NZItTVCDh39JJHnLdfCOkzoLbFnTg==
 
 react-docgen@^5.0.0:
   version "5.3.0"
@@ -19756,10 +19756,10 @@ stealthy-require@^1.1.1:
   resolved "http://192.168.2.10:8081/repository/npm.gm/stealthy-require/-/stealthy-require-1.1.1.tgz#35b09875b4ff49f26a777e509b3090a3226bf24b"
   integrity sha1-NbCYdbT/SfJqd35QmzCQoyJr8ks=
 
-stormrage@3.0.0-beta.46:
-  version "3.0.0-beta.46"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/stormrage/-/stormrage-3.0.0-beta.46.tgz#670f123e8e47822054578ed26cfdce3b91d3cd6e"
-  integrity sha512-3b7VcYhq9wc3qR9cJN6EMNJiQ0gBiVfvydoWrya5NsJmEaCh6C18LOmmSFFMJMBWEQAwomBRHL7RBOahpFnq4g==
+stormrage@3.0.0-beta.48:
+  version "3.0.0-beta.48"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/stormrage/-/stormrage-3.0.0-beta.48.tgz#4300f8e7b9f3ee33d09eb4bc2002430c6682c716"
+  integrity sha512-RuXgoIka/2krH/W7yaj78/Y7MIRoh1Fe/y3k0mUjmLdhP1rUK4wR5ncT/4hWYPKkVBZdxCXaMiQPZcADfk7qHQ==
   dependencies:
     "@babel/core" "^7.7.4"
     "@babel/plugin-proposal-export-default-from" "^7.7.4"
@@ -19840,7 +19840,7 @@ stormrage@3.0.0-beta.46:
     prettier "^3.2.4"
     progress-bar-webpack-plugin "^1.12.1"
     react-dev-utils "^11.0.1"
-    react-docgen-typescript "^1.22.0"
+    react-docgen-typescript "^2.2.2"
     react-refresh "^0.9.0"
     react-styleguidist "11.1.5"
     resolve "1.8.1"
