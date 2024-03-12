@@ -165,8 +165,8 @@ module.exports = () => ({
     commonjs: 'state-container',
     commonjs2: 'state-container',
     cdn: {
-      development: `${process.env['business.cdn']}/state-container/1.5.0/state-container.js`,
-      production: `${process.env['business.cdn']}/state-container/1.5.0/state-container.min.js`,
+      development: `${process.env['business.cdn']}/state-container/1.6.0/state-container.js`,
+      production: `${process.env['business.cdn']}/state-container/1.6.0/state-container.min.js`,
     },
   },
   axios: {

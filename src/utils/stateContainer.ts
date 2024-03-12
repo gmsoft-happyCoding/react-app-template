@@ -1,6 +1,11 @@
 import { create } from 'state-container';
 import history from './history';
 
+const origin =
+  process.env.NODE_ENV === 'development'
+    ? `https://${process.env['business.dev-plat-domain']}`
+    : undefined;
+
 const stateContainer = create({
   history,
   NODE_ENV: process.env.NODE_ENV,
@@ -8,6 +13,8 @@ const stateContainer = create({
   globalContextOpts: {
     appName: '{{projectName}}',
     djcGatewayBaseUrl: process.env['gateway.djc'],
+    origin,
+    meOrigin: origin,
   },
   onError: err => {
     // err.preventDefault();
