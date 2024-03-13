@@ -2367,8 +2367,8 @@
 
 "@gmsoft/dva-global-context-plugin@1.10.0":
   version "1.10.0"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/@gmsoft/dva-global-context-plugin/-/dva-global-context-plugin-1.10.0.tgz#8f4ea32638fee8d992dd72543d297b611195fa6a"
-  integrity sha512-K4ElBR19rTiCeTz4ZqxSTGugDKO3nxVwp5nXw6HUTqoTFoSMyC8DTdRJbOYO6Bxjx7UC3asKh+GFimz7L39Ung==
+  resolved "http://192.168.2.10:8081/repository/npm.gm/@gmsoft/dva-global-context-plugin/-/dva-global-context-plugin-1.10.0.tgz#03ee27d81747cfb358d1fec8ee4349ab8f79154b"
+  integrity sha512-2Owtkct+9h/naPNwwaJ3o2QihsM9ZW+PmfhcIF/U9cEakfeBg/48bhpipGSs+hxKJPda5s9Lzw0S/ixtVlDFiw==
   dependencies:
     "@gmsoft/auth-sdk" "1.1.0"
     react-redux "7.1.0"
