@@ -19743,8 +19743,8 @@ state-container@1.5.0:
 
 state-container@1.6.0:
   version "1.6.0"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/state-container/-/state-container-1.6.0.tgz#ede5a6e36871e0dbcb84380027ec990baf71c9b1"
-  integrity sha512-iGTmb5tnli36ABEQx4CZClSUoalwEIpcO4kebAQMURQ2FeZdLZYKCUcsd5INAwW0jHO6AzWQEv+4znCzfU7xhQ==
+  resolved "http://192.168.2.10:8081/repository/npm.gm/state-container/-/state-container-1.6.0.tgz#97b1942b716fabe817c7588ddfaa3c717c36d604"
+  integrity sha512-2XCZLM+rmjzTFZrNt+B7KgZFIMS1eLgyoM1u9n5QflJjoJWiO7meBELxYZLWPokvWF8aKfgU5kxNIchy/hDsYA==
   dependencies:
     "@gmsoft/dva-global-context-plugin" "1.10.0"
     "@gmsoft/dva-theme-plugin" "1.4.0"
