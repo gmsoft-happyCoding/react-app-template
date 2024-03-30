@@ -1,20 +1,26 @@
 import { showNetworkError } from '@/utils';
 import { axiosTokenInterceptor } from '@gmsoft/auth-sdk';
-import { AxiosError, AxiosInstance } from 'axios';
+import axios, { AxiosError, AxiosInstance } from 'axios';
 import type { Opts } from './Opts';
 
 export default (instance: AxiosInstance) => {
-  instance.interceptors.request.use(axiosTokenInterceptor(
-    {
+  instance.interceptors.request.use(
+    axiosTokenInterceptor({
       platDomain:
         process.env.NODE_ENV === 'development'
           ? process.env['business.dev-plat-domain']
           : location.host,
-    }
-  ));
+    })
+  );
 
   const errorHandler = (error: AxiosError & { config: Opts }) => {
-    if (!error.config.interceptorIgnoreError) showNetworkError(error);
+    /**
+     * 忽略或主动取消请求时不显示错误信息
+     */
+    if (!error?.config?.interceptorIgnoreError && !axios.isAxiosError(error)) {
+      showNetworkError(error);
+    }
+
     return Promise.reject(error);
   };
 
