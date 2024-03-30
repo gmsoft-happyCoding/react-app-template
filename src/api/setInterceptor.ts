@@ -1,6 +1,6 @@
-import { showNetworkError } from '@/utils';
-import { axiosTokenInterceptor } from '@gmsoft/auth-sdk';
 import axios, { AxiosError, AxiosInstance } from 'axios';
+import { axiosTokenInterceptor } from '@gmsoft/auth-sdk';
+import { showNetworkError } from '@/utils';
 import type { Opts } from './Opts';
 
 export default (instance: AxiosInstance) => {
