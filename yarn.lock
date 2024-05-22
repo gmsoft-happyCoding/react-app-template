@@ -2349,10 +2349,10 @@
     state-container "1.5.0"
     styled-components "^5.3.0"
 
-"@gmsoft/auth-sdk@1.7.0":
-  version "1.7.0"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/@gmsoft/auth-sdk/-/auth-sdk-1.7.0.tgz#69c66359ffbbd38b2ac5a0e73db2a0c3e6d3f7f0"
-  integrity sha512-QsE29pkQdvHTev34UmnLvy8ChPPEAEidHcKqmosKD7hLYdYPt9EePL9fDPV64whvjD79D57m7QDR5+q7OJ97ow==
+"@gmsoft/auth-sdk@1.8.0":
+  version "1.8.0"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/@gmsoft/auth-sdk/-/auth-sdk-1.8.0.tgz#e325aeebf5b42d4b25396531288b055286ab1559"
+  integrity sha512-pEOI7IvtpMAet2+MTtIoTt9kgnUZgoG8eyf3QBjwkk1GHJhdtBwGP3fmy6zaZxO90jTw9tli8vxmNdR0HT29pA==
   dependencies:
     "@gmsoft/ui" "^1.12.3"
     antd "3.26.20-custom.2"
@@ -19778,10 +19778,10 @@ stealthy-require@^1.1.1:
   resolved "http://192.168.2.10:8081/repository/npm.gm/stealthy-require/-/stealthy-require-1.1.1.tgz#35b09875b4ff49f26a777e509b3090a3226bf24b"
   integrity sha1-NbCYdbT/SfJqd35QmzCQoyJr8ks=
 
-stormrage@3.0.0-beta.52:
-  version "3.0.0-beta.52"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/stormrage/-/stormrage-3.0.0-beta.52.tgz#b7b49b8452ddd5a48924e6dd5bb00ffe9520c1bd"
-  integrity sha512-YcQbwgjz8RB7hqstf5T/E9XYheysEZ6+iSUrD3ck5NF8A2WminTZnKxkrjvavOxSGFXoDQIoGWX8RZsqDRyvVQ==
+stormrage@3.0.0-beta.56:
+  version "3.0.0-beta.56"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/stormrage/-/stormrage-3.0.0-beta.56.tgz#e5d7e21e3484b29ab899c3a33e12b6df835ee53d"
+  integrity sha512-RzOgCsrofZwIf77vthnBRV0wlhLT/V0E5j0CufZgegO2pAlSIzNCMove7+R9GipTGbMBEZbDgBlr625iFdOljg==
   dependencies:
     "@babel/core" "^7.7.4"
     "@babel/plugin-proposal-export-default-from" "^7.7.4"
