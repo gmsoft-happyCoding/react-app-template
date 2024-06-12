@@ -34,7 +34,7 @@
     "react-router-redux": "4.0.8",
     "redux": "^4.0.1",
     "redux-saga": "0.16.2",
-    "state-container": "1.6.0",
+    "state-container": "1.7.0",
     "styled-components": "^5.2.1"
   },
   "devDependencies": {

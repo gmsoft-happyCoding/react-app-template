@@ -2365,12 +2365,12 @@
     state-container "1.5.0"
     styled-components "^5.3.0"
 
-"@gmsoft/dva-global-context-plugin@1.10.0":
-  version "1.10.0"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/@gmsoft/dva-global-context-plugin/-/dva-global-context-plugin-1.10.0.tgz#03ee27d81747cfb358d1fec8ee4349ab8f79154b"
-  integrity sha512-2Owtkct+9h/naPNwwaJ3o2QihsM9ZW+PmfhcIF/U9cEakfeBg/48bhpipGSs+hxKJPda5s9Lzw0S/ixtVlDFiw==
+"@gmsoft/dva-global-context-plugin@1.11.0":
+  version "1.11.0"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/@gmsoft/dva-global-context-plugin/-/dva-global-context-plugin-1.11.0.tgz#28790f318fac5cbd24b70dd720d0234611abf069"
+  integrity sha512-deeyWWNhLcPe1ncTLBr1r3ttY4Aolgjxh2NTTC13D6JGuDzpeZ4IoXiiiXA4ELiTa20RcToJl/IB3x6jCUb+mA==
   dependencies:
-    "@gmsoft/auth-sdk" "1.1.0"
+    "@gmsoft/auth-sdk" "1.9.0"
     react-redux "7.1.0"
 
 "@gmsoft/dva-global-context-plugin@1.9.1":
@@ -19741,12 +19741,12 @@ state-container@1.5.0:
     react-router-redux "4.0.8"
     redux "^4.1.0"
 
-state-container@1.6.0:
-  version "1.6.0"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/state-container/-/state-container-1.6.0.tgz#97b1942b716fabe817c7588ddfaa3c717c36d604"
-  integrity sha512-2XCZLM+rmjzTFZrNt+B7KgZFIMS1eLgyoM1u9n5QflJjoJWiO7meBELxYZLWPokvWF8aKfgU5kxNIchy/hDsYA==
+state-container@1.7.0:
+  version "1.7.0"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/state-container/-/state-container-1.7.0.tgz#7580578d964d63cf45e927f51e44a7fc48913d92"
+  integrity sha512-cTGlnVbASXUNWLJKaw2gSpI/aIIk5B5RfJLIgQn4O1qeDtSLZmXMfKd1Jd0+8cXCRib9a2uO/AbsMo7doPHRYA==
   dependencies:
-    "@gmsoft/dva-global-context-plugin" "1.10.0"
+    "@gmsoft/dva-global-context-plugin" "1.11.0"
     "@gmsoft/dva-theme-plugin" "1.4.0"
     dva "^2.4.1"
     dva-core "^2.0.1"
