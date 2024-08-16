@@ -10,7 +10,7 @@
     "bad": "stormrage bad"
   },
   "dependencies": {
-    "@gmsoft/auth-sdk": "1.9.1",
+    "@gmsoft/auth-sdk": "1.9.2",
     "@gmsoft/event-bus": "1.4.0",
     "@gmsoft/tt-sdk": "1.6.0",
     "@gmsoft/ui": "^1.14.0",
